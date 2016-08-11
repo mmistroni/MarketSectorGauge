@@ -1,0 +1,9 @@
+db.shareprices.insert({
+    'ticker' : 'TEST',
+    'asofdate' : Date(),
+    'price' : 1.1,
+    'currentEps' : 'N\A',
+    'forwardEps' : 'N\A',
+    'movingAvg' : 'N\A',
+    'shortratio' : 'N\A',
+    'exDivDate'  : 'N\A'})

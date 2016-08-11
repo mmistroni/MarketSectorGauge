@@ -1,0 +1,89 @@
+-- Application.py. Flask Service
+Exposes following functionality:
+- viewAllSectors. uses dbConnector to load all sectors from database
+- viewTopPerformingSectors. uses strategyworker to compute best performing sectors
+- viewSectorCompanies. uses strategyWorker to fetch all companies for a sector
+- worstPerformingSectors uses srategyWorker to fetch worst performing sectors
+- viewCompany uses dbConnector to fetch company given its ticker, and  yahooclient to get the price
+- companyLookup uses dbConnector to fetch company and expose all informations
+
+sectorFinder.py  contains
+
+--- csvWorker whose main function is to export data to csv
+
+--- sqliteConnector whose main function is to store data for
+    - sectors
+    - companies
+    - share prices
+    
+--- yahooClient whose main function is to download data from Yahoo/Google/Bloomberg
+
+
+--- strategyWorker which incorporates following functionality
+    - uploadShare --> this actually refers to upload new sectors
+    - fetchBestSectors --> find out best sectors based on sector price between two dates
+    - fetchWorstSEctorsPerformance --> same as above but find worst performer
+    - fetchSectorPerformance --> find performance for a sector
+    - fetchSectorCompanies  --> find all companies for a sector
+    
+--- sectorFinder:
+    # This class loades data for each sector.
+    # This class should refresh the list of sector/companies on a monthly basis
+    # so that we can pick the latest fund. analysis parameters
+    - findSectorData: downloads all sectors via yahoo
+    - findAllSectors: download all sectors
+    - findAllSectorShares: find all companies for a sector
+    - findSectorCompanyTicker: find a ticker given a company name
+    - loadData: stores sector and company data into sql db
+    - exportPrices : export share prices (not needed)
+    - fetchData: in charge of fetching data for all sectors
+
+Additionally there's a scheduler which runs two tasks
+- daily, calls sectoFinder.fetchData which loads prices for all sectors
+- monthly, calls sectorFinder.loadData which updates sectors and companies    
+    
+    
+    
+--- NEW APPLICATION BASED ON SCALA, AKKA AND AKKA-HTTP    
+    
+PHASE1: standalone application that download data and stores it into mongodb
+We need:
+- DownloadService   (mimics yahooDownloader)
+- PersistenceSevice (mimics dbconnector. used to store/read data from mongo)
+- LoaderService     (mimics sectorFinder. used to load data but we will drop the following functionality:
+     - exportPrices, as we will rely on a NoSQL db
+     - loadData as once again we will rely on what's already in the database
+     
+Yet to be defined how to trigger this. Possible options:
+- package all data in a jar and create a cron job that runs daily     
+     
+So the cron job will kick off an ActorSystem that will have to:
+ - DOWNLOAD DATA ONCE A WEEK
+  - download all sectorIds
+  - download all sectorData
+  - persist all sectors
+  - find companies for each Sector
+  - store companies for each sector
+ - DOWNLOAD DATA DAILY 
+    - get all sector stored (from persistence service)
+    - fetch prices          (from data downloader)
+    - store  prices         (using persistence service)
+
+
+   
+    
+PHASE2:
+We need to expose this data via REST service, and for this we will try to use akka-http
+
+PHASE3: 
+Performance computation. We will use a local instance of spark to fetch all the data
+
+PHASE4:
+Store companies data in addition to sector data. We can do this in a separate actor system
+This might require moving to DynamoDB
+
+PHASE5:
+We will run ML algorithm on the data to find out trends or to predict prices
+
+ONGOING: Refactoring based on Scala design patterns
+
