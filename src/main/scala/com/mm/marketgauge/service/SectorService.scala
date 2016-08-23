@@ -35,7 +35,7 @@ trait SectorService {
     val data = lines.filter(line => line.indexOf("^YHO") > 0 && line.indexOf("]")> 0)
     val mapped = data.map(line=>line.substring(line.indexOf("[")+1, line.indexOf("]"))).toList
     val dataArray =  mapped.head.split('(')
-    Sector(dataArray(0).trim, dataArray(1).substring(0, dataArray(1).indexOf(")")).trim,
+    Sector(null, dataArray(0).trim, dataArray(1).substring(0, dataArray(1).indexOf(")")).trim,
            sectorId, "yhoo")
      
   }

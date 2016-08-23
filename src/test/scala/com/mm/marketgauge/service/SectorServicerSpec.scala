@@ -41,7 +41,7 @@ class SectorServiceDownloaderSpec extends FreeSpec with Matchers {
         val sectorId = 124
         val expectedUrl = mockSectorService.sectorDataUrl.replace("<sectorId>", sectorId.toString)
         val yahooData = List("[Oil & Gas Equipment & Services (^YHOh708)]</a></td></tr></table></td></tr></table><table><tr><td")
-        val expectedSector = Sector("Oil & Gas Equipment & Services", 
+        val expectedSector = Sector(null, "Oil & Gas Equipment & Services", 
                                     "^YHOh708", 124, "yhoo")
         
         Mockito.when(mockDownloader.downloadFromURL(expectedUrl)).thenReturn(yahooData.iterator)
@@ -52,6 +52,10 @@ class SectorServiceDownloaderSpec extends FreeSpec with Matchers {
       }
     }
   }
+  
+  
+  
+  
   
   
 }

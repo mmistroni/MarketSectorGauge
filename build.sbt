@@ -8,6 +8,8 @@ organization := "com.mm"
 
 scalaVersion := "2.11.5"
 
+scalacOptions ++= Seq("-deprecation")
+
 
 resolvers ++= Seq("spray repo" at "http://repo.spray.io/",
                 "Sonatype Snapshots" at "http://oss.sonatype.org/content/repositories/snapshots/",
@@ -44,7 +46,9 @@ libraryDependencies ++= {
     "org.slf4j" % "slf4j-simple" % "1.7.5",
     "org.clapper" %% "grizzled-slf4j" % "1.0.2",
     "org.reactivemongo" %% "reactivemongo" % "0.11.14",
-    "com.github.tototoshi" %% "scala-csv" % "1.3.3"
+    "com.github.tototoshi" %% "scala-csv" % "1.3.3",
+    "org.mongodb" %% "casbah" % "2.7.3",
+    "org.slf4j" % "slf4j-simple" % "1.6.4"
 
     
   )
