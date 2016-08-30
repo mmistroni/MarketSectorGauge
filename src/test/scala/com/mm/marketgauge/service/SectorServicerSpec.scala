@@ -8,15 +8,18 @@ import org.scalatest.concurrent.ScalaFutures._
 import com.mm.marketgauge.entities.Sector
 import org.junit.runner.RunWith
 import org.scalatest.junit.JUnitRunner
+import com.mm.marketgaugen.dao.SectorDao
 
 
 @RunWith(classOf[JUnitRunner])
 class SectorServiceDownloaderSpec extends FreeSpec with Matchers {
  
   val mockDownloader = Mockito.mock(classOf[DataDownloader])
+  val mockSectorDao = Mockito.mock(classOf[SectorDao])
   val mockSectorService = 
     new SectorService {
             val dataDownloader = mockDownloader
+            val sectorDao = mockSectorDao
                       }
   "The SectorService" - {
     "when calling getAllSectorsIds it should call dataDownloader.downloader with allSectorsUrl URL" - {
@@ -34,6 +37,7 @@ class SectorServiceDownloaderSpec extends FreeSpec with Matchers {
       }
     }
   }
+  
   "The SectorService" - {
     "when calling downloadSectorData it should call dataDownloader.downloader with sectorDataUrl URL" - {
       "should return a Sector" in {
@@ -47,11 +51,27 @@ class SectorServiceDownloaderSpec extends FreeSpec with Matchers {
         Mockito.when(mockDownloader.downloadFromURL(expectedUrl)).thenReturn(yahooData.iterator)
         val sector = mockSectorService.downloadSectorData(sectorId)
         sector shouldEqual(expectedSector)
-        Mockito.verify(mockDownloader).downloadFromURL(expectedUrl)
         
       }
     }
   }
+  
+  "The SectorService" - {
+    "when calling persistSectors it should call  sectorDao" - {
+      "should return count" in {
+        
+        val expectedSector = Sector(null, "Oil & Gas Equipment & Services", 
+                                    "^YHOh708", 124, "yhoo")
+        
+        val sectors = List(expectedSector)
+                                    
+        mockSectorService.persistSectors(sectors)
+        Mockito.verify(mockSectorDao, Mockito.times(1)).insertSector(expectedSector)
+          
+      }
+    }
+  }
+  
   
   
   

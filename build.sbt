@@ -47,7 +47,7 @@ libraryDependencies ++= {
     "org.clapper" %% "grizzled-slf4j" % "1.0.2",
     "org.reactivemongo" %% "reactivemongo" % "0.11.14",
     "com.github.tototoshi" %% "scala-csv" % "1.3.3",
-    "org.mongodb" %% "casbah" % "2.7.3",
+    "org.mongodb" %% "casbah" % "2.8.0",
     "org.slf4j" % "slf4j-simple" % "1.6.4"
 
     
