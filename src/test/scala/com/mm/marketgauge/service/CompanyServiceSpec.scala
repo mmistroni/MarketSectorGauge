@@ -5,19 +5,22 @@ import org.scalatest.FreeSpec
 import org.scalatest.Matchers
 import org.mockito.{ Mockito, Matchers => MockitoMatchers }
 import org.scalatest.concurrent.ScalaFutures._
-import com.mm.marketgauge.entities.Sector
 import org.junit.runner.RunWith
 import org.scalatest.junit.JUnitRunner
-import com.mm.marketgauge.entities.Company
+import com.mm.marketgauge.entities.{Company, CompanyRepo}
+import com.mm.marketgaugen.dao.CompanyDao
+
 
 
 @RunWith(classOf[JUnitRunner])
 class CompanyServiceSpec extends FreeSpec with Matchers {
  
   val mockDownloader = Mockito.mock(classOf[DataDownloader])
+  val mockCompanyDao = Mockito.mock(classOf[CompanyDao])
   val mockCompanyService = 
     new CompanyService {
             val dataDownloader = mockDownloader
+            val companyDao = mockCompanyDao
                       }
   "The CompanyService" - {
     "when calling downloadCopmpayData with a SectorId should call dataDownloader.downloadFromURL with companyUrl" - {
@@ -118,6 +121,46 @@ res5: List[List[String]] = List(List(Symbol, Name, LastSale, MarketCap, IPOyear,
   }
   
   
+  "The CompanyService" - {
+    "when calling persistCompanies  should call CompanyDao" - {
+      "and return an Integer" in {
+        
+        val testCompany = Company.fromListOfString(
+            List("Financial", "0.622", "97700136.89B", "15.803", "8.204", "3.320", "127.027", "1.600", "17.599", "21.443", "1")
+                                                  )
+        val companies = List(testCompany)          
+        val numInsert =  companies.size
+                            
+        Mockito.when(mockCompanyDao.insertCompanies(companies: _*)).thenReturn(numInsert)
+        val res = mockCompanyService.persistCompanies(companies)
+        res should be(numInsert)
+        Mockito.verify(mockCompanyDao).insertCompanies(companies: _*)
+        
+      }
+    }
+  }
+  
+  
+  "The CompanyService" - {
+    "when calling persistCompanyRepo  should call CompanyDao" - {
+      "and return an Integer" in {
+        
+        val testCompanyRepo = CompanyRepo.fromListOfString(
+            List("WBAI", "500.com Limited", "17.74", "$734.06M", "2013", "Consumer Services", "Services-Misc. Amusement & Recreation", 
+                            "http://www.nasdaq.com/symbol/wbai","" )
+                                                          )
+        val companyRepos = List(testCompanyRepo)          
+        val numInsert =  companyRepos.size
+                            
+        Mockito.when(mockCompanyDao.insertCompanyRepos(companyRepos: _*)).thenReturn(numInsert)
+        val res = mockCompanyService.persistCompanyRepos(companyRepos)
+        res should be(numInsert)
+        Mockito.verify(mockCompanyDao).insertCompanyRepos(companyRepos: _*)
+        
+        
+      }
+    }
+  }
   
   
   

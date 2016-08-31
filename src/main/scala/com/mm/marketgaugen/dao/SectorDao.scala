@@ -28,19 +28,15 @@ trait SectorDao {
   
   def insertSector(sector: Sector) = {
     println("Inserting:" + sector.name)
-    
     // we shud do a find. if available, copy data, then save
-    
-    
-    collection.insert(SectorConverter.convertToMongoObject(sector))
-    
-    //save(SectorConverter.convertToMongoObject(sector))
-    
-    
-    //
+    collection.save(SectorConverter.convertToMongoObject(sector))
     
   }
   
+  
+  def getAllSectorIds:Seq[Int] = {
+    findAll.map(sector => sector.sectorId).toList
+  }
   
 
   def findAll = {

@@ -1,6 +1,7 @@
 package com.mm.marketgauge.service
 import com.mm.marketgauge.entities.Company
 import com.mm.marketgauge.entities.CompanyRepo
+import com.mm.marketgaugen.dao.CompanyDao
 
 /**
  * Service for handling Company data
@@ -12,7 +13,7 @@ trait CompanyService {
   private [service] val nyseCompaniesUrl = "http://www.nasdaq.com/screening/companies-by-name.aspx?letter=0&exchange=nyse&render=download"
   private [service] val amexCompaniesUrl = "http://www.nasdaq.com/screening/companies-by-name.aspx?letter=0&exchange=amex&render=download"
   private[service] val dataDownloader:DataDownloader 
-  
+  private[service] val companyDao:CompanyDao
   
   
   def downloadCompanyData(sectorId:Int):List[Company] = {
@@ -33,7 +34,13 @@ trait CompanyService {
   }
   
   
-  def persistCompanies(companies:List[Company]):Unit = {}
+  def persistCompanies(companies:Seq[Company]):Int = {
+    companyDao.insertCompanies(companies: _*)
+  }
+  
+  def persistCompanyRepos(companyRepos:Seq[CompanyRepo]):Int = {
+    companyDao.insertCompanyRepos(companyRepos: _*)
+  }
  
   private def _extractCsvData(url:String):List[List[String]] = {
     // skipping the header

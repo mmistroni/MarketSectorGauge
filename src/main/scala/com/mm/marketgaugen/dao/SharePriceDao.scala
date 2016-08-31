@@ -1,7 +1,7 @@
 package com.mm.marketgaugen.dao
 
 import com.mm.marketgauge.entities.SharePrice
-import com.mongodb.casbah.{MongoClient, MongoClientURI}
+import com.mongodb.casbah.{MongoClient, MongoClientURI, WriteConcern}
 import com.mm.marketgauge.converters.SharePriceConverter
 import com.mongodb.casbah.Imports._
 
@@ -9,7 +9,7 @@ import com.mongodb.casbah.Imports._
  * User: talg
  */
 
-object SharePriceDao {
+trait SharePriceDao {
   /**
    * Mongo URI string [[http://docs.mongodb.org/manual/reference/connection-string/]]
    */
@@ -17,10 +17,13 @@ object SharePriceDao {
   val db = MongoClient(MongoClientURI(uri))( """test""")
   val collection = db("share_prices")
 
-  def insert(share: SharePrice) = {
-    collection.insert(SharePriceConverter.convertToMongoObject(share))
+  def insert(shares: SharePrice*) = {
+    val builder = collection.initializeOrderedBulkOperation
+    shares.foreach(s => builder.insert(SharePriceConverter.convertToMongoObject(s)))
+    builder.execute().insertedCount
   }
 
+  
   def findByTicker(ticker :String) = {
     import com.mm.marketgauge.entities.SharePriceProperties.TICKER
     val query = MongoDBObject(TICKER -> ticker)

@@ -10,11 +10,12 @@ object SharePriceDaoApp extends App {
                  Double.NaN, Double.NaN)
 
   println("Inserting...")
-  SharePriceDao.insert(share)
+  val sharePriceDao = new SharePriceDao {}
+  sharePriceDao.insert(share)
   
   println("Now retrieving...")
   
-  val res:SharePrice = SharePriceDao.findByTicker(ticker).get
+  val res:SharePrice = sharePriceDao.findByTicker(ticker).get
  
   println(s"Ticker=${res.ticker}|Price:${res.price}|Eps;${res.currentEps}")
   

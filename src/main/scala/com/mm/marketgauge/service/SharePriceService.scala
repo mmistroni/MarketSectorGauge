@@ -1,6 +1,7 @@
 package com.mm.marketgauge.service
 
 import com.mm.marketgauge.entities.SharePrice
+import com.mm.marketgaugen.dao.SharePriceDao 
 import scala.util.control.Exception.allCatch
 
 /**
@@ -10,6 +11,7 @@ trait SharePriceService {
   private[service] val sharePriceUrl = "http://finance.yahoo.com/d/quotes.csv?s=<ticker>&f=sl1d1e7e8m4qr5s7"
   private[service] val dataDownloader:DataDownloader 
   private[service] val sectorService:SectorService
+  private[service] val sharePriceDao:SharePriceDao
   
   def downloadSharePrice(ticker:String):SharePrice = {
     val head = dataDownloader.downloadCSV(sharePriceUrl.replace("<ticker>", ticker)).head
@@ -21,7 +23,9 @@ trait SharePriceService {
   }
   
   
-  def persistSharePrices(sharePrices:List[SharePrice]):Int = { 0}
+  def persistSharePrices(sharePrices:List[SharePrice]):Int = { 
+    sharePriceDao.insert(sharePrices : _*)
+  }
                 
   private def extractData(dataList:List[String]) = {
     SharePrice(null, dataList(0), 
