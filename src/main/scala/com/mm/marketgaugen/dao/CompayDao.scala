@@ -20,6 +20,7 @@ trait CompanyDao {
   
   
   def insertCompanies(companies: Company*):Int = {
+    println("Dao. Inserting:" + companies.length)
     val builder = companyCollection.initializeOrderedBulkOperation
     companies.foreach(s => builder.insert(CompanyConverter.convertToMongoObject(s)))
     builder.execute().insertedCount

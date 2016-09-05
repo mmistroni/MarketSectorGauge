@@ -23,7 +23,9 @@ trait SectorService {
                                                       sectorId)
   }
   
-  def getAllSectors:Seq[Sector] = {null}
+  def getAllSectors:Seq[Sector] = {
+    sectorDao.findAll.toSeq
+  }
   
   def persistSectors(sectors:Seq[Sector]):Unit = {
     sectors.foreach(s => sectorDao.insertSector(s)) 

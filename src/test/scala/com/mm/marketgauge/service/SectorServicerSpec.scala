@@ -72,6 +72,24 @@ class SectorServiceDownloaderSpec extends FreeSpec with Matchers {
     }
   }
   
+  "The SectorService" - {
+    "when calling getAllSectors should call  sectorDao" - {
+      "and return all sectors" in {
+        
+        val expectedSector = Sector(null, "Oil & Gas Equipment & Services", 
+                                    "^YHOh708", 124, "yhoo")
+        
+        val sectors = List(expectedSector)
+                                    
+        Mockito.when(mockSectorDao.findAll).thenReturn(sectors.iterator)
+        val res = mockSectorService.getAllSectors
+        Mockito.verify(mockSectorDao).findAll
+        res should be(sectors)
+          
+      }
+    }
+  }
+  
   
   
   

@@ -1,5 +1,6 @@
 package com.mm.marketgauge.entities
 import org.bson.types.ObjectId
+import scala.util.control.Exception.allCatch
 
 /**
  * Abstraction of company.
@@ -13,19 +14,30 @@ case class Company (_id:ObjectId, name :String ,priceChange: Double, marketCap:D
 object Company {
   
   def fromListOfString(inputList:List[String]) = {
-    Company( null, inputList(0),
-            inputList(1).toDouble,
-            inputList(2).replace("B", "").toDouble,
-            inputList(3).toDouble,
-            inputList(4).toDouble,
-            inputList(5).toDouble,
-            inputList(6).toDouble,
-            inputList(7).toDouble,
-            inputList(8).toDouble,
-            inputList(9).toDouble,
+    
+    if (inputList.size > 2) {
+      Company( null, inputList(0),
+            getDouble(inputList(1)),
+            getDouble(inputList(2).replace("B", "").replace("M","")),
+            getDouble(inputList(3)),
+            getDouble(inputList(4)),
+            getDouble(inputList(5)),
+            getDouble(inputList(6)),
+            getDouble(inputList(7)),
+            getDouble(inputList(8)),
+            getDouble(inputList(9)),
             inputList(10).toInt)
+    } else
+      null
             
   }
+  
+  def getDouble(doubleStr:String):Double = 
+    allCatch opt doubleStr.toDouble match {
+    case Some(doubleNum) => doubleNum
+    case _ => Double.NaN
+  }
+
 }
                       
 object CompanyProperties {
