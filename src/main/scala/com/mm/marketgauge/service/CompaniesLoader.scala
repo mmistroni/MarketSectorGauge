@@ -50,9 +50,9 @@ object CompaniesLoader extends App with LogHelper {
     val companies = loadCompanies
     logger.info(s"Obtained:${companies.size}")
     persistCompanies(companies)
-    logger.info("... Loadig nasdaq..")
+    logger.info(s"... Loadig nasdaq..")
     val repos = loadRepos
-    logger.info("Obtained ${repos.size}")
+    logger.info(s"Obtained ${repos.size}")
     persistRepos(repos)
     
     

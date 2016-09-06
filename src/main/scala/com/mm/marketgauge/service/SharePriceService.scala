@@ -3,6 +3,7 @@ package com.mm.marketgauge.service
 import com.mm.marketgauge.entities.SharePrice
 import com.mm.marketgaugen.dao.SharePriceDao 
 import scala.util.control.Exception.allCatch
+import com.mm.marketgauge.util.Utilities.getDouble
 
 /**
  * Service for handling Company data
@@ -45,10 +46,4 @@ trait SharePriceService {
         
   }
     
-  private def getDouble(doubleStr:String):Double = 
-    allCatch opt doubleStr.toDouble match {
-    case Some(doubleNum) => doubleNum
-    case _ => Double.NaN
-  }
-  
 }

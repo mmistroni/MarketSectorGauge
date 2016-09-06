@@ -1,6 +1,7 @@
 package com.mm.marketgauge.entities
 import org.bson.types.ObjectId
 import scala.util.control.Exception.allCatch
+import com.mm.marketgauge.util.Utilities.getDouble
 
 /**
  * Abstraction of company.
@@ -32,12 +33,7 @@ object Company {
             
   }
   
-  def getDouble(doubleStr:String):Double = 
-    allCatch opt doubleStr.toDouble match {
-    case Some(doubleNum) => doubleNum
-    case _ => Double.NaN
-  }
-
+  
 }
                       
 object CompanyProperties {
@@ -66,7 +62,7 @@ object CompanyRepo {
   
   def fromListOfString(inputList:List[String]) = {
     CompanyRepo(null, inputList(0), inputList(1),
-                inputList(2).replace("B", "").toDouble, 
+                getDouble(inputList(2).replace("B", "")), 
                 inputList(3),
                 inputList(4).replace("B", ""), inputList(5), inputList(6))
   }
