@@ -1,15 +1,17 @@
 package com.mm.marketgauge.service
 
-import com.mm.marketgauge.util.LogHelper
 import com.mm.marketgaugen.dao.{SectorDao, SharePriceDao}
 import com.mm.marketgauge.entities.{Sector, SharePrice}
 import com.mm.marketgauge.util.LogHelper
+import com.typesafe.config._
 
 
 
 object SharePriceLoader extends App with LogHelper{
   
+  
   val downloader = new DataDownloader {}
+  val conf = ConfigFactory.load()
     
   val sectorService = new SectorService {
     val dataDownloader = downloader
@@ -19,7 +21,9 @@ object SharePriceLoader extends App with LogHelper{
   
   val sharePriceService = new SharePriceService {
     val dataDownloader = downloader
-    val sharePriceDao = new SharePriceDao {}
+    val sharePriceDao = new SharePriceDao {
+      val uri = conf.getString("db.uri")
+    }
   }
 
 

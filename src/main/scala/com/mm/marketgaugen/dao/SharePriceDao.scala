@@ -13,9 +13,9 @@ trait SharePriceDao {
   /**
    * Mongo URI string [[http://docs.mongodb.org/manual/reference/connection-string/]]
    */
-  private val uri = """mongodb://localhost:27017/"""
-  val db = MongoClient(MongoClientURI(uri))( """test""")
-  val collection = db("share_prices")
+  val uri : String // = """mongodb://localhost:27017/"""
+  lazy val db = MongoClient(MongoClientURI(uri))( """test""")
+  lazy val collection = db("share_prices")
 
   def insert(shares: SharePrice*) = {
     val builder = collection.initializeOrderedBulkOperation

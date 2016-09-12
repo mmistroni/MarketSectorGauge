@@ -44,7 +44,7 @@ class SectorConverterSpec extends FreeSpec with Matchers {
   
 
   
-  // On HOld. need to find out how to mock it
+  /** On HOld. need to find out how to mock it
   "The SectorConverter" - {
     "when calling convertFromMongoObject with a DbSector object " - {
       "should return a Sector with all properties set" in {
@@ -73,6 +73,6 @@ class SectorConverterSpec extends FreeSpec with Matchers {
       }
     }
   }
-	
+	**/
 
 }

@@ -10,6 +10,22 @@ scalaVersion := "2.11.5"
 
 scalacOptions ++= Seq("-deprecation")
 
+assembleArtifact in packageScala := true
+assembleArtifact in packageDependency := true
+assemblyJarName in assembly := "marketsectorgauge.jar"
+
+mainClass in assembly :=   Some("com.mm.marketgauge.service.SharePriceLoader")
+
+assemblyMergeStrategy in assembly := {
+  case PathList("javax", "mail", xs @ _*)         => MergeStrategy.first
+  case PathList("com", "sun", xs @ _*)         => MergeStrategy.first
+  case x =>
+    val oldStrategy = (assemblyMergeStrategy in assembly).value
+    oldStrategy(x)
+}
+
+
+
 
 resolvers ++= Seq("spray repo" at "http://repo.spray.io/",
                 "Sonatype Snapshots" at "http://oss.sonatype.org/content/repositories/snapshots/",
