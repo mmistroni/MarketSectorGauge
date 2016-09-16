@@ -28,7 +28,6 @@ class SharePriceServiceSpec extends FreeSpec with Matchers {
       "should return a SharePrice" in {
         
         val ticker = "GE";
-        val simpleDateFormat = new java.text.SimpleDateFormat("MM/dd/yyyy")
         
         val yahooData = List(ticker, "1.0", "12/13/2016", "3.0", "4.0", "5.0", "", "6.0", "7.0")
         val sharePriceUrl = mockSharePriceService.sharePriceUrl.replace("<ticker>", ticker);
@@ -38,7 +37,7 @@ class SharePriceServiceSpec extends FreeSpec with Matchers {
         sharePriceResult.price should be(yahooData(1).toDouble)
         sharePriceResult.ticker should be(ticker)
         sharePriceResult.currentEps should be(yahooData(3).toDouble)
-        simpleDateFormat.format(sharePriceResult.asOfDate) should be (yahooData(2))
+        sharePriceResult.asOfDate should be (yahooData(2))
         Mockito.verify(mockDownloader).downloadCSV(sharePriceUrl)
         
       }
@@ -50,10 +49,9 @@ class SharePriceServiceSpec extends FreeSpec with Matchers {
       "and should return an integer representing number of inserts" in {
         
         val ticker = "GE";
-        val simpleDateFormat = new java.text.SimpleDateFormat("MM/dd/yyyy")
         
         val testSharePrice = new SharePrice(null, ticker, 1.0, 
-                    simpleDateFormat.parse("12/13/2016"),
+                    "12/13/2016",
                      Double.NaN, Double.NaN,
                      Double.NaN, "i dont know",
                      Double.NaN, Double.NaN)

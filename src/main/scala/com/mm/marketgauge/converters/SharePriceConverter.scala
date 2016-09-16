@@ -26,7 +26,7 @@ object SharePriceConverter {
   def convertFromMongoObject(db: DBObject): SharePrice = {
     val id = db.getAs[ObjectId](ID) orElse {mongoFail}
     val ticker = db.getAs[String](TICKER) orElse{mongoFail}
-    val asOfDate = db.getAs[java.util.Date](ASOFDATE) orElse{mongoFail}
+    val asOfDate = db.getAs[String](ASOFDATE) orElse{mongoFail}
     val price = db.getAs[Double](PRICE) orElse{mongoFail}
     val currentEps = db.getAs[Double](CURRENTEPS) orElse{mongoFail}
     val forwardEps = db.getAs[Double](FORWARDEPS) orElse{mongoFail}

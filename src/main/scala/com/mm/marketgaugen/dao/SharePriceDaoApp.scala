@@ -7,7 +7,7 @@ object SharePriceDaoApp extends App {
   println("---------------------" + conf.getString("db.uri"))
   
   val ticker = "MyTicker"
-  val share = new SharePrice(null, ticker, -1.0, new java.util.Date(),
+  val share = new SharePrice(null, ticker, -1.0, "20160911",
                  -2.0, -3.0,
                  -4.0, "N.A",
                  Double.NaN, Double.NaN)

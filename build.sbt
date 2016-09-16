@@ -19,6 +19,7 @@ mainClass in assembly :=   Some("com.mm.marketgauge.service.SharePriceLoader")
 assemblyMergeStrategy in assembly := {
   case PathList("javax", "mail", xs @ _*)         => MergeStrategy.first
   case PathList("com", "sun", xs @ _*)         => MergeStrategy.first
+  case PathList("org", "slf4j", xs @ _*)         => MergeStrategy.first
   case x =>
     val oldStrategy = (assemblyMergeStrategy in assembly).value
     oldStrategy(x)

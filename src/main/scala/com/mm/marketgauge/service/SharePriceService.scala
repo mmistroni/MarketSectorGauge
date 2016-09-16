@@ -33,7 +33,7 @@ trait SharePriceService {
       // to replace with slicing notation
       SharePrice(null, dataList(0), 
         dataList(1).toDouble,
-        new java.text.SimpleDateFormat("MM/dd/yyyy").parse(dataList(2)),
+        dataList(2),
         getDouble(dataList(3)),
         getDouble(dataList(4)),
         getDouble(dataList(5)),
