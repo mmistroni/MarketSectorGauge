@@ -14,7 +14,7 @@ assembleArtifact in packageScala := true
 assembleArtifact in packageDependency := true
 assemblyJarName in assembly := "marketsectorgauge.jar"
 
-mainClass in assembly :=   Some("com.mm.marketgauge.service.SharePriceLoader")
+mainClass in assembly :=   Some("com.mm.marketgauge.service.LoaderExecutor")
 
 assemblyMergeStrategy in assembly := {
   case PathList("javax", "mail", xs @ _*)         => MergeStrategy.first
