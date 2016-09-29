@@ -18,7 +18,6 @@ trait CompanyService {
   
   def downloadCompanyData(sectorId:Int):List[Company] = {
     val companies = _extractCsvData(companyUrl.replace("<sectorId>", sectorId.toString))
-    println(companies)
     companies.map(strList => Company.fromListOfString(strList::: List(sectorId.toString)))
   }
   

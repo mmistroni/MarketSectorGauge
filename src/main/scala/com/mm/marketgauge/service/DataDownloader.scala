@@ -22,6 +22,7 @@ import com.mm.marketgauge.util.LogHelper
 trait DataDownloader  extends LogHelper{
   
   def downloadFromURL(url:String):Iterator[String] = {
+    logger.info("Downloadign data from url:" + url)
     _getFromUrl(url).getLines()
   }
   

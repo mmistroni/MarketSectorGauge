@@ -29,11 +29,11 @@ object CompaniesLoader extends App with LogHelper {
   
   def loadRepos = {
     val allAmex = companyService.downloadAmexData
-    logger.info("Got from Amex:${allAmex.size}")
+    logger.info(s"Got from Amex:${allAmex.size}")
     val allNasdaq = companyService.downloadNasdaqData
-    logger.info("Got from Nasdaq:${allNasdaq.size}")
+    logger.info(s"Got from Nasdaq:${allNasdaq.size}")
     val allNyse = companyService.downloadNyseData
-    logger.info("Got from Nyse:${allNyse.size}")
+    logger.info(s"Got from Nyse:${allNyse.size}")
     allAmex ::: allNasdaq ::: allNyse 
   }
 

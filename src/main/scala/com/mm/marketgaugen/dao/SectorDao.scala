@@ -19,12 +19,45 @@ trait SectorDao {
 
   def insertBulk(sectors: Seq[Sector]):Int = {
     
+    collection.findOne() match {
+      case Some(coll) => {
+              println("...There's data in db. updating one by one...") 
+              insertIndividually(sectors)
+            }
+      case None => {
+          println("Bulk Insert....")
+          bulkInsert(sectors)
+      }
+    }
+    
+    
+  }
+
+  private def insertIndividually(sectors:Seq[Sector]):Int = {
+    var updates = 0
+    for (sector <- sectors) {
+      val q = MongoDBObject("sectorId" -> sector.sectorId)
+      
+      println(s"Updating ${sector.sectorId}")
+      val update = MongoDBObject(
+              "$set" -> MongoDBObject("sectorId" -> sector.sectorId,
+                                      "name" -> sector.name,
+                                      "ticker" -> sector.ticker)
+                )
+      collection.update(q, update, true)
+      updates +=1
+   }
+   updates
+  }
+  
+  
+  private def bulkInsert(sectors:Seq[Sector]):Int = {
     val builder = collection.initializeOrderedBulkOperation
     sectors.foreach(s => builder.insert(SectorConverter.convertToMongoObject(s)))
     builder.execute().insertedCount
     
   }
-
+  
   
   def insertSector(sector: Sector) = {
     println("Inserting:" + sector.name)

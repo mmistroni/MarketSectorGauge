@@ -4,11 +4,12 @@ package com.mm.marketgauge.service
 import com.mm.marketgauge.entities.Sector
 import com.mm.marketgauge.entities.SharePrice
 import com.mm.marketgaugen.dao.SectorDao
+import com.mm.marketgauge.util.LogHelper
 
 /**
  * Service for handling Sector data
  */
-trait SectorService {
+trait SectorService extends LogHelper {
   private[service] val allSectorsUrl = "https://biz.yahoo.com/ic/ind_index_alpha.html"
   private[service] val sectorDataUrl = "https://biz.yahoo.com/ic/<sectorId>.html"
   private[service] val dataDownloader:DataDownloader 
@@ -38,11 +39,18 @@ trait SectorService {
   }
   
   def _extractSectorData(lines:Iterator[String], sectorId:Int):Sector = {
-    val data = lines.filter(line => line.indexOf("^YHO") > 0 && line.indexOf("]")> 0)
-    val mapped = data.map(line=>line.substring(line.indexOf("[")+1, line.indexOf("]"))).toList
-    val dataArray =  mapped.head.split('(')
-    Sector(null, dataArray(0).trim, dataArray(1).substring(0, dataArray(1).indexOf(")")).trim,
-           sectorId, "yhoo")
+    logger.info(s"Extracting data for sector:$sectorId")
+    logger.info(lines.isEmpty)
+    try {
+      val data = lines.toList.filter(line => line.indexOf("^YHO") > 0 && line.indexOf("]")> 0 && line.size > 0)
+      val mapped = data.map(line=>line.substring(line.indexOf("[")+1, line.indexOf("]"))).toList
+      val dataArray =  mapped.head.split('(')
+      Sector(null, dataArray(0).trim, dataArray(1).substring(0, dataArray(1).indexOf(")")).trim,
+             sectorId, "yhoo")
+    } catch {
+      case e:java.lang.Exception => null
+    }
+    
      
   }
   

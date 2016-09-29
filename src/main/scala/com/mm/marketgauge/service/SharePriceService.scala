@@ -28,7 +28,6 @@ trait SharePriceService {
   }
                 
   private def extractData(dataList:List[String]) = {
-    println(dataList)
     try {
       // to replace with slicing notation
       SharePrice(null, dataList(0), 

@@ -14,8 +14,8 @@ object SectorLoader extends App with LogHelper {
 
   def load = {
     val allSectorsId = sectorService.downloadAllSectorsIds
-    logger.info("Got:" + allSectorsId.size)
-    val allSectors = allSectorsId.map(sectorService.downloadSectorData(_))
+    logger.info("All sector downoaded. now mapping them...")
+    val allSectors = allSectorsId.map(sectorService.downloadSectorData(_)).filter(sec => sec != null)
     logger.info("Got all sectors...")
     val res = sectorService.sectorDao.insertBulk(allSectors)
     logger.info(s"Inserted $res rows...")
