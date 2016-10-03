@@ -21,11 +21,9 @@ trait SectorDao {
     
     collection.findOne() match {
       case Some(coll) => {
-              println("...There's data in db. updating one by one...") 
               insertIndividually(sectors)
             }
       case None => {
-          println("Bulk Insert....")
           bulkInsert(sectors)
       }
     }
@@ -37,8 +35,6 @@ trait SectorDao {
     var updates = 0
     for (sector <- sectors) {
       val q = MongoDBObject("sectorId" -> sector.sectorId)
-      
-      println(s"Updating ${sector.sectorId}")
       val update = MongoDBObject(
               "$set" -> MongoDBObject("sectorId" -> sector.sectorId,
                                       "name" -> sector.name,

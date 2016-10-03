@@ -40,7 +40,6 @@ trait SectorService extends LogHelper {
   
   def _extractSectorData(lines:Iterator[String], sectorId:Int):Sector = {
     logger.info(s"Extracting data for sector:$sectorId")
-    logger.info(lines.isEmpty)
     try {
       val data = lines.toList.filter(line => line.indexOf("^YHO") > 0 && line.indexOf("]")> 0 && line.size > 0)
       val mapped = data.map(line=>line.substring(line.indexOf("[")+1, line.indexOf("]"))).toList
