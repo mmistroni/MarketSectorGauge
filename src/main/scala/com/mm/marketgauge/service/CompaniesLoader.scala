@@ -2,19 +2,26 @@ package com.mm.marketgauge.service
 import com.mm.marketgaugen.dao.{CompanyDao, SectorDao}
 import com.mm.marketgauge.entities.{Company, CompanyRepo}
 import com.mm.marketgauge.util.LogHelper
+import com.typesafe.config._
 
 
 object CompaniesLoader extends App with LogHelper {
 
   val downloader = new DataDownloader {}
+  val conf = ConfigFactory.load()
+  
   val companyService = new CompanyService {
     val dataDownloader = downloader
-    val companyDao = new CompanyDao {}
+    val companyDao = new CompanyDao {
+      val uri = conf.getString("db.uri")
+    }
   }
   
   val sectorService = new SectorService {
     val dataDownloader = downloader
-    val sectorDao = new SectorDao {}
+    val sectorDao = new SectorDao {
+      val uri = conf.getString("db.uri")
+    }
 
   }
   

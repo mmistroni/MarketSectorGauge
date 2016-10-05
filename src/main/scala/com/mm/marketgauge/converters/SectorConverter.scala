@@ -20,12 +20,12 @@ object SectorConverter {
   }
 
   def convertFromMongoObject(db: DBObject): Sector = {
-    
+    println("Converting for ticker:"+ db.getAs[String](TICKER) + " " + db.getAs[String](NAME))
     val id = db.getAs[ObjectId](ID) orElse {mongoFail}
     val ticker = db.getAs[String](TICKER) orElse{mongoFail}
     val name = db.getAs[String](NAME) orElse{mongoFail}
     val sectorId = db.getAs[Integer](SECTORID) orElse{mongoFail}
-    val source = db.getAs[String](SOURCE) orElse{mongoFail}
+    val source = db.getAs[String](SOURCE) 
     Sector(id.get, name.get, ticker.get, sectorId.get, 
                 source.get)
     

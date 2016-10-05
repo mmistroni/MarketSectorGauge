@@ -14,10 +14,10 @@ trait CompanyDao extends LogHelper {
   /**
    * Mongo URI string [[http://docs.mongodb.org/manual/reference/connection-string/]]
    */
-  private val uri = """mongodb://localhost:27017/"""
-  val db = MongoClient(MongoClientURI(uri))( """test""")
-  val companyCollection = db("companies")
-  val repoCollection = db("companiesrepo")
+  val uri:String // = """mongodb://localhost:27017/"""
+  lazy val db = MongoClient(MongoClientURI(uri))( """test""")
+  lazy val companyCollection = db("companies")
+  lazy val repoCollection = db("companiesrepo")
   
   
   

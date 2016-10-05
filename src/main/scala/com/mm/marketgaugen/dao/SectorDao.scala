@@ -9,13 +9,13 @@ import com.mongodb.casbah.Imports._
  * User: talg
  */
 
-trait SectorDao {
+trait SectorDao  extends com.mm.marketgauge.util.LogHelper{
   /**
    * Mongo URI string [[http://docs.mongodb.org/manual/reference/connection-string/]]
    */
-  private val uri = """mongodb://localhost:27017/"""
-  val db = MongoClient(MongoClientURI(uri))( """test""")
-  val collection = db("sectors")
+  val uri :String // """mongodb://localhost:27017/"""
+  lazy val db = MongoClient(MongoClientURI(uri))( """test""")
+  lazy val collection = db("sectors")
 
   def insertBulk(sectors: Seq[Sector]):Int = {
     
@@ -56,7 +56,7 @@ trait SectorDao {
   
   
   def insertSector(sector: Sector) = {
-    println("Inserting:" + sector.name)
+    logger.info("Inserting:" + sector.name)
     // we shud do a find. if available, copy data, then save
     collection.save(SectorConverter.convertToMongoObject(sector))
     
@@ -64,6 +64,8 @@ trait SectorDao {
   
   
   def getAllSectorIds:Seq[Int] = {
+    val allSectors = findAll
+    logger.info(s"Found:${allSectors.size}")
     findAll.map(sector => sector.sectorId).toList
   }
   
