@@ -1,21 +1,20 @@
 package com.mm.marketgaugen.dao
 
-import com.mm.marketgauge.entities.SharePrice
-import com.mongodb.casbah.{MongoClient, MongoClientURI, WriteConcern}
 import com.mm.marketgauge.converters.SharePriceConverter
-import com.mongodb.casbah.Imports._
+import com.mm.marketgauge.entities.SharePrice
+import com.mm.marketgauge.entities.SharePriceProperties
+import com.mongodb.casbah.Imports.DBObject
+import com.mongodb.casbah.Imports.MongoDBObject
 
 /**
  * User: talg
  */
 
-trait SharePriceDao {
+trait SharePriceDao extends BaseDao with com.mm.marketgauge.util.LogHelper {
   /**
    * Mongo URI string [[http://docs.mongodb.org/manual/reference/connection-string/]]
    */
-  val uri : String // = """mongodb://localhost:27017/"""
-  lazy val db = MongoClient(MongoClientURI(uri))( """test""")
-  lazy val collection = db("share_prices")
+  lazy val collection = database.client("share_prices")
 
   def insert(shares: SharePrice*) = {
     val builder = collection.initializeOrderedBulkOperation

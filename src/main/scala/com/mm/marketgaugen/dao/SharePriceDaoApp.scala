@@ -14,7 +14,10 @@ object SharePriceDaoApp extends App {
 
   println("Inserting...")
   val sharePriceDao = new SharePriceDao {
-    val uri = conf.getString("db.uri")
+    val database = Database.getDatabase(conf.getString("db.username"), 
+                                          conf.getString("db.password"),
+                                          conf.getString("db.uri"),
+                                          conf.getString("db.name"))
   }
   sharePriceDao.insert(share)
   

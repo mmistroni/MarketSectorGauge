@@ -10,14 +10,12 @@ import com.mm.marketgauge.util.LogHelper
  * User: talg
  */
 
-trait CompanyDao extends LogHelper {
+trait CompanyDao extends BaseDao with LogHelper {
   /**
    * Mongo URI string [[http://docs.mongodb.org/manual/reference/connection-string/]]
    */
-  val uri:String // = """mongodb://localhost:27017/"""
-  lazy val db = MongoClient(MongoClientURI(uri))( """test""")
-  lazy val companyCollection = db("companies")
-  lazy val repoCollection = db("companiesrepo")
+  lazy val companyCollection = database.client("companies")
+  lazy val repoCollection = database.client("companiesrepo")
   
   
   

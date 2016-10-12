@@ -2,6 +2,7 @@ package com.mm.marketgauge.service
 import com.mm.marketgaugen.dao.{CompanyDao, SectorDao}
 import com.mm.marketgauge.entities.{Company, CompanyRepo}
 import com.mm.marketgauge.util.LogHelper
+import com.mm.marketgaugen.dao.Database
 import com.typesafe.config._
 
 
@@ -12,15 +13,22 @@ object CompaniesLoader extends App with LogHelper {
   
   val companyService = new CompanyService {
     val dataDownloader = downloader
+    import com.mongodb.casbah.{MongoClient, MongoClientURI}
     val companyDao = new CompanyDao {
-      val uri = conf.getString("db.uri")
+      val database = Database.getDatabase(conf.getString("db.username"), 
+                                          conf.getString("db.password"),
+                                          conf.getString("db.uri"),
+                                          conf.getString("db.name"))
     }
   }
   
   val sectorService = new SectorService {
     val dataDownloader = downloader
     val sectorDao = new SectorDao {
-      val uri = conf.getString("db.uri")
+      val database = Database.getDatabase(conf.getString("db.username"), 
+                                          conf.getString("db.password"),
+                                          conf.getString("db.uri"),
+                                          conf.getString("db.name"))
     }
 
   }

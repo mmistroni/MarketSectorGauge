@@ -1,5 +1,5 @@
 package com.mm.marketgauge.service
-import com.mm.marketgaugen.dao.SectorDao
+import com.mm.marketgaugen.dao.{SectorDao, Database}
 import com.mm.marketgauge.entities.Sector
 import com.mm.marketgauge.util.LogHelper
 import com.typesafe.config._
@@ -8,15 +8,16 @@ object SectorLoader extends App with LogHelper {
 
   val downloader = new DataDownloader {}
   val conf = ConfigFactory.load()
-  
-  
-  
+
   val sectorService = new SectorService {
     val dataDownloader = downloader
     val sectorDao = new SectorDao {
-      
-       val uri = conf.getString("db.uri")
-      
+
+      val database = Database.getDatabase(conf.getString("db.username"),
+        conf.getString("db.password"),
+        conf.getString("db.uri"),
+        conf.getString("db.name"))
+
     }
 
   }
@@ -31,10 +32,7 @@ object SectorLoader extends App with LogHelper {
 
   }
 
-  
   logger.info(".... Loading...")
   load
-  
-  
-  
+
 }

@@ -13,7 +13,6 @@ trait PersistenceService {
   /** 
    *  component holding the connection to specific db
    */
-  val dbAccess:DbComponent
   
   def getAllSectors:Seq[Sector] = { null }
   

@@ -9,13 +9,11 @@ import com.mongodb.casbah.Imports._
  * User: talg
  */
 
-trait SectorDao  extends com.mm.marketgauge.util.LogHelper{
+trait SectorDao  extends BaseDao with com.mm.marketgauge.util.LogHelper{
   /**
    * Mongo URI string [[http://docs.mongodb.org/manual/reference/connection-string/]]
    */
-  val uri :String // """mongodb://localhost:27017/"""
-  lazy val db = MongoClient(MongoClientURI(uri))( """test""")
-  lazy val collection = db("sectors")
+  lazy val collection = database.client("sectors")
 
   def insertBulk(sectors: Seq[Sector]):Int = {
     
