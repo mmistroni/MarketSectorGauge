@@ -11,6 +11,10 @@ object SectorLoader extends App with LogHelper {
 
   val sectorService = new SectorService {
     val dataDownloader = downloader
+    logger.info("db.util"+ conf.getString("db.uri"))
+    logger.info("db.name" + conf.getString("db.name"))
+    
+    
     val sectorDao = new SectorDao {
 
       val database = Database.getDatabase(conf.getString("db.username"),

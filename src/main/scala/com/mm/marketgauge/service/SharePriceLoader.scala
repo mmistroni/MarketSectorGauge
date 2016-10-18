@@ -55,8 +55,8 @@ object SharePriceLoader extends App with LogHelper{
   def load = {
     val sectors = loadSectors
     logger.info(s"Loaded ${sectors.size} sectors....")
-    //val prices = loadPrices(sectors)
-    //persistPrices(prices)
+    val prices = loadPrices(sectors)
+    persistPrices(prices)
   }
   
   logger.info("Starting load...")

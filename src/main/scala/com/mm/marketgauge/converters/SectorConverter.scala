@@ -4,7 +4,7 @@ import com.mongodb.casbah.Imports._
 import com.mm.marketgauge.entities.Sector
 import com.mm.marketgauge.entities.SectorProperties._
 
-object SectorConverter {
+object SectorConverter extends com.mm.marketgauge.util.LogHelper {
 
   def mongoFail = throw new Exception("Unable to access object")
   
@@ -20,7 +20,7 @@ object SectorConverter {
   }
 
   def convertFromMongoObject(db: DBObject): Sector = {
-    println("Converting for ticker:"+ db.getAs[String](TICKER) + " " + db.getAs[String](NAME))
+    logger.info("Converting for ticker:"+ db.getAs[String](TICKER) + " " + db.getAs[String](NAME))
     val id = db.getAs[ObjectId](ID) orElse {mongoFail}
     val ticker = db.getAs[String](TICKER) orElse{mongoFail}
     val name = db.getAs[String](NAME) orElse{mongoFail}
