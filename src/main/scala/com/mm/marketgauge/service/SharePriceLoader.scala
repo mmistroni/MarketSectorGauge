@@ -43,13 +43,14 @@ object SharePriceLoader extends App with LogHelper{
 
   def loadPrices(sectors:Seq[Sector]) = {
     logger.info(s"Loading prices for ${sectors.size} sectors")
-    sectors.map(sector => sharePriceService.downloadSharePrice(sector.ticker))
+    sectors.flatMap(sector => sharePriceService.downloadSharePrice(sector.ticker))
   }
   
   def persistPrices(prices:Seq[SharePrice]) = {
     val valids = prices.filter(_ != null)
     logger.info(s"Persisting ${valids.size} prices...")
-    sharePriceService.persistSharePrices(valids)
+    val numRows = sharePriceService.persistSharePrices(valids)
+    logger.info(s"From ${prices.size} we  persisted $numRows prices")
   }
   
   def load = {

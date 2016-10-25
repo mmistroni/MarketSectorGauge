@@ -17,7 +17,7 @@ assemblyJarName in assembly := "marketsectorgauge.jar"
 mainClass in assembly :=   Some("com.mm.marketgauge.service.LoaderExecutor")
 
 assemblyMergeStrategy in assembly := {
-  case PathList("javax", "mail", xs @ _*)         => MergeStrategy.first
+  case PathList("ch", "qos", xs @ _*)         => MergeStrategy.first
   case PathList("com", "sun", xs @ _*)         => MergeStrategy.first
   case PathList("org", "slf4j", xs @ _*)         => MergeStrategy.first
   case x =>
@@ -39,21 +39,13 @@ libraryDependencies ++= {
   val Json4sVersion     = "3.2.11"
   val akkaHttpVersion =   "2.4.8" //"2.4.2-RC2"
   Seq(
-    "io.spray"          %% "spray-can"       % SprayVersion,
-    "io.spray"          %% "spray-routing"   % SprayVersion,
     "com.typesafe.akka" %% "akka-slf4j"      % AkkaVersion,
     "ch.qos.logback"    %  "logback-classic" % "1.1.2",
     "com.h2database" % "h2" % "1.4.190",
     "org.scalatest" %% "scalatest" % "2.2.5" % "test",
     "org.specs2" %% "specs2" % "2.3.11" % "test",
-    "org.json4s"        %% "json4s-native"   % Json4sVersion,
-    "org.json4s"        %% "json4s-ext"      % Json4sVersion,
-    "io.spray" %% "spray-testkit" % SprayVersion  % "test",
     "org.mockito" % "mockito-core" % "1.9.5" % "test",
-    "joda-time" % "joda-time" % "2.9.3",
     "com.github.tototoshi" %% "slick-joda-mapper" % "2.1.0",
-    "com.typesafe.slick" %% "slick-hikaricp" % "3.1.1",
-    "com.typesafe.slick" %% "slick-codegen" % "3.1.1",
     "com.typesafe.akka" %% "akka-http-core" % akkaHttpVersion,
     "com.typesafe.akka" %% "akka-http-testkit" % AkkaVersion,
     "com.typesafe.akka" %% "akka-actor" % AkkaVersion,
@@ -64,10 +56,12 @@ libraryDependencies ++= {
     "org.clapper" %% "grizzled-slf4j" % "1.0.2",
     "org.reactivemongo" %% "reactivemongo" % "0.11.14",
     "com.github.tototoshi" %% "scala-csv" % "1.3.3",
-    "org.mongodb" %% "casbah" % "2.8.0"
-    
+    "org.mongodb" %% "casbah" % "2.8.0",
+    "com.mm" %% "sparkutilities" % "1.0" ,
+    "de.flapdoodle.embed" % "de.flapdoodle.embed.mongo" % "1.50.5" % "test",
+    "com.github.simplyscala" %% "scalatest-embedmongo" % "0.2.2" % "test"
     
   )
+  
 }
-
 

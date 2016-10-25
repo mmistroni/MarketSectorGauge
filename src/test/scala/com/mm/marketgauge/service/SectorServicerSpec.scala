@@ -49,8 +49,26 @@ class SectorServiceDownloaderSpec extends FreeSpec with Matchers {
                                     "^YHOh708", 124, "yhoo")
         
         Mockito.when(mockDownloader.downloadFromURL(expectedUrl)).thenReturn(yahooData.iterator)
-        val sector = mockSectorService.downloadSectorData(sectorId)
+        val sector = mockSectorService.downloadSectorData(sectorId).get
         sector shouldEqual(expectedSector)
+        
+      }
+    }
+  }
+  
+  "The SectorService" - {
+    "when calling downloadSectorData it should call dataDownloader.downloader with sectorDataUrl URL" - {
+      "should return None if dataDownloader raises exception" in {
+        
+        val sectorId = 124
+        val expectedUrl = mockSectorService.sectorDataUrl.replace("<sectorId>", sectorId.toString)
+        val yahooData = List("[Oil & Gas Equipment & Services (^YHOh708)]</a></td></tr></table></td></tr></table><table><tr><td")
+        val expectedSector = Sector(null, "Oil & Gas Equipment & Services", 
+                                    "^YHOh708", 124, "yhoo")
+        
+        Mockito.when(mockDownloader.downloadFromURL(expectedUrl)).thenThrow(new java.lang.IllegalArgumentException("Data not found"))
+        val sector = mockSectorService.downloadSectorData(sectorId)
+        sector shouldEqual(None)
         
       }
     }

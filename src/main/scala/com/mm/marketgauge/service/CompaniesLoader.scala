@@ -5,7 +5,10 @@ import com.mm.marketgauge.util.LogHelper
 import com.mm.marketgaugen.dao.Database
 import com.typesafe.config._
 
-
+// Code need to be amended:
+// 1. Abstract daos under a PersistenceService
+// 2. Each  loader will inject  a Service (which contains a DataDownloader and a PersistenceService)
+// 3. No DAOs should be exposed at this level
 object CompaniesLoader extends App with LogHelper {
 
   val downloader = new DataDownloader {}

@@ -8,14 +8,21 @@ import com.mm.marketgauge.util.Utilities.getDouble
 /**
  * Service for handling Company data
  */
-trait SharePriceService {
+trait SharePriceService extends com.mm.marketgauge.util.LogHelper {
   private[service] val sharePriceUrl = "http://finance.yahoo.com/d/quotes.csv?s=<ticker>&f=sl1d1e7e8m4qr5s7"
   private[service] val dataDownloader:DataDownloader 
   private[service] val sharePriceDao:SharePriceDao
   
-  def downloadSharePrice(ticker:String):SharePrice = {
-    val head = dataDownloader.downloadCSV(sharePriceUrl.replace("<ticker>", ticker)).head
-    extractData(head)
+  def downloadSharePrice(ticker:String):Option[SharePrice] = {
+    try {
+      val head = dataDownloader.downloadCSV(sharePriceUrl.replace("<ticker>", ticker)).head
+      Some(extractData(head))
+    } catch {
+      case e:java.lang.Exception => {
+        logger.info(s"FAiled to fetch prices for ticker $ticker:\n$e")
+        None
+      }
+    }
   }
   
   def loadPrices = {
@@ -42,7 +49,7 @@ trait SharePriceService {
     } catch{
       case jnf: java.lang.NumberFormatException => null
     }
-        
+    // replace with Some(SharePrice) or None   
   }
     
 }

@@ -5,8 +5,6 @@ import scala.concurrent.Future
 import org.scalatest.BeforeAndAfterAll
 import org.scalatest.FreeSpec
 import org.scalatest.Matchers
-import spray.http.StatusCodes._
-import spray.testkit.ScalatestRouteTest
 import org.mockito.{ Mockito, Matchers => MockitoMatchers }
 import org.joda.time.LocalDate
 import org.scalatest.concurrent.ScalaFutures._

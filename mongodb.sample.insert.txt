@@ -7,3 +7,8 @@ db.shareprices.insert({
     'movingAvg' : 'N\A',
     'shortratio' : 'N\A',
     'exDivDate'  : 'N\A'})
+    
+    
+    Running app
+    
+    scala -Daws.accessKey=AKIAIVV22LNH46ZDP7XA  -Daws.secretKey=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  target\scala-2.11\marketsectorgauge.jar sectors
