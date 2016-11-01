@@ -43,14 +43,6 @@ class CompanyServiceSpec extends FreeSpec with Matchers {
         
         Mockito.verify(mockDownloader).downloadCSV(companyUrl)
         
-        /* sample data from nasdaq
-         * 
-         * scala> CSVReader.open(Source.fromURL("http://www.nasdaq.com/screening/companies-by-name.aspx?letter=0&exchange=nyse&render=download")).all()
-res5: List[List[String]] = List(List(Symbol, Name, LastSale, MarketCap, IPOyear, Sector, industry, Summary Quote, ""), 
-                       List(DDD, 3D Systems Corporation, 14.77, $1.66B, n/a, Technology, Computer Software: Prepackaged Software, http://www.nasdaq.com/symbol/ddd, ""), List(MMM, 3M Company, 178.57, $107.93B, n/a, Health Care, Medical/Dental Instruments, http://www.nasdaq.com/symbol/mmm, ""), List(WBAI, 500.com Limited, 17.79, $736.13M, 2013, Consumer Services, Services-Misc. Amusement & Recreation, http://www.nasdaq.com/symbol/wbai, ""), List(WUBA, 58.com Inc., 53.15, $7.53B, 2013, Technology, Computer Software: Programming, Data Processing, http://www.nasdaq.com/symbol/wuba, ""), 
-                       List(AHC, A.H. Belo Corporation, 5.65, $122.47M, n/a, Consumer Services, Newspapers/Magazines, http://www.nasdaq.
-         */
-        
         
       }
     }

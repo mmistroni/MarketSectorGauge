@@ -4,6 +4,7 @@ import com.mm.marketgauge.entities.{Company, CompanyRepo}
 import com.mm.marketgauge.util.LogHelper
 import com.mm.marketgaugen.dao.Database
 import com.typesafe.config._
+import amazon.util.AWSClientFactory
 
 // Code need to be amended:
 // 1. Abstract daos under a PersistenceService
@@ -13,6 +14,10 @@ object CompaniesLoader extends App with LogHelper {
 
   val downloader = new DataDownloader {}
   val conf = ConfigFactory.load()
+  val topic = conf.getString("aws.topic")
+  val notifier = AWSClientFactory.snsClient(conf.getString("aws.accessKey"),
+                                            conf.getString("aws.secretKey"))
+  
   
   val companyService = new CompanyService {
     val dataDownloader = downloader
@@ -67,11 +72,15 @@ object CompaniesLoader extends App with LogHelper {
     logger.info(".... Loading...")
     val companies = loadCompanies
     logger.info(s"Obtained:${companies.size}")
-    persistCompanies(companies)
+    val companiesCount = persistCompanies(companies)
     logger.info(s"... Loadig nasdaq..")
     val repos = loadRepos
     logger.info(s"Obtained ${repos.size}")
-    persistRepos(repos)
+    val reposCount = persistRepos(repos)
+    logger.info("Publishing..")
+    notifier.publishToTopic(topic, "MarketSectorGauge. Companies upload", 
+              s"$companiesCount companies were uploaded\n$reposCount companies repos were uploaded")
+    
     
     
   }

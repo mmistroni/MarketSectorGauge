@@ -196,3 +196,17 @@ java.lang.IllegalArgumentException: Data not found
 2016-10-25 21:53:55,536 10853 [pool-5-thread-4-ScalaTest-running-SectorDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Initalizing wiht:null
 2016-10-25 21:53:56,062 11379 [pool-5-thread-4-ScalaTest-running-SectorDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Converting for ticker:Some(sectorTicker) Some(sectorName)
 2016-10-25 21:53:56,072 11389 [pool-5-thread-4-ScalaTest-running-SectorDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Converting for ticker:Some(Updated) Some(sectorName)
+2016-10-25 23:10:35,322 11917 [pool-4-thread-9-ScalaTest-running-SectorDaoSuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@141ae408
+2016-10-25 23:10:37,404 13999 [pool-4-thread-9-ScalaTest-running-SectorDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Initalizing wiht:null
+2016-10-25 23:10:50,077 26672 [pool-4-thread-9-ScalaTest-running-SectorDaoSuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@62f7995e
+2016-10-25 23:10:50,077 26672 [pool-4-thread-9-ScalaTest-running-SectorDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Initalizing wiht:null
+2016-10-25 23:10:51,269 27864 [pool-4-thread-9-ScalaTest-running-SectorDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Converting for ticker:Some(sectorTicker) Some(sectorName)
+2016-10-25 23:10:51,349 27944 [pool-4-thread-9-ScalaTest-running-SectorDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Found:1
+2016-10-25 23:10:51,365 27960 [pool-4-thread-9-ScalaTest-running-SectorDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Converting for ticker:Some(sectorTicker) Some(sectorName)
+2016-10-25 23:10:55,923 32518 [pool-4-thread-9-ScalaTest-running-SectorDaoSuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@4de10d66
+2016-10-25 23:10:55,923 32518 [pool-4-thread-9-ScalaTest-running-SectorDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Initalizing wiht:null
+2016-10-25 23:10:57,251 33846 [pool-4-thread-9-ScalaTest-running-SectorDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Converting for ticker:Some(sectorTicker) Some(sectorName)
+2016-10-25 23:11:00,931 37526 [pool-4-thread-9-ScalaTest-running-SectorDaoSuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@8528015
+2016-10-25 23:11:00,932 37527 [pool-4-thread-9-ScalaTest-running-SectorDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Initalizing wiht:null
+2016-10-25 23:11:02,827 39422 [pool-4-thread-9-ScalaTest-running-SectorDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Converting for ticker:Some(sectorTicker) Some(sectorName)
+2016-10-25 23:11:03,982 40577 [pool-4-thread-9-ScalaTest-running-SectorDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Converting for ticker:Some(Updated) Some(sectorName)

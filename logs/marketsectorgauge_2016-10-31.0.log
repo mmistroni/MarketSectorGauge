@@ -1,0 +1,103 @@
+2016-10-31 21:06:30,253 5786 [main-ScalaTest-running-CompanyDaoSuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@3d51f06e
+2016-10-31 21:06:30,318 5851 [main-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Initalizing wiht:null
+2016-10-31 21:06:32,986 8519 [main-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Bulk Insert....
+2016-10-31 21:06:32,989 8522 [main-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Dao. Inserting:1
+2016-10-31 21:06:35,867 11400 [main-ScalaTest-running-CompanyDaoSuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@548d708a
+2016-10-31 21:06:35,867 11400 [main-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Initalizing wiht:null
+2016-10-31 21:06:38,785 14318 [main-ScalaTest-running-CompanyDaoSuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@7bba5817
+2016-10-31 21:06:38,786 14319 [main-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Initalizing wiht:null
+2016-10-31 21:06:38,807 14340 [main-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Bulk Insert....
+2016-10-31 21:06:38,808 14341 [main-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Dao. Inserting:1
+2016-10-31 21:06:39,559 15092 [main-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - ...There's data in db. updating one by one...
+2016-10-31 21:06:39,626 15159 [main-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Updating UpdatedName
+2016-10-31 21:09:27,111 5015 [main-ScalaTest-running-CompanyDaoSuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@3d51f06e
+2016-10-31 21:09:27,178 5082 [main-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Initalizing wiht:null
+2016-10-31 21:09:28,781 6685 [main-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Bulk Insert....
+2016-10-31 21:09:28,784 6688 [main-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Dao. Inserting:1
+2016-10-31 21:09:31,247 9151 [main-ScalaTest-running-CompanyDaoSuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@548d708a
+2016-10-31 21:09:31,247 9151 [main-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Initalizing wiht:null
+2016-10-31 21:09:33,580 11484 [main-ScalaTest-running-CompanyDaoSuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@7bba5817
+2016-10-31 21:09:33,581 11485 [main-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Initalizing wiht:null
+2016-10-31 21:09:33,597 11501 [main-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Bulk Insert....
+2016-10-31 21:09:33,598 11502 [main-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Dao. Inserting:1
+2016-10-31 21:09:34,164 12068 [main-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - ...There's data in db. updating one by one...
+2016-10-31 21:09:34,168 12072 [main-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Updating UpdatedName
+2016-10-31 21:14:02,681 5087 [main-ScalaTest-running-CompanyDaoSuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@3d51f06e
+2016-10-31 21:14:02,721 5127 [main-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Initalizing wiht:null
+2016-10-31 21:14:04,515 6921 [main-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Bulk Insert....
+2016-10-31 21:14:04,531 6937 [main-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Dao. Inserting:1
+2016-10-31 21:14:07,148 9554 [main-ScalaTest-running-CompanyDaoSuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@548d708a
+2016-10-31 21:14:07,148 9554 [main-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Initalizing wiht:null
+2016-10-31 21:14:09,561 11967 [main-ScalaTest-running-CompanyDaoSuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@7bba5817
+2016-10-31 21:14:09,562 11968 [main-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Initalizing wiht:null
+2016-10-31 21:14:09,581 11987 [main-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Bulk Insert....
+2016-10-31 21:14:09,582 11988 [main-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Dao. Inserting:1
+2016-10-31 21:14:10,194 12600 [main-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - ...There's data in db. updating one by one...
+2016-10-31 21:14:10,200 12606 [main-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Updating UpdatedName
+2016-10-31 21:18:43,716 5440 [main-ScalaTest-running-CompanyDaoSuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@3d51f06e
+2016-10-31 21:18:43,759 5483 [main-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Initalizing wiht:null
+2016-10-31 21:18:45,401 7125 [main-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Bulk Insert....
+2016-10-31 21:18:45,404 7128 [main-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Dao. Inserting:1
+2016-10-31 21:18:47,671 9395 [main-ScalaTest-running-CompanyDaoSuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@548d708a
+2016-10-31 21:18:47,672 9396 [main-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Initalizing wiht:null
+2016-10-31 21:18:50,111 11835 [main-ScalaTest-running-CompanyDaoSuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@7bba5817
+2016-10-31 21:18:50,112 11836 [main-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Initalizing wiht:null
+2016-10-31 21:18:50,127 11851 [main-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Bulk Insert....
+2016-10-31 21:18:50,127 11851 [main-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Dao. Inserting:1
+2016-10-31 21:18:50,694 12418 [main-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - ...There's data in db. updating one by one...
+2016-10-31 21:18:50,698 12422 [main-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Updating name
+2016-10-31 21:26:50,504 5312 [main-ScalaTest-running-CompanyDaoSuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@3d51f06e
+2016-10-31 21:26:50,627 5435 [main-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Initalizing wiht:null
+2016-10-31 21:26:52,441 7249 [main-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Bulk Insert....
+2016-10-31 21:26:52,444 7252 [main-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Dao. Inserting:1
+2016-10-31 21:26:54,816 9624 [main-ScalaTest-running-CompanyDaoSuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@548d708a
+2016-10-31 21:26:54,817 9625 [main-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Initalizing wiht:null
+2016-10-31 21:26:57,045 11853 [main-ScalaTest-running-CompanyDaoSuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@7bba5817
+2016-10-31 21:26:57,046 11854 [main-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Initalizing wiht:null
+2016-10-31 21:26:57,063 11871 [main-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Bulk Insert....
+2016-10-31 21:26:57,064 11872 [main-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Dao. Inserting:1
+2016-10-31 21:26:57,676 12484 [main-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - ...There's data in db. updating one by one...
+2016-10-31 21:26:57,685 12493 [main-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Updating name
+2016-10-31 21:26:59,275 14083 [main-ScalaTest-running-CompanyDaoSuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@6caf0677
+2016-10-31 21:26:59,276 14084 [main-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Initalizing wiht:null
+2016-10-31 21:26:59,879 14687 [main-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - ...There's data in db. updating one by one...
+2016-10-31 21:26:59,883 14691 [main-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Updating UpdatedName
+2016-10-31 21:33:45,192 4939 [main-ScalaTest-running-CompanyDaoSuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@3d51f06e
+2016-10-31 21:33:45,236 4983 [main-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Initalizing wiht:null
+2016-10-31 21:33:46,957 6704 [main-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Bulk Insert....
+2016-10-31 21:33:46,960 6707 [main-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Dao. Inserting:1
+2016-10-31 21:33:49,439 9186 [main-ScalaTest-running-CompanyDaoSuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@548d708a
+2016-10-31 21:33:49,439 9186 [main-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Initalizing wiht:null
+2016-10-31 21:33:51,648 11395 [main-ScalaTest-running-CompanyDaoSuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@7bba5817
+2016-10-31 21:33:51,649 11396 [main-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Initalizing wiht:null
+2016-10-31 21:33:51,665 11412 [main-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Bulk Insert....
+2016-10-31 21:33:51,665 11412 [main-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Dao. Inserting:1
+2016-10-31 21:33:52,275 12022 [main-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - ...There's data in db. updating one by one...
+2016-10-31 21:33:52,280 12027 [main-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Updating name
+2016-10-31 21:33:53,950 13697 [main-ScalaTest-running-CompanyDaoSuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@6caf0677
+2016-10-31 21:33:53,951 13698 [main-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Initalizing wiht:null
+2016-10-31 21:33:54,578 14325 [main-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - ...There's data in db. updating one by one...
+2016-10-31 21:33:54,587 14334 [main-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Updating UpdatedName
+2016-10-31 21:38:56,682 4990 [main-ScalaTest-running-CompanyDaoSuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@3d51f06e
+2016-10-31 21:38:56,733 5041 [main-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Initalizing wiht:null
+2016-10-31 21:38:58,307 6615 [main-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Bulk Insert....
+2016-10-31 21:38:58,311 6619 [main-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Dao. Inserting:1
+2016-10-31 21:39:00,749 9057 [main-ScalaTest-running-CompanyDaoSuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@548d708a
+2016-10-31 21:39:00,750 9058 [main-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Initalizing wiht:null
+2016-10-31 21:39:03,030 11338 [main-ScalaTest-running-CompanyDaoSuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@7bba5817
+2016-10-31 21:39:03,031 11339 [main-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Initalizing wiht:null
+2016-10-31 21:39:03,045 11353 [main-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Bulk Insert....
+2016-10-31 21:39:03,045 11353 [main-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Dao. Inserting:1
+2016-10-31 21:39:03,608 11916 [main-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - ...There's data in db. updating one by one...
+2016-10-31 21:39:03,613 11921 [main-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Updating name
+2016-10-31 21:39:05,164 13472 [main-ScalaTest-running-CompanyDaoSuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@6caf0677
+2016-10-31 21:39:05,165 13473 [main-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Initalizing wiht:null
+2016-10-31 21:39:05,759 14067 [main-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - ...There's data in db. updating one by one...
+2016-10-31 21:39:05,764 14072 [main-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Updating UpdatedName
+2016-10-31 21:42:19,776 5229 [main-ScalaTest-running-CompanyDaoSuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@3d51f06e
+2016-10-31 21:42:19,817 5270 [main-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Initalizing wiht:null
+2016-10-31 21:42:22,318 7771 [main-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Updating UpdatedName
+2016-10-31 22:13:17,555 5415 [main-ScalaTest-running-SharePriceDaoSuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@3d51f06e
+2016-10-31 22:13:17,595 5455 [main-ScalaTest-running-SharePriceDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Initalizing wiht:null
+2016-10-31 22:15:05,623 4936 [main-ScalaTest-running-SharePriceDaoSuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@3d51f06e
+2016-10-31 22:15:05,671 4984 [main-ScalaTest-running-SharePriceDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Initalizing wiht:null

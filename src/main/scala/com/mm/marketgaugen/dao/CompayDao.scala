@@ -18,7 +18,6 @@ trait CompanyDao extends BaseDao with LogHelper {
   lazy val repoCollection = database.client("companiesrepo")
   
   
-  
   def insertCompanies(companies:Company*):Int = {
     companyCollection.findOne() match {
       case Some(coll) => {
@@ -65,22 +64,18 @@ trait CompanyDao extends BaseDao with LogHelper {
   }
   
   
-  
-  
-  
   def insertCompanyRepos(companyRepos: CompanyRepo*):Int = {
     repoCollection.findOne() match {
-      case Some(coll) => {
-              logger.info("...There's data in db. updating one by one...") 
+      case Some(coll) => {  
+              logger.info("...There's data in repo db. updating one by one...") 
               insertRepoIndividually(companyRepos:_*)
             }
       case None => {
-          println("Bulk Insert....")
+          logger.info("Bulk RepoInsert....")
           bulkInsertRepo(companyRepos:_*)
       }
     }
   }    
-    
     
   private def bulkInsertRepo(companyRepos:CompanyRepo*):Int = {  
     val builder = repoCollection.initializeOrderedBulkOperation
@@ -105,7 +100,7 @@ trait CompanyDao extends BaseDao with LogHelper {
                                       "ipoYear" -> companyRepo.ipoYear,
                                       "industry" -> companyRepo.industry)
                 )
-      companyCollection.update(q, update, true)
+      repoCollection.update(q, update, true)
       updates +=1
    }
    updates
