@@ -8,7 +8,7 @@ import org.scalatest.concurrent.ScalaFutures._
 import com.mm.marketgauge.entities.Sector
 import org.junit.runner.RunWith
 import org.scalatest.junit.JUnitRunner
-import com.mm.marketgaugen.dao.SectorDao
+import com.mm.marketgauge.dao.SectorDao
 
 
 @RunWith(classOf[JUnitRunner])
@@ -45,7 +45,7 @@ class SectorServiceDownloaderSpec extends FreeSpec with Matchers {
         val sectorId = 124
         val expectedUrl = mockSectorService.sectorDataUrl.replace("<sectorId>", sectorId.toString)
         val yahooData = List("[Oil & Gas Equipment & Services (^YHOh708)]</a></td></tr></table></td></tr></table><table><tr><td")
-        val expectedSector = Sector(null, "Oil & Gas Equipment & Services", 
+        val expectedSector = Sector("Oil & Gas Equipment & Services", 
                                     "^YHOh708", 124, "yhoo")
         
         Mockito.when(mockDownloader.downloadFromURL(expectedUrl)).thenReturn(yahooData.iterator)
@@ -63,7 +63,7 @@ class SectorServiceDownloaderSpec extends FreeSpec with Matchers {
         val sectorId = 124
         val expectedUrl = mockSectorService.sectorDataUrl.replace("<sectorId>", sectorId.toString)
         val yahooData = List("[Oil & Gas Equipment & Services (^YHOh708)]</a></td></tr></table></td></tr></table><table><tr><td")
-        val expectedSector = Sector(null, "Oil & Gas Equipment & Services", 
+        val expectedSector = Sector( "Oil & Gas Equipment & Services", 
                                     "^YHOh708", 124, "yhoo")
         
         Mockito.when(mockDownloader.downloadFromURL(expectedUrl)).thenThrow(new java.lang.IllegalArgumentException("Data not found"))
@@ -78,7 +78,7 @@ class SectorServiceDownloaderSpec extends FreeSpec with Matchers {
     "when calling persistSectors it should call  sectorDao" - {
       "should return count" in {
         
-        val expectedSector = Sector(null, "Oil & Gas Equipment & Services", 
+        val expectedSector = Sector( "Oil & Gas Equipment & Services", 
                                     "^YHOh708", 124, "yhoo")
         
         val sectors = List(expectedSector)
@@ -94,7 +94,7 @@ class SectorServiceDownloaderSpec extends FreeSpec with Matchers {
     "when calling getAllSectors should call  sectorDao" - {
       "and return all sectors" in {
         
-        val expectedSector = Sector(null, "Oil & Gas Equipment & Services", 
+        val expectedSector = Sector( "Oil & Gas Equipment & Services", 
                                     "^YHOh708", 124, "yhoo")
         
         val sectors = List(expectedSector)

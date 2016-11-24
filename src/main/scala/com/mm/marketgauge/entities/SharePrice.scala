@@ -1,7 +1,7 @@
 package com.mm.marketgauge.entities
 import org.bson.types.ObjectId
 
-case class SharePrice(_id:ObjectId, ticker:String, price:Double, asOfDate:String,
+case class SharePrice(ticker:String, price:Double, asOfDate:String,
                  currentEps:Double, forwardEps:Double,
                  movingAverage:Double, exDivDate:String,
                  peg:Double, shortRatio:Double)

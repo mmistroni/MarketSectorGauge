@@ -12,7 +12,7 @@ import org.bson.types.ObjectId
  * - source: source of the data. Most of the sectors can be fetched via yahoo finance, but few others
  *           are available via google service or bloomberg
  */
-case class Sector (_id:ObjectId, name:String, ticker:String, sectorId:Int, source:String)
+case class Sector (name:String, ticker:String, sectorId:Int, source:String)
 
 
 object SectorProperties {

@@ -8,7 +8,7 @@ import org.scalatest.concurrent.ScalaFutures._
 import org.junit.runner.RunWith
 import org.scalatest.junit.JUnitRunner
 import com.mm.marketgauge.entities.{Company, CompanyRepo}
-import com.mm.marketgaugen.dao.CompanyDao
+import com.mm.marketgauge.dao.CompanyDao
 
 
 

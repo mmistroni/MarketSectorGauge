@@ -1,0 +1,37 @@
+2016-11-14 21:35:10,183 2191 [pool-6-thread-2-ScalaTest-running-SectorServiceDownloaderSpec] INFO  com.mm.marketgauge.util.LogHelper - Extracting data for sector:124
+2016-11-14 21:35:10,211 2219 [pool-6-thread-2-ScalaTest-running-SectorServiceDownloaderSpec] INFO  com.mm.marketgauge.util.LogHelper - Exception while fetching 124 
+java.lang.IllegalArgumentException: Data not found
+2016-11-14 21:35:12,035 4043 [pool-6-thread-6-ScalaTest-running-SectorDaoSuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@603ce9fa
+2016-11-14 21:35:11,979 3987 [pool-6-thread-4-ScalaTest-running-CompanyDaoSuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@64b05935
+2016-11-14 21:35:12,186 4194 [pool-6-thread-1-ScalaTest-running-SharePriceDaoSuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@4eaac51
+2016-11-14 21:35:12,204 4212 [pool-6-thread-1-ScalaTest-running-SharePriceDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Initalizing wiht:null
+2016-11-14 21:35:12,204 4212 [pool-6-thread-4-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Initalizing wiht:null
+2016-11-14 21:35:12,204 4212 [pool-6-thread-6-ScalaTest-running-SectorDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Initalizing wiht:null
+2016-11-14 21:35:15,521 7529 [pool-6-thread-4-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Bulk Insert....
+2016-11-14 21:35:15,525 7533 [pool-6-thread-4-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Dao. Inserting:1
+2016-11-14 21:35:17,961 9969 [pool-6-thread-6-ScalaTest-running-SectorDaoSuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@67f28
+2016-11-14 21:35:17,961 9969 [pool-6-thread-6-ScalaTest-running-SectorDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Initalizing wiht:null
+2016-11-14 21:35:18,034 10042 [pool-6-thread-4-ScalaTest-running-CompanyDaoSuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@4c8aae09
+2016-11-14 21:35:18,034 10042 [pool-6-thread-4-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Initalizing wiht:null
+2016-11-14 21:35:18,051 10059 [pool-6-thread-4-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Bulk RepoInsert....
+2016-11-14 21:35:18,556 10564 [pool-6-thread-6-ScalaTest-running-SectorDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Converting for ticker:Some(sectorTicker) Some(sectorName)
+2016-11-14 21:35:18,564 10572 [pool-6-thread-6-ScalaTest-running-SectorDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Found:1
+2016-11-14 21:35:18,568 10576 [pool-6-thread-6-ScalaTest-running-SectorDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Converting for ticker:Some(sectorTicker) Some(sectorName)
+2016-11-14 21:35:20,090 12098 [pool-6-thread-6-ScalaTest-running-SectorDaoSuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@79beb54
+2016-11-14 21:35:20,091 12099 [pool-6-thread-6-ScalaTest-running-SectorDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Initalizing wiht:null
+2016-11-14 21:35:20,156 12164 [pool-6-thread-4-ScalaTest-running-CompanyDaoSuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@c37538f
+2016-11-14 21:35:20,157 12165 [pool-6-thread-4-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Initalizing wiht:null
+2016-11-14 21:35:20,174 12182 [pool-6-thread-4-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Bulk Insert....
+2016-11-14 21:35:20,174 12182 [pool-6-thread-4-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Dao. Inserting:1
+2016-11-14 21:35:20,703 12711 [pool-6-thread-6-ScalaTest-running-SectorDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Converting for ticker:Some(sectorTicker) Some(sectorName)
+2016-11-14 21:35:20,805 12813 [pool-6-thread-4-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - ...There's data in db. updating one by one...
+2016-11-14 21:35:20,810 12818 [pool-6-thread-4-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Updating name
+2016-11-14 21:35:22,338 14346 [pool-6-thread-6-ScalaTest-running-SectorDaoSuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@28bde619
+2016-11-14 21:35:22,339 14347 [pool-6-thread-6-ScalaTest-running-SectorDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Initalizing wiht:null
+2016-11-14 21:35:22,659 14667 [pool-6-thread-4-ScalaTest-running-CompanyDaoSuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@298902cb
+2016-11-14 21:35:22,659 14667 [pool-6-thread-4-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Initalizing wiht:null
+2016-11-14 21:35:22,680 14688 [pool-6-thread-4-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Bulk RepoInsert....
+2016-11-14 21:35:23,089 15097 [pool-6-thread-6-ScalaTest-running-SectorDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Converting for ticker:Some(sectorTicker) Some(sectorName)
+2016-11-14 21:35:23,096 15104 [pool-6-thread-6-ScalaTest-running-SectorDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Converting for ticker:Some(Updated) Some(sectorName)
+2016-11-14 21:35:23,382 15390 [pool-6-thread-4-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - ...There's data in repo db. updating one by one...
+2016-11-14 21:35:23,387 15395 [pool-6-thread-4-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Updating UpdatedName

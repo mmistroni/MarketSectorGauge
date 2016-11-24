@@ -36,13 +36,12 @@
 	</appender>
 
 
-	<logger name="akka" level="INFO" />
+	<logger name="akka" level="ERROR" />
 	<logger name="spray" level="INFO" />
 
-	<logger name="slick.jdbc" level="INFO" />
 	<logger name="com.mm" level="INFO" />
 
 	<root level="INFO">
-		<appender-ref ref="CONSOLE" />
+		<appender-ref ref="FILE" />
 	</root>
 </configuration>

@@ -7,11 +7,11 @@ import org.mockito.{ Mockito, Matchers => MockitoMatchers }
 import org.mockito.Mockito._
 import org.scalatest.concurrent.ScalaFutures._
 import com.mm.marketgauge.entities.Sector
-import com.mm.marketgauge.converters.SectorConverter
+import com.mm.marketgauge.dao.SectorConverter
 import com.mm.marketgauge.entities.SectorProperties._
 import org.junit.runner.RunWith
 import org.scalatest.junit.JUnitRunner
-import com.mm.marketgaugen.dao.{ SectorDao, MongoDatabase, Database }
+import com.mm.marketgauge.dao.{ SectorDao, MongoDatabase, Database }
 
 import org.scalatest.FunSuite
 import org.scalatest.BeforeAndAfter
@@ -47,7 +47,7 @@ class SectorDaoSuite extends FunSuite with MongoEmbedDatabase with BeforeAndAfte
   after { mongoStop(mongoProps) }
 
   
-  private def createSector = new Sector(null, testName, testTicker, sectorId, source) 
+  private def createSector = new Sector(testName, testTicker, sectorId, source) 
   
   test("Inserting a Sector in the database") {
     

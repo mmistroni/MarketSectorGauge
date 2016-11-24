@@ -1,8 +1,8 @@
 package com.mm.marketgauge.service
-import com.mm.marketgaugen.dao.{CompanyDao, SectorDao}
+import com.mm.marketgauge.dao.{CompanyDao, SectorDao}
 import com.mm.marketgauge.entities.{Company, CompanyRepo}
 import com.mm.marketgauge.util.LogHelper
-import com.mm.marketgaugen.dao.Database
+import com.mm.marketgauge.dao.Database
 import com.typesafe.config._
 import amazon.util.AWSClientFactory
 

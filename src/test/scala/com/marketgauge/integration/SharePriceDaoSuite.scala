@@ -7,11 +7,11 @@ import org.mockito.{ Mockito, Matchers => MockitoMatchers }
 import org.mockito.Mockito._
 import org.scalatest.concurrent.ScalaFutures._
 import com.mm.marketgauge.entities.SharePrice
-import com.mm.marketgauge.converters.SharePriceConverter
+import com.mm.marketgauge.dao.SharePriceConverter
 import com.mm.marketgauge.entities.SharePriceProperties._
 import org.junit.runner.RunWith
 import org.scalatest.junit.JUnitRunner
-import com.mm.marketgaugen.dao.{ SharePriceDao, MongoDatabase, Database }
+import com.mm.marketgauge.dao.{ SharePriceDao, MongoDatabase, Database }
 
 import org.scalatest.FunSuite
 import org.scalatest.BeforeAndAfter
@@ -45,7 +45,7 @@ class SharePriceDaoSuite extends FunSuite with MongoEmbedDatabase with BeforeAnd
   
   test("Inserting a SharePrice in the database") {
     
-    val testSharePrice = new SharePrice(null, "testTicker", 1.0, 
+    val testSharePrice = new SharePrice( "testTicker", 1.0, 
                     "12/13/2016",
                      1.1, 2.0,
                      3.0, "i dont know",
@@ -68,7 +68,7 @@ class SharePriceDaoSuite extends FunSuite with MongoEmbedDatabase with BeforeAnd
     sharePriceFromDb.ticker  shouldEqual(testSharePrice.ticker)
       
   }
-
+ 
   
   
 }

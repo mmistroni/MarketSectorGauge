@@ -8,7 +8,7 @@ import org.scalatest.concurrent.ScalaFutures._
 import org.junit.runner.RunWith
 import org.scalatest.junit.JUnitRunner
 import com.mm.marketgauge.entities.SharePrice
-import com.mm.marketgaugen.dao.SharePriceDao
+import com.mm.marketgauge.dao.SharePriceDao
 
 
 @RunWith(classOf[JUnitRunner])
@@ -50,7 +50,7 @@ class SharePriceServiceSpec extends FreeSpec with Matchers {
         
         val ticker = "GE";
         
-        val testSharePrice = new SharePrice(null, ticker, 1.0, 
+        val testSharePrice = new SharePrice(ticker, 1.0, 
                     "12/13/2016",
                      Double.NaN, Double.NaN,
                      Double.NaN, "i dont know",

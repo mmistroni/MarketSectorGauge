@@ -1,6 +1,6 @@
 package com.mm.marketgauge.service
 
-import com.mm.marketgaugen.dao.{SectorDao, SharePriceDao, Database}
+import com.mm.marketgauge.dao.{SectorDao, SharePriceDao, Database}
 import com.mm.marketgauge.entities.{Sector, SharePrice}
 import com.mm.marketgauge.util.LogHelper
 import com.typesafe.config._

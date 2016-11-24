@@ -1,30 +1,46 @@
 package com.mm.marketgauge.persistence
 
-import com.mm.marketgauge.entities.Sector
-import com.mm.marketgauge.entities.Company
-import com.mm.marketgauge.entities.SharePrice
+import com.mm.marketgauge.entities.{Sector, Company, CompanyRepo, SharePrice}
+import com.mm.marketgauge.dao._
 
 
 /**
  * Global Persistence Service for the application
  */
 trait PersistenceService {
+ 
+  val sectorDao:SectorDao
+  val sharePriceDao:SharePriceDao
+  val companyDao:CompanyDao
+  
   
   /** 
-   *  component holding the connection to specific db
+   *  @return all sectors
    */
   
-  def getAllSectors:Seq[Sector] = { null }
+  def getAllSectorIds:Seq[Int] = sectorDao.getAllSectorIds
   
-  def getCompany(companyTicker:String):Company
+  /**
+   * Stores a Sector in the database
+   * @param sectorList a List of Sector objects
+   */
+  def storeSectors(sectorList:Seq[Sector]):Int = sectorDao.insertBulk(sectorList)
+  /**
+   * Stores a company in the database
+   * @param company a Company object
+   */
+  def storeCompanies(companies:Seq[Company]):Int = companyDao.insertCompanies(companies:_*)
+  /**
+   * Store a price
+   * @param prices a List of SharePrice object
+   */
+  def storePrices(prices:Seq[SharePrice]):Int = sharePriceDao.insert(prices:_*)
   
-  def getSector(sectorId:Int):Sector
-  
-  def storeSector(data:Sector):Sector
-  
-  def storeCompany(data:Sector):Sector
-  
-  def storePrice(data:SharePrice):SharePrice
+  /**
+   * Store companyRepos
+   * @param companyRepos a list of companyRepos object
+   */
+  def storeCompanyRepos(companyRepos:Seq[CompanyRepo]):Int = companyDao.insertCompanyRepos(companyRepos:_*)
   
   
 }

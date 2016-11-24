@@ -2,7 +2,7 @@ package com.mm.marketgauge.service
 
 import com.mm.marketgauge.entities.Sector
 import com.mm.marketgauge.entities.SharePrice
-import com.mm.marketgaugen.dao.SectorDao
+import com.mm.marketgauge.dao.SectorDao
 import com.mm.marketgauge.util.LogHelper
 
 /**
@@ -50,7 +50,7 @@ trait SectorService extends LogHelper {
     val data = lines.toList.filter(line => line.indexOf("^YHO") > 0 && line.indexOf("]") > 0 && line.size > 0)
     val mapped = data.map(line => line.substring(line.indexOf("[") + 1, line.indexOf("]"))).toList
     val dataArray = mapped.head.split('(')
-    Sector(null, dataArray(0).trim, dataArray(1).substring(0, dataArray(1).indexOf(")")).trim,
+    Sector(dataArray(0).trim, dataArray(1).substring(0, dataArray(1).indexOf(")")).trim,
       sectorId, "yhoo")
     
   }

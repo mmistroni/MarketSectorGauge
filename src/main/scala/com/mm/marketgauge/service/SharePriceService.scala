@@ -1,7 +1,7 @@
 package com.mm.marketgauge.service
 
 import com.mm.marketgauge.entities.SharePrice
-import com.mm.marketgaugen.dao.SharePriceDao 
+import com.mm.marketgauge.dao.SharePriceDao 
 import scala.util.control.Exception.allCatch
 import com.mm.marketgauge.util.Utilities.getDouble
 
@@ -37,7 +37,7 @@ trait SharePriceService extends com.mm.marketgauge.util.LogHelper {
   private def extractData(dataList:List[String]) = {
     try {
       // to replace with slicing notation
-      SharePrice(null, dataList(0), 
+      SharePrice(dataList(0), 
         dataList(1).toDouble,
         dataList(2),
         getDouble(dataList(3)),

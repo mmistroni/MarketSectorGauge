@@ -7,12 +7,12 @@ import org.mockito.{ Mockito, Matchers => MockitoMatchers }
 import org.mockito.Mockito._
 import org.scalatest.concurrent.ScalaFutures._
 import com.mm.marketgauge.entities.{Company, CompanyRepo}
-import com.mm.marketgauge.converters.{CompanyConverter, CompanyRepoConverter}
+import com.mm.marketgauge.dao.{CompanyRepoConverter}
+import com.mm.marketgauge.dao.CompanyConverter
 import com.mm.marketgauge.entities.CompanyProperties._
 import org.junit.runner.RunWith
 import org.scalatest.junit.JUnitRunner
-import com.mm.marketgaugen.dao.{ CompanyDao, MongoDatabase, Database }
-
+import com.mm.marketgauge.dao.{ CompanyDao, MongoDatabase, Database }
 import org.scalatest.FunSuite
 import org.scalatest.BeforeAndAfter
 import scala.collection.mutable.Stack

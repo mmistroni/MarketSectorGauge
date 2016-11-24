@@ -1,7 +1,7 @@
 package com.mm.marketgauge.service
 import com.mm.marketgauge.entities.Company
 import com.mm.marketgauge.entities.CompanyRepo
-import com.mm.marketgaugen.dao.CompanyDao
+import com.mm.marketgauge.dao.CompanyDao
 
 /**
  * Service for handling Company data
