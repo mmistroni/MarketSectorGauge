@@ -4,7 +4,7 @@ import org.bson.types.ObjectId
 case class SharePrice(ticker:String, price:Double, asOfDate:String,
                  currentEps:Double, forwardEps:Double,
                  movingAverage:Double, exDivDate:String,
-                 peg:Double, shortRatio:Double)
+                 peg:Double, shortRatio:Double, marketCap:String)
                  
                  
 object SharePriceProperties {
@@ -18,5 +18,7 @@ object SharePriceProperties {
   val EXDIVDATE = "exDivDate"
   val PEG = "peg"
   val SHORTRATIO = "shortRatio"
+  val CREATED_TIME = "created_time"
+  val MARKETCAP = "marketCap"
 }                
 

@@ -47,9 +47,8 @@ object SharePriceLoader extends App with LogHelper{
   }
   
   def persistPrices(prices:Seq[SharePrice]) = {
-    val valids = prices.filter(_ != null)
-    logger.info(s"Persisting ${valids.size} prices...")
-    val numRows = sharePriceService.persistSharePrices(valids)
+    logger.info(s"Persisting ${prices.size} prices...")
+    val numRows = sharePriceService.persistSharePrices(prices)
     logger.info(s"From ${prices.size} we  persisted $numRows prices")
   }
   

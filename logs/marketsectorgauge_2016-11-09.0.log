@@ -1,8 +1,0 @@
-2016-11-09 21:00:37,316 1137 [main] INFO  com.mm.marketgauge.util.LogHelper - dbUri:mongodb://localhost:27017/
-2016-11-09 21:00:37,354 1175 [main] INFO  com.mm.marketgauge.util.LogHelper - Initalizing wiht:null
-2016-11-09 21:03:15,120 686  [main] INFO  com.mm.marketgauge.util.LogHelper - dbUri:mongodb://localhost:27017/
-2016-11-09 21:03:15,139 705  [main] INFO  com.mm.marketgauge.util.LogHelper - Initalizing wiht:null
-2016-11-09 21:03:31,034 701  [main] INFO  com.mm.marketgauge.util.LogHelper - dbUri:mongodb://localhost:27017/
-2016-11-09 21:03:31,050 717  [main] INFO  com.mm.marketgauge.util.LogHelper - Initalizing wiht:null
-2016-11-09 21:17:13,740 742  [main] INFO  com.mm.marketgauge.util.LogHelper - dbUri:mongodb://localhost:27017/
-2016-11-09 21:17:13,759 761  [main] INFO  com.mm.marketgauge.util.LogHelper - Initalizing wiht:null

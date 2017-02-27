@@ -4,7 +4,7 @@
 		module="marketsectorgauge-build"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20161115210651"
+		publication="20170219175058"
 		e:sbtVersion="0.13" e:scalaVersion="2.10"
 	>
 		<description>

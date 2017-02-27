@@ -82,7 +82,7 @@ class PersistenceServiceSpec extends FreeSpec with Matchers {
                     "12/13/2016",
                      Double.NaN, Double.NaN,
                      Double.NaN, "i dont know",
-                     Double.NaN, Double.NaN))
+                     Double.NaN, Double.NaN, "1.0B"))
         val expectedInserts  =sharePrices.size
         
         Mockito.when(persistenceService.storePrices(sharePrices)).thenReturn(expectedInserts)

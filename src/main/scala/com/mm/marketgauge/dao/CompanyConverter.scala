@@ -6,7 +6,7 @@ import com.mm.marketgauge.entities.CompanyProperties._
 
 object CompanyConverter {
 
-  def mongoFail = throw new Exception("Unable to access object")
+  def mongoFail(field:String) = throw new Exception(s"Unable to access object for:$field")
   
   def convertToMongoObject(company: Company): DBObject = {
     val builder = MongoDBObject.newBuilder
@@ -29,18 +29,18 @@ object CompanyConverter {
 
   def convertFromMongoObject(db: DBObject): Company = {
     
-    val id = db.getAs[ObjectId](ID) orElse {mongoFail}
-    val name = db.getAs[String](NAME) orElse{mongoFail}
-    val priceChange = db.getAs[Double](PRICECHANGE) orElse{mongoFail}
-    val marketCap = db.getAs[Double](MARKETCAP) orElse{mongoFail}
-    val priceToEarnings = db.getAs[Double](PRICETOEARNINGS) orElse{mongoFail}
-    val roe = db.getAs[Double](ROE) orElse{mongoFail}
-    val divYield = db.getAs[Double](DIVYIELD) orElse{mongoFail}
-    val ltdToEq = db.getAs[Double](LTDTOEQ) orElse{mongoFail}
-    val priceToBook = db.getAs[Double](PRICETOBOOK) orElse{mongoFail}
-    val netProfMgn = db.getAs[Double](NETPROFMGN) orElse{mongoFail}
-    val priceToCashflow = db.getAs[Double](PRICETOCASHFLOW) orElse{mongoFail}
-    val sectorId = db.getAs[Int](SECTORID) orElse{mongoFail}
+    val id = db.getAs[ObjectId](ID) orElse {mongoFail(ID)}
+    val name = db.getAs[String](NAME) orElse{mongoFail(NAME)}
+    val priceChange = db.getAs[Double](PRICECHANGE) orElse{mongoFail(PRICECHANGE)}
+    val marketCap = db.getAs[Double](MARKETCAP) orElse{mongoFail(MARKETCAP)}
+    val priceToEarnings = db.getAs[Double](PRICETOEARNINGS) orElse{mongoFail(PRICETOEARNINGS)}
+    val roe = db.getAs[Double](ROE) orElse{mongoFail(ROE)}
+    val divYield = db.getAs[Double](DIVYIELD) orElse{mongoFail(DIVYIELD)}
+    val ltdToEq = db.getAs[Double](LTDTOEQ) orElse{mongoFail(LTDTOEQ)}
+    val priceToBook = db.getAs[Double](PRICETOBOOK) orElse{mongoFail(PRICETOBOOK)}
+    val netProfMgn = db.getAs[Double](NETPROFMGN) orElse{mongoFail(NETPROFMGN)}
+    val priceToCashflow = db.getAs[Double](PRICETOCASHFLOW) orElse{mongoFail(PRICETOCASHFLOW)}
+    val sectorId = db.getAs[Int](SECTORID) orElse{mongoFail(SECTORID)}
     
     Company(id.get, name.get, priceChange.get, marketCap.get, 
             priceToEarnings.get, roe.get, divYield.get, ltdToEq.get,

@@ -1,0 +1,65 @@
+2017-02-27 21:00:29,929 1663 [pool-6-thread-2-ScalaTest-running-SectorServiceDownloaderSpec] INFO  com.mm.marketgauge.util.LogHelper - Extracting data for sector:124
+2017-02-27 21:00:30,061 1795 [pool-6-thread-2-ScalaTest-running-SectorServiceDownloaderSpec] INFO  com.mm.marketgauge.util.LogHelper - Exception while fetching 124 
+java.lang.IllegalArgumentException: Data not found
+2017-02-27 21:00:35,702 7436 [pool-6-thread-3-ScalaTest-running-SharePriceDaoSuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@6d296916
+2017-02-27 21:00:35,726 7460 [pool-6-thread-3-ScalaTest-running-SharePriceDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Initalizing wiht:null
+2017-02-27 21:00:36,867 8601 [pool-6-thread-1-ScalaTest-running-CompanyDaoSuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@6008c6b0
+2017-02-27 21:00:36,877 8611 [pool-6-thread-1-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Initalizing wiht:null
+2017-02-27 21:00:36,897 8631 [pool-6-thread-1-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Bulk Insert....
+2017-02-27 21:00:36,903 8637 [pool-6-thread-1-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Dao. Inserting:1
+2017-02-27 21:00:37,696 9430 [pool-6-thread-4-ScalaTest-running-SectorDaoSuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@5bc03c14
+2017-02-27 21:00:37,704 9438 [pool-6-thread-4-ScalaTest-running-SectorDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Initalizing wiht:null
+2017-02-27 21:00:40,274 12008 [pool-6-thread-1-ScalaTest-running-CompanyDaoSuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@ca121ee
+2017-02-27 21:00:40,274 12008 [pool-6-thread-1-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Initalizing wiht:null
+2017-02-27 21:00:40,297 12031 [pool-6-thread-1-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Bulk RepoInsert....
+2017-02-27 21:00:41,065 12799 [pool-6-thread-4-ScalaTest-running-SectorDaoSuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@cb14231
+2017-02-27 21:00:41,065 12799 [pool-6-thread-4-ScalaTest-running-SectorDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Initalizing wiht:null
+2017-02-27 21:00:41,693 13427 [pool-6-thread-4-ScalaTest-running-SectorDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Found:1
+2017-02-27 21:00:41,803 13537 [pool-6-thread-4-ScalaTest-running-SectorDaoSuite] INFO  d.f.e.p.runtime.ProcessControl - stopOrDestroyProcess: process has not exited 
+2017-02-27 21:00:43,292 15026 [pool-6-thread-1-ScalaTest-running-CompanyDaoSuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@4f1bd21f
+2017-02-27 21:00:43,292 15026 [pool-6-thread-1-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Initalizing wiht:null
+2017-02-27 21:00:43,313 15047 [pool-6-thread-1-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Bulk Insert....
+2017-02-27 21:00:43,313 15047 [pool-6-thread-1-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Dao. Inserting:1
+2017-02-27 21:00:43,997 15731 [pool-6-thread-1-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - ...There's data in db. updating one by one...
+2017-02-27 21:00:44,003 15737 [pool-6-thread-1-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Updating name
+2017-02-27 21:00:44,237 15971 [pool-6-thread-4-ScalaTest-running-SectorDaoSuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@289e4329
+2017-02-27 21:00:44,237 15971 [pool-6-thread-4-ScalaTest-running-SectorDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Initalizing wiht:null
+2017-02-27 21:00:46,338 18072 [pool-6-thread-1-ScalaTest-running-CompanyDaoSuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@34d3307
+2017-02-27 21:00:46,339 18073 [pool-6-thread-1-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Initalizing wiht:null
+2017-02-27 21:00:46,369 18103 [pool-6-thread-1-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Bulk RepoInsert....
+2017-02-27 21:00:46,964 18698 [pool-6-thread-1-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - ...There's data in repo db. updating one by one...
+2017-02-27 21:00:46,969 18703 [pool-6-thread-1-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Updating UpdatedName
+2017-02-27 21:00:47,094 18828 [pool-6-thread-4-ScalaTest-running-SectorDaoSuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@4fd57909
+2017-02-27 21:00:47,095 18829 [pool-6-thread-4-ScalaTest-running-SectorDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Initalizing wiht:null
+2017-02-27 22:51:34,134 17493 [pool-6-thread-7-ScalaTest-running-SectorServiceDownloaderSpec] INFO  com.mm.marketgauge.util.LogHelper - Extracting data for sector:124
+2017-02-27 22:51:34,356 17715 [pool-6-thread-3-ScalaTest-running-SharePriceDaoSuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@523d99a8
+2017-02-27 22:51:34,852 18211 [pool-6-thread-3-ScalaTest-running-SharePriceDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Initalizing wiht:null
+2017-02-27 22:51:34,905 18264 [pool-6-thread-7-ScalaTest-running-SectorServiceDownloaderSpec] INFO  com.mm.marketgauge.util.LogHelper - Exception while fetching 124 
+java.lang.IllegalArgumentException: Data not found
+2017-02-27 22:51:43,362 26721 [pool-6-thread-1-ScalaTest-running-SectorDaoSuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@48fc199a
+2017-02-27 22:51:43,378 26737 [pool-6-thread-1-ScalaTest-running-SectorDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Initalizing wiht:null
+2017-02-27 22:51:49,967 33326 [pool-6-thread-8-ScalaTest-running-CompanyDaoSuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@677c1e8c
+2017-02-27 22:51:49,980 33339 [pool-6-thread-8-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Initalizing wiht:null
+2017-02-27 22:51:50,275 33634 [pool-6-thread-8-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Bulk Insert....
+2017-02-27 22:51:50,279 33638 [pool-6-thread-8-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Dao. Inserting:1
+2017-02-27 22:51:52,284 35643 [pool-6-thread-1-ScalaTest-running-SectorDaoSuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@4c995732
+2017-02-27 22:51:52,285 35644 [pool-6-thread-1-ScalaTest-running-SectorDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Initalizing wiht:null
+2017-02-27 22:51:53,620 36979 [pool-6-thread-1-ScalaTest-running-SectorDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Found:1
+2017-02-27 22:51:55,985 39344 [pool-6-thread-8-ScalaTest-running-CompanyDaoSuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@2686b06f
+2017-02-27 22:51:55,986 39345 [pool-6-thread-8-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Initalizing wiht:null
+2017-02-27 22:51:56,518 39877 [pool-6-thread-8-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Bulk RepoInsert....
+2017-02-27 22:51:59,330 42689 [pool-6-thread-1-ScalaTest-running-SectorDaoSuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@36da1d67
+2017-02-27 22:51:59,331 42690 [pool-6-thread-1-ScalaTest-running-SectorDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Initalizing wiht:null
+2017-02-27 22:52:04,379 47738 [pool-6-thread-8-ScalaTest-running-CompanyDaoSuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@7c62fa2
+2017-02-27 22:52:04,379 47738 [pool-6-thread-8-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Initalizing wiht:null
+2017-02-27 22:52:04,936 48295 [pool-6-thread-8-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Bulk Insert....
+2017-02-27 22:52:04,936 48295 [pool-6-thread-8-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Dao. Inserting:1
+2017-02-27 22:52:06,605 49964 [pool-6-thread-8-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - ...There's data in db. updating one by one...
+2017-02-27 22:52:06,617 49976 [pool-6-thread-8-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Updating name
+2017-02-27 22:52:08,388 51747 [pool-6-thread-1-ScalaTest-running-SectorDaoSuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@199dbeaf
+2017-02-27 22:52:08,389 51748 [pool-6-thread-1-ScalaTest-running-SectorDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Initalizing wiht:null
+2017-02-27 22:52:12,020 55379 [pool-6-thread-8-ScalaTest-running-CompanyDaoSuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@56548ef9
+2017-02-27 22:52:12,021 55380 [pool-6-thread-8-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Initalizing wiht:null
+2017-02-27 22:52:12,175 55534 [pool-6-thread-8-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Bulk RepoInsert....
+2017-02-27 22:52:13,027 56386 [pool-6-thread-8-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - ...There's data in repo db. updating one by one...
+2017-02-27 22:52:13,038 56397 [pool-6-thread-8-ScalaTest-running-CompanyDaoSuite] INFO  com.mm.marketgauge.util.LogHelper - Updating UpdatedName

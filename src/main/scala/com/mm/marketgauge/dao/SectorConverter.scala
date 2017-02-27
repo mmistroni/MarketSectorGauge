@@ -6,7 +6,7 @@ import com.mm.marketgauge.entities.SectorProperties._
 
 object SectorConverter extends com.mm.marketgauge.util.LogHelper {
 
-  def mongoFail = throw new Exception("Unable to access object")
+  def mongoFail(field:String) = throw new Exception(s"Unable to access object for :$field")
   
   def convertToMongoObject(sector: Sector): DBObject = {
     val builder = MongoDBObject.newBuilder
@@ -20,14 +20,13 @@ object SectorConverter extends com.mm.marketgauge.util.LogHelper {
   }
 
   def convertFromMongoObject(db: DBObject): Sector = {
-    logger.info("Converting for ticker:"+ db.getAs[String](TICKER) + " " + db.getAs[String](NAME))
-    val id = db.getAs[ObjectId](ID) orElse {mongoFail}
-    val ticker = db.getAs[String](TICKER) orElse{mongoFail}
-    val name = db.getAs[String](NAME) orElse{mongoFail}
-    val sectorId = db.getAs[Integer](SECTORID) orElse{mongoFail}
+    val id = db.getAs[ObjectId](ID) orElse {mongoFail(ID)}
+    val ticker = db.getAs[String](TICKER) orElse{mongoFail(id + "@" + TICKER)}
+    val name = db.getAs[String](NAME) orElse{mongoFail(id + "@" + NAME)}
+    val sectorId = db.getAs[Integer](SECTORID) orElse{mongoFail(id + "@" + SECTORID)}
     val source = db.getAs[String](SOURCE) 
     Sector(name.get, ticker.get, sectorId.get, 
-                source.get)
+                source.getOrElse(""))
     
   }
     

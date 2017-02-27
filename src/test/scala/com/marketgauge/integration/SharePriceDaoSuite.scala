@@ -49,7 +49,8 @@ class SharePriceDaoSuite extends FunSuite with MongoEmbedDatabase with BeforeAnd
                     "12/13/2016",
                      1.1, 2.0,
                      3.0, "i dont know",
-                     4.0, 5.0)
+                     4.0, 5.0,
+                     "3B")
          
     val res = sharePriceDao.insert(List(testSharePrice):_*)
     res shouldBe(1)
@@ -66,6 +67,7 @@ class SharePriceDaoSuite extends FunSuite with MongoEmbedDatabase with BeforeAnd
     sharePriceFromDb.price  shouldEqual(testSharePrice.price)
     sharePriceFromDb.shortRatio shouldEqual(testSharePrice.shortRatio)
     sharePriceFromDb.ticker  shouldEqual(testSharePrice.ticker)
+    sharePriceFromDb.marketCap  shouldEqual(testSharePrice.marketCap)  
       
   }
  

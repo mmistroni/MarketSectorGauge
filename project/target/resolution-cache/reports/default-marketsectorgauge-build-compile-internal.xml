@@ -9,7 +9,7 @@
 		extra-sbtVersion="0.13"
 		conf="compile-internal"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20161115210651"/>
+		date="20170219175059"/>
 	<dependencies>
 		<module organisation="org.scala-sbt" name="sbt">
 			<revision name="0.13.8" status="release" pubdate="20150320121147" resolver="sbt-chain" artresolver="sbt-chain" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="44">
@@ -933,7 +933,7 @@
 				<metadata-artifact status="no" details="" size="4811" time="0" location="C:\Users\marco\.ivy2\cache\org.sonatype.sisu\sisu-guice\ivy-3.1.0.xml" searched="false" origin-is-local="true" origin-location="C:\activator-dist-1.3.10\repository\org.sonatype.sisu\sisu-guice\3.1.0\ivys\ivy.xml"/>
 				<caller organisation="org.eclipse.sisu" name="org.eclipse.sisu.plexus" conf="compile, runtime" rev="3.1.0" rev-constraint-default="3.1.0" rev-constraint-dynamic="3.1.0" callerrev="0.0.0.M5"/>
 				<artifacts>
-					<artifact name="sisu-guice" type="jar" ext="jar" status="successful" details="" size="585485" time="589" location="C:\Users\marco\.ivy2\cache\org.sonatype.sisu\sisu-guice\jars\sisu-guice-3.1.0.jar">
+					<artifact name="sisu-guice" type="jar" ext="jar" status="no" details="" size="585485" time="0" location="C:\Users\marco\.ivy2\cache\org.sonatype.sisu\sisu-guice\jars\sisu-guice-3.1.0.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/sonatype/sisu/sisu-guice/3.1.0/sisu-guice-3.1.0.jar"/>
 					</artifact>
 				</artifacts>
@@ -957,7 +957,7 @@
 				<metadata-artifact status="no" details="" size="4085" time="0" location="C:\Users\marco\.ivy2\cache\com.google.guava\guava\ivy-10.0.1.xml" searched="false" origin-is-local="true" origin-location="C:\activator-dist-1.3.10\repository\com.google.guava\guava\10.0.1\ivys\ivy.xml"/>
 				<caller organisation="org.eclipse.sisu" name="org.eclipse.sisu.plexus" conf="compile, runtime" rev="10.0.1" rev-constraint-default="10.0.1" rev-constraint-dynamic="10.0.1" callerrev="0.0.0.M5"/>
 				<artifacts>
-					<artifact name="guava" type="jar" ext="jar" status="successful" details="" size="1501575" time="1564" location="C:\Users\marco\.ivy2\cache\com.google.guava\guava\jars\guava-10.0.1.jar">
+					<artifact name="guava" type="jar" ext="jar" status="no" details="" size="1501575" time="0" location="C:\Users\marco\.ivy2\cache\com.google.guava\guava\jars\guava-10.0.1.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/google/guava/guava/10.0.1/guava-10.0.1.jar"/>
 					</artifact>
 				</artifacts>
@@ -1173,7 +1173,7 @@
 				<caller organisation="com.typesafe.sbt" name="sbt-native-packager" conf="compile" rev="1.4.1" rev-constraint-default="1.4.1" rev-constraint-dynamic="1.4.1" callerrev="1.0.0-M4"/>
 				<caller organisation="org.vafer" name="jdeb" conf="default, compile, runtime, master" rev="1.7" rev-constraint-default="1.7" rev-constraint-dynamic="1.7" callerrev="1.3"/>
 				<artifacts>
-					<artifact name="commons-compress" type="jar" ext="jar" status="successful" details="" size="355794" time="635" location="C:\Users\marco\.ivy2\cache\org.apache.commons\commons-compress\jars\commons-compress-1.7.jar">
+					<artifact name="commons-compress" type="jar" ext="jar" status="no" details="" size="355794" time="0" location="C:\Users\marco\.ivy2\cache\org.apache.commons\commons-compress\jars\commons-compress-1.7.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/commons/commons-compress/1.7/commons-compress-1.7.jar"/>
 					</artifact>
 				</artifacts>
@@ -1194,7 +1194,7 @@
 				<caller organisation="org.apache.commons" name="commons-compress" conf="default, compile, runtime, master" rev="1.0" rev-constraint-default="1.0" rev-constraint-dynamic="1.0" callerrev="1.4.1"/>
 				<caller organisation="org.apache.commons" name="commons-compress" conf="compile, runtime" rev="1.4" rev-constraint-default="1.4" rev-constraint-dynamic="1.4" callerrev="1.7"/>
 				<artifacts>
-					<artifact name="xz" type="jar" ext="jar" status="successful" details="" size="99234" time="206" location="C:\Users\marco\.ivy2\cache\org.tukaani\xz\jars\xz-1.4.jar">
+					<artifact name="xz" type="jar" ext="jar" status="no" details="" size="99234" time="0" location="C:\Users\marco\.ivy2\cache\org.tukaani\xz\jars\xz-1.4.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/tukaani/xz/1.4/xz-1.4.jar"/>
 					</artifact>
 				</artifacts>

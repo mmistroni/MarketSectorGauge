@@ -15,8 +15,7 @@ object CompaniesLoader extends App with LogHelper {
   val downloader = new DataDownloader {}
   val conf = ConfigFactory.load()
   val topic = conf.getString("aws.topic")
-  val notifier = AWSClientFactory.snsClient(conf.getString("aws.accessKey"),
-                                            conf.getString("aws.secretKey"))
+  val notifier = AWSClientFactory.snsClient
   
   
   val companyService = new CompanyService {

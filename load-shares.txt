@@ -1,0 +1,5 @@
+ULVR.L,HSBC.L,GSK.L,BATS.L,VOD.L,SAB.L,BT.L
+
+
+
+scala -Ddb.uri=mongodb://localhost:27017/ -Dcustom.shares=ULVR.L,HSBC.L,GSK.L,BATS.L,VOD.L,SAB.L,BT.L target\scala-2.11\marketsectorgauge.jar  shar

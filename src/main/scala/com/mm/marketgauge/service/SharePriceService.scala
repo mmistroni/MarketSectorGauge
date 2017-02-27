@@ -9,17 +9,18 @@ import com.mm.marketgauge.util.Utilities.getDouble
  * Service for handling Company data
  */
 trait SharePriceService extends com.mm.marketgauge.util.LogHelper {
-  private[service] val sharePriceUrl = "http://finance.yahoo.com/d/quotes.csv?s=<ticker>&f=sl1d1e7e8m4qr5s7"
+  private[service] val sharePriceUrl = "http://finance.yahoo.com/d/quotes.csv?s=<ticker>&f=sl1d1e7e8m4qr5s7j1"
   private[service] val dataDownloader:DataDownloader 
   private[service] val sharePriceDao:SharePriceDao
   
   def downloadSharePrice(ticker:String):Option[SharePrice] = {
+    // Replace with Either
     try {
       val head = dataDownloader.downloadCSV(sharePriceUrl.replace("<ticker>", ticker)).head
       Some(extractData(head))
     } catch {
       case e:java.lang.Exception => {
-        logger.info(s"FAiled to fetch prices for ticker $ticker:\n$e")
+        logger.info(s"FAiled to fetch prices for ticker $ticker:\n$e.")
         None
       }
     }
@@ -35,9 +36,7 @@ trait SharePriceService extends com.mm.marketgauge.util.LogHelper {
   }
                 
   private def extractData(dataList:List[String]) = {
-    try {
-      // to replace with slicing notation
-      SharePrice(dataList(0), 
+    SharePrice(dataList(0), 
         dataList(1).toDouble,
         dataList(2),
         getDouble(dataList(3)),
@@ -45,11 +44,9 @@ trait SharePriceService extends com.mm.marketgauge.util.LogHelper {
         getDouble(dataList(5)),
         dataList(6), 
         getDouble(dataList(7)),
-        getDouble(dataList(8)))
-    } catch{
-      case jnf: java.lang.NumberFormatException => null
-    }
-    // replace with Some(SharePrice) or None   
+        getDouble(dataList(8)),
+        dataList(9))
+       
   }
     
 }
