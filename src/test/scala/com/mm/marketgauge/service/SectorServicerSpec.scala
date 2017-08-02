@@ -16,23 +16,30 @@ class SectorServiceDownloaderSpec extends FreeSpec with Matchers {
  
   val mockDownloader = Mockito.mock(classOf[DataDownloader])
   val mockSectorDao = Mockito.mock(classOf[SectorDao])
-  val mockSectorService = 
-    new SectorService {
-            val dataDownloader = mockDownloader
-            val sectorDao = mockSectorDao
-                      }
+
+  trait MockDataDownloaderComponent extends DataDownloaderComponent {
+    override val dataDownloader = mockDownloader
+  }
+  
+  
+  val mockSectorServiceComponent = new SectorServiceComponent with MockDataDownloaderComponent 
+  
+  val sectorService = mockSectorServiceComponent.dataService
+  
+  
+                      
   "The SectorService" - {
     "when calling getAllSectorsIds it should call dataDownloader.downloader with allSectorsUrl URL" - {
       "should return a sequence of Sector Ids" in {
         
         val yahooData = List("<a href=\"https://biz.yahoo.com/ic/1.html\">Test1</a>",
                              "<a href=\"https://biz.yahoo.com/ic/2.html\">Test2</a>")
-                        
-        Mockito.when(mockDownloader.downloadFromURL(mockSectorService.allSectorsUrl)).thenReturn(yahooData.iterator)
+        
+        Mockito.when(mockDownloader.downloadFromURL(sectorService.allSectorsUrl)).thenReturn(yahooData.iterator)
         val expectedSectorIds = List(1,2)        
-        val sectorIds = mockSectorService.downloadAllSectorsIds
+        val sectorIds = sectorService.downloadAllSectorsIds
         sectorIds shouldEqual(expectedSectorIds)
-        Mockito.verify(mockDownloader).downloadFromURL(mockSectorService.allSectorsUrl)
+        Mockito.verify(mockDownloader).downloadFromURL(sectorService.allSectorsUrl)
         
       }
     }
@@ -43,13 +50,13 @@ class SectorServiceDownloaderSpec extends FreeSpec with Matchers {
       "should return a Sector" in {
         
         val sectorId = 124
-        val expectedUrl = mockSectorService.sectorDataUrl.replace("<sectorId>", sectorId.toString)
+        val expectedUrl = sectorService.sectorDataUrl.replace("<sectorId>", sectorId.toString)
         val yahooData = List("[Oil & Gas Equipment & Services (^YHOh708)]</a></td></tr></table></td></tr></table><table><tr><td")
         val expectedSector = Sector("Oil & Gas Equipment & Services", 
                                     "^YHOh708", 124, "yhoo")
         
         Mockito.when(mockDownloader.downloadFromURL(expectedUrl)).thenReturn(yahooData.iterator)
-        val sector = mockSectorService.downloadSectorData(sectorId).get
+        val sector = sectorService.downloadSectorData(sectorId).get
         sector shouldEqual(expectedSector)
         
       }
@@ -61,57 +68,17 @@ class SectorServiceDownloaderSpec extends FreeSpec with Matchers {
       "should return None if dataDownloader raises exception" in {
         
         val sectorId = 124
-        val expectedUrl = mockSectorService.sectorDataUrl.replace("<sectorId>", sectorId.toString)
+        val expectedUrl = sectorService.sectorDataUrl.replace("<sectorId>", sectorId.toString)
         val yahooData = List("[Oil & Gas Equipment & Services (^YHOh708)]</a></td></tr></table></td></tr></table><table><tr><td")
         val expectedSector = Sector( "Oil & Gas Equipment & Services", 
                                     "^YHOh708", 124, "yhoo")
         
         Mockito.when(mockDownloader.downloadFromURL(expectedUrl)).thenThrow(new java.lang.IllegalArgumentException("Data not found"))
-        val sector = mockSectorService.downloadSectorData(sectorId)
+        val sector = sectorService.downloadSectorData(sectorId)
         sector shouldEqual(None)
         
       }
     }
   }
-  
-  "The SectorService" - {
-    "when calling persistSectors it should call  sectorDao" - {
-      "should return count" in {
-        
-        val expectedSector = Sector( "Oil & Gas Equipment & Services", 
-                                    "^YHOh708", 124, "yhoo")
-        
-        val sectors = List(expectedSector)
-                                    
-        mockSectorService.persistSectors(sectors)
-        Mockito.verify(mockSectorDao, Mockito.times(1)).insertSector(expectedSector)
-          
-      }
-    }
-  }
-  
-  "The SectorService" - {
-    "when calling getAllSectors should call  sectorDao" - {
-      "and return all sectors" in {
-        
-        val expectedSector = Sector( "Oil & Gas Equipment & Services", 
-                                    "^YHOh708", 124, "yhoo")
-        
-        val sectors = List(expectedSector)
-                                    
-        Mockito.when(mockSectorDao.findAll).thenReturn(sectors.iterator)
-        val res = mockSectorService.getAllSectors
-        Mockito.verify(mockSectorDao).findAll
-        res should be(sectors)
-          
-      }
-    }
-  }
-  
-  
-  
-  
-  
-  
   
 }

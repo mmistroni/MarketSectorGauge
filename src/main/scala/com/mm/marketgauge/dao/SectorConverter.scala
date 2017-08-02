@@ -20,7 +20,7 @@ object SectorConverter extends com.mm.marketgauge.util.LogHelper {
   }
 
   def convertFromMongoObject(db: DBObject): Sector = {
-    val id = db.getAs[ObjectId](ID) orElse {mongoFail(ID)}
+    val id = db.getAs[ObjectId](ID) //orElse {mongoFail(ID)}
     val ticker = db.getAs[String](TICKER) orElse{mongoFail(id + "@" + TICKER)}
     val name = db.getAs[String](NAME) orElse{mongoFail(id + "@" + NAME)}
     val sectorId = db.getAs[Integer](SECTORID) orElse{mongoFail(id + "@" + SECTORID)}

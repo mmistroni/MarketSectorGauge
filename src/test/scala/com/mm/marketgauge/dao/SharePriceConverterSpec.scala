@@ -42,7 +42,7 @@ class SharePriceConverterSpec extends FreeSpec with Matchers {
         dbObject.get(EXDIVDATE).toString shouldEqual (testSharePrice.exDivDate)
         dbObject.get(PEG).asInstanceOf[Double] shouldEqual(testSharePrice.peg)
         dbObject.get(SHORTRATIO).asInstanceOf[Double] shouldEqual(testSharePrice.shortRatio)
-        dbObject.get(CREATED_TIME) shouldEqual (new java.text.SimpleDateFormat("MM/dd/yyyy").parse(testSharePrice.asOfDate))
+        dbObject.get(CREATED_TIME).isInstanceOf[java.util.Date]
         dbObject.get(MARKETCAP).toString shouldEqual (testSharePrice.marketCap)
         
         

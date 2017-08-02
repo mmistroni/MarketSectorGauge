@@ -1,0 +1,268 @@
+2017-04-25 21:33:00,029 713  [main] INFO  c.m.m.loaders.LoaderExecutor$ - loader to launch is:shares
+2017-04-25 21:33:00,131 815  [main] INFO  c.m.m.loaders.DataLoader$$anon$4 - Starting shares loader.....
+2017-04-25 21:33:00,134 818  [main] INFO  c.m.m.loaders.DataLoader$$anon$4 - Loading shares:GBPUSD=X,GBPEUR=X
+2017-04-25 21:33:00,161 845  [main] INFO  c.m.m.dao.Database$$anon$2 - Initalizing wiht:null and null
+2017-04-25 21:34:44,624 692  [main] INFO  c.m.m.loaders.LoaderExecutor$ - loader to launch is:shares
+2017-04-25 21:34:44,726 794  [main] INFO  c.m.m.loaders.DataLoader$$anon$4 - Starting shares loader.....
+2017-04-25 21:34:44,755 823  [main] INFO  c.m.m.loaders.DataLoader$$anon$4 - Loading shares:GBPUSD=X,GBPEUR=X
+2017-04-25 21:34:44,786 854  [main] INFO  c.m.m.dao.Database$$anon$2 - Initalizing wiht:null and null
+2017-04-25 21:44:34,557 682  [main] INFO  c.m.m.loaders.LoaderExecutor$ - loader to launch is:shares
+2017-04-25 21:44:34,670 795  [main] INFO  c.m.m.loaders.DataLoader$$anon$4 - Starting shares loader.....
+2017-04-25 21:44:34,672 797  [main] INFO  c.m.m.loaders.DataLoader$$anon$4 - Loading shares:GBPUSD=X|-20,GBPEUR=X|30,GBP
+2017-04-25 21:44:34,694 819  [main] INFO  c.m.m.loaders.DataLoader$$anon$4 - Inserting:Sector(GBPUSD=X|-20,GBPUSD=X|-20,-1060712731,manual):Sector(GBPEUR=X|30,GBPEUR=X|30,1152055375,manual):Sector(GBP,GBP,-70357,manual)
+2017-04-25 21:44:34,713 838  [main] INFO  c.m.m.dao.Database$$anon$2 - Initalizing wiht:null and null
+2017-04-25 21:51:30,426 1110 [main] INFO  c.m.m.loaders.LoaderExecutor$ - loader to launch is:shares
+2017-04-25 21:51:30,545 1229 [main] INFO  c.m.m.loaders.DataLoader$$anon$4 - Starting shares loader.....
+2017-04-25 21:51:30,547 1231 [main] INFO  c.m.m.loaders.DataLoader$$anon$4 - Loading shares:SHP.L,CCL.L,PRU.L,RIO.L,IMB.L,NG.L,LLOY.L,BLT.L,DGE.L,CRDA.L,AZN.L,BATS.L,HSBA.L,VOD.L,ULVR.L
+2017-04-25 21:51:30,566 1250 [main] INFO  c.m.m.loaders.DataLoader$$anon$4 - Inserting:Sector(SHP.L,SHP.L,-78875577,manual):Sector(CCL.L,CCL.L,-63946442,manual):Sector(PRU.L,PRU.L,-76407729,manual):Sector(RIO.L,RIO.L,-77980886,manual):Sector(IMB.L,IMB.L,-69775868,manual):Sector(NG.L,NG.L,-2393431,manual):Sector(LLOY.L,LLOY.L,2046523704,manual):Sector(BLT.L,BLT.L,-63298728,manual):Sector(DGE.L,DGE.L,-64982400,manual):Sector(CRDA.L,CRDA.L,-1995971594,manual):Sector(AZN.L,AZN.L,-62786515,manual):Sector(BATS.L,BATS.L,-1952136540,manual):Sector(HSBA.L,HSBA.L,-2139981288,manual):Sector(VOD.L,VOD.L,-81843145,manual):Sector(ULVR.L,ULVR.L,1788659535,manual)
+2017-04-25 21:51:30,580 1264 [main] INFO  c.m.m.dao.Database$$anon$2 - Initalizing wiht:null and null
+2017-04-25 21:59:20,768 895  [main] INFO  c.m.m.loaders.LoaderExecutor$ - loader to launch is:prices
+2017-04-25 21:59:20,865 992  [main] INFO  c.m.m.loaders.DataLoader$$anon$3 - Loading all sectors.....
+2017-04-25 21:59:20,868 995  [main] INFO  c.m.m.loaders.DataLoader$$anon$3 - false
+2017-04-25 21:59:20,881 1008 [main] INFO  c.m.m.dao.Database$$anon$2 - Initalizing wiht:null and null
+2017-04-25 21:59:22,241 2368 [main] INFO  c.m.m.loaders.DataLoader$$anon$3 - Loaded 228 sectors....
+2017-04-25 21:59:22,243 2370 [main] INFO  c.m.m.loaders.DataLoader$$anon$3 - Loading prices for 228 sectors
+2017-04-25 21:59:22,864 2991 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh769|1059939.25|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:23,159 3286 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh825|406607.09|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:23,421 3548 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh799|27453.98|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:23,705 3832 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh800|1147.80|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:23,998 4125 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh702|81957.98|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:24,281 4408 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh874|13541.95|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:24,546 4673 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh873|1036059.19|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:24,806 4933 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh712|3807541.00|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:25,068 5195 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh835|54867.60|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:25,351 5478 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh718|1050.79|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:25,641 5768 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh885|1115.71|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:25,902 6029 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh762|828.07|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:26,171 6298 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh849|126033.05|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:26,564 6691 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh735|1383479.88|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:26,833 6960 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh738|2144.41|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:27,104 7231 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh843|932.01|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:27,370 7497 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh851|942.77|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:27,644 7771 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh859|494.36|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:27,923 8050 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh745|285846.06|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:28,179 8306 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh747|807585.31|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:28,439 8566 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh746|107113.96|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:28,699 8826 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh788|30577.76|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:28,958 9085 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh829|5618.87|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:29,217 9344 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh828|133033.64|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:29,500 9627 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh852|1364.28|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:29,775 9902 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh721|526101.81|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:30,037 10164 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh861|7462.52|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:30,304 10431 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh890|1187211.75|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:30,583 10710 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh830|80442.29|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:30,844 10971 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh844|1134.98|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:31,112 11239 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh813|1112.04|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:31,393 11520 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh700|390905.62|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:31,657 11784 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh748|1115.13|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:31,921 12048 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh733|1184.47|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:32,200 12327 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh765|22607.94|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:32,473 12600 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh766|5926.22|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:32,739 12866 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh767|976.17|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:33,014 13141 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh880|398247.44|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:33,284 13411 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh883|1175.45|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:33,553 13680 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh856|571269.81|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:33,829 13956 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh744|878046.25|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:34,106 14233 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh717|903.85|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:34,370 14497 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh864|1630.76|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:34,631 14758 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh711|2671077.75|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:34,913 15040 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh764|927707.75|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:35,192 15319 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh743|1200.68|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:35,482 15609 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh881|48928.12|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:35,754 15881 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh836|3454955.00|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:36,040 16167 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh789|1206.63|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:36,306 16433 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh837|1606328.75|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:36,583 16710 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh906|995.69|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:36,852 16979 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh878|1360.10|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:37,125 17252 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh898|231247.28|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:37,387 17514 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh763|632.37|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:37,658 17785 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh803|230746.17|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:37,937 18064 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh913|19054.78|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:38,213 18340 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh786|740145.12|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:38,481 18608 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh783|1323521.62|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:38,754 18881 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh784|827.65|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:39,019 19146 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh787|754.32|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:39,277 19404 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh838|911.32|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:39,553 19680 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh785|223998.62|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:39,822 19949 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh857|791.80|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:40,081 20208 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh867|81291.12|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:40,367 20494 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh722|459305.19|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:40,632 20759 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh840|1250.83|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:40,906 21033 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh827|365077.00|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:41,188 21315 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh801|939114.94|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:41,458 21585 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh740|1.57|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:41,728 21855 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh739|168480.61|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:41,988 22115 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh858|9746.97|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:42,512 22639 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh757|1284.32|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:42,810 22937 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh758|1116.71|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:43,072 23199 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh910|1003.68|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:43,331 23458 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh822|95598.25|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:43,595 23722 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh912|199036.52|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:44,146 24273 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh814|51211.90|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:44,410 24537 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh816|N/A|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:44,413 24540 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - FAiled to fetch prices for ticker ^YHOh816:
+java.lang.NumberFormatException: For input string: "N/A".^YHOh816N/A4/25/2017N/AN/AN/AN/A0.00N/AN/A
+2017-04-25 21:59:44,669 24796 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh824|1323.40|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:44,957 25084 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh714|1992000.25|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:45,230 25357 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh839|267.61|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:45,512 25639 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh792|978773.25|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:45,782 25909 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh889|800.63|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:46,045 26172 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh815|266328.25|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:46,305 26432 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh842|986.11|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:46,575 26702 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh719|77964.72|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:46,849 26976 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh796|1241.86|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:47,136 27263 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh841|825.17|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:47,403 27530 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh794|32195.27|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:47,691 27818 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh720|986.81|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:47,963 28090 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh705|202118.75|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:48,223 28350 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh808|1129.80|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:48,496 28623 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh802|1117.64|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:48,758 28885 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh853|1192.18|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:49,053 29180 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh713|3071552.50|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:49,633 29760 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh891|955.70|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:49,902 30029 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh888|90820.63|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:50,190 30317 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh772|1693.58|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:50,459 30586 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh908|956699.31|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:50,724 30851 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh907|666.12|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:50,989 31116 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh760|6429.59|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:51,259 31386 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh761|1278.25|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:51,530 31657 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh847|5522790.00|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:51,805 31932 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh768|121183.77|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:52,089 32216 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh818|181037.64|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:52,362 32489 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh793|322686.53|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:52,627 32754 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh812|309074.31|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:52,900 33027 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh805|2062.28|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:53,167 33294 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh871|134692.42|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:53,456 33583 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh704|1297382.75|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:53,779 33906 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh870|2215.36|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:54,042 34169 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh811|1207.07|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:54,327 34454 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh826|188205.97|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:54,812 34939 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh742|1308.19|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:55,084 35211 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh791|324942.75|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:55,351 35478 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh855|1001.76|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:55,619 35746 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh790|101256.95|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:55,902 36029 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh795|844461.69|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:56,178 36305 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh797|1200.00|4/5/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:56,449 36576 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh807|986240.38|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:56,720 36847 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh750|2175743.25|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:56,995 37122 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh780|169823.77|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:57,259 37386 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh831|1031.41|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:57,519 37646 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh884|908582.62|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:57,790 37917 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh848|1528.71|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:58,052 38179 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh882|1023.83|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:58,311 38438 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh716|1179.07|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:58,578 38705 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh734|1100.70|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:58,838 38965 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh707|281.20|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:59,098 39225 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh708|94372.58|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:59,396 39523 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh709|388468.47|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:59,667 39794 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh706|1029.47|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 21:59:59,927 40054 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh732|10974.94|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 22:00:00,215 40342 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh731|857701.56|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 22:00:00,489 40616 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh879|N/A|N/A|N/A|N/A|N/A|N/A|0|N/A|N/A
+2017-04-25 22:00:00,489 40616 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - FAiled to fetch prices for ticker ^YHOh879:
+java.lang.NumberFormatException: For input string: "N/A".^YHOh879N/AN/AN/AN/AN/AN/A0N/AN/A
+2017-04-25 22:00:00,760 40887 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh730|55543.11|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 22:00:01,021 41148 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh863|N/A|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 22:00:01,022 41149 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - FAiled to fetch prices for ticker ^YHOh863:
+java.lang.NumberFormatException: For input string: "N/A".^YHOh863N/A4/25/2017N/AN/AN/AN/A0.00N/AN/A
+2017-04-25 22:00:01,281 41408 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh726|697.72|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 22:00:01,548 41675 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh804|361.18|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 22:00:01,807 41934 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh897|465669.53|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 22:00:02,069 42196 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh741|939.40|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 22:00:02,327 42454 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh902|1065.81|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 22:00:02,598 42725 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh770|35144.33|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 22:00:03,051 43178 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh781|N/A|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 22:00:03,052 43179 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - FAiled to fetch prices for ticker ^YHOh781:
+java.lang.NumberFormatException: For input string: "N/A".^YHOh781N/A4/25/2017N/AN/AN/AN/A0.00N/AN/A
+2017-04-25 22:00:03,324 43451 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh834|849.37|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 22:00:03,605 43732 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh832|256.72|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 22:00:03,871 43998 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh833|1036.98|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 22:00:04,137 44264 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh773|122828.98|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 22:00:04,421 44548 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh775|36731.48|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 22:00:04,705 44832 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh776|490997.75|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 22:00:04,973 45100 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh777|36930.80|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 22:00:05,235 45362 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh774|103880.24|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 22:00:05,520 45647 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh778|3732897.75|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 22:00:05,802 45929 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh779|334690.81|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 22:00:06,064 46191 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh877|125819.27|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 22:00:06,333 46460 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh782|3613.23|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 22:00:06,622 46749 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh725|61109.43|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 22:00:06,885 47012 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh737|776462.94|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 22:00:07,145 47272 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh752|1219.33|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 22:00:07,406 47533 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh754|1063630.50|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 22:00:07,673 47800 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh751|1290.19|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 22:00:07,937 48064 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh756|1317.23|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 22:00:08,203 48330 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh753|1218.51|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 22:00:08,472 48599 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh755|1260.33|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 22:00:08,730 48857 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh872|1383.29|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 22:00:08,991 49118 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh862|3381400272046686994432.00|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 22:00:09,261 49388 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh869|970.64|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 22:00:09,537 49664 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh810|1879.57|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 22:00:09,797 49924 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh819|34388.05|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 22:00:10,057 50184 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh820|98219.77|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 22:00:10,326 50453 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh729|34175.64|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 22:00:10,598 50725 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh759|60992.33|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 22:00:10,865 50992 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh899|269498.81|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 22:00:11,139 51266 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh866|1013651.12|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 22:00:11,403 51530 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh887|1269.82|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 22:00:11,668 51795 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh892|341725.81|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 22:00:11,928 52055 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh895|1192.02|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 22:00:12,197 52324 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh894|1740.78|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 22:00:12,474 52601 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh896|589720.31|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 22:00:12,753 52880 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh893|1242421.50|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 22:00:13,015 53142 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh876|69077.12|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 22:00:13,288 53415 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh715|553757.38|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 22:00:13,550 53677 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh806|1187.00|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 22:00:13,811 53938 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh798|1319.34|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 22:00:14,083 54210 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh703|571044.69|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 22:00:14,345 54472 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh821|1102.41|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 22:00:14,610 54737 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh850|162927.09|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 22:00:14,875 55002 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh823|1079.71|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 22:00:15,148 55275 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh724|893.38|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 22:00:15,423 55550 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh845|953.64|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 22:00:15,695 55822 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh865|1768836.12|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 22:00:15,964 56091 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh710|460359.34|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 22:00:16,233 56360 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh771|1111.74|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 22:00:16,536 56663 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh701|1442.00|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 22:00:17,125 57252 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh886|30229.27|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 22:00:17,385 57512 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh868|1064.47|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 22:00:17,675 57802 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh904|927.10|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 22:00:17,937 58064 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh905|954.24|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 22:00:18,200 58327 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh727|1884862.88|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 22:00:18,464 58591 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh728|260731.66|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 22:00:18,749 58876 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh809|2579.99|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 22:00:19,020 59147 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh749|N/A|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 22:00:19,021 59148 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - FAiled to fetch prices for ticker ^YHOh749:
+java.lang.NumberFormatException: For input string: "N/A".^YHOh749N/A4/25/2017N/AN/AN/AN/A0.00N/AN/A
+2017-04-25 22:00:19,278 59405 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh846|759.58|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 22:00:19,568 59695 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh723|982.39|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 22:00:19,834 59961 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh875|147.19|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 22:00:20,095 60222 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh736|2709.62|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 22:00:20,368 60495 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh817|480756.44|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 22:00:20,628 60755 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh914|500087.47|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 22:00:20,903 61030 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh860|6.69|3/23/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 22:00:21,164 61291 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ^YHOh900|334498.94|4/25/2017|N/A|N/A|N/A|N/A|0.00|N/A|N/A
+2017-04-25 22:00:21,604 61731 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - GBPEUR=X|1.1744|4/25/2017|N/A|N/A|N/A|N/A|0.0000|N/A|N/A
+2017-04-25 22:00:21,862 61989 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - 
+2017-04-25 22:00:21,864 61991 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - FAiled to fetch prices for ticker GBPUSD=X|-20:
+java.lang.IndexOutOfBoundsException: 1.
+2017-04-25 22:00:22,128 62255 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - 
+2017-04-25 22:00:22,129 62256 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - FAiled to fetch prices for ticker GBPEUR=X|30:
+java.lang.IndexOutOfBoundsException: 1.
+2017-04-25 22:00:22,388 62515 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - SHP.L|4626.50|4/25/2017|5.06|N/A|4698.25|3/9/2017|0.83|0.00|41.76B
+2017-04-25 22:00:22,651 62778 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - CCL.L|4625.00|4/25/2017|3.67|N/A|4211.49|2/23/2017|1.25|0.00|33.58B
+2017-04-25 22:00:22,899 63026 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - PRU.L|1694.00|4/25/2017|137.37|N/A|1575.42|3/30/2017|0.79|0.00|43.54B
+2017-04-25 22:00:23,175 63302 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - RIO.L|3099.50|4/25/2017|4.77|N/A|3176.08|2/23/2017|0.00|0.00|55.76B
+2017-04-25 22:00:23,438 63565 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - IMB.L|3817.00|4/25/2017|272.91|N/A|3703.55|2/16/2017|3.12|0.00|36.46B
+2017-04-25 22:00:23,692 63819 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - NG.L|1010.50|4/25/2017|66.33|N/A|974.16|11/24/2016|11.90|0.00|38.03B
+2017-04-25 22:00:23,945 64072 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - LLOY.L|66.95|4/25/2017|7.07|N/A|63.00|4/6/2017|-3.70|0.00|47.27B
+2017-04-25 22:00:24,192 64319 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - BLT.L|1206.50|4/25/2017|1.50|N/A|1311.93|3/9/2017|0.00|0.00|64.21B
+2017-04-25 22:00:24,433 64560 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - DGE.L|2259.00|4/25/2017|105.97|N/A|2173.74|2/23/2017|1.88|0.00|56.72B
+2017-04-25 22:00:24,679 64806 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - CRDA.L|3659.00|4/25/2017|170.10|N/A|3396.57|9/8/2016|2.91|0.00|N/A
+2017-04-25 22:00:24,932 65059 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - AZN.L|4688.00|4/25/2017|3.68|N/A|4565.39|2/16/2017|3.28|0.00|59.31B
+2017-04-25 22:00:25,179 65306 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - BATS.L|5290.00|4/25/2017|286.78|N/A|4821.88|3/16/2017|1.49|0.00|98.35B
+2017-04-25 22:00:25,429 65556 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - HSBA.L|642.50|4/25/2017|0.61|N/A|652.55|2/23/2017|2.11|0.00|125.37B
+2017-04-25 22:00:25,677 65804 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - VOD.L|202.50|4/25/2017|0.05|N/A|205.48|11/24/2016|3.87|0.00|56.52B
+2017-04-25 22:00:25,925 66052 [main] INFO  c.m.m.l.DataLoader$$anon$3$$anon$7 - ULVR.L|4014.50|4/25/2017|1.80|N/A|3514.23|2/9/2017|2.52|0.00|114.00B
+2017-04-25 22:00:25,926 66053 [main] INFO  c.m.m.loaders.DataLoader$$anon$3 - Persisting 221 prices...
+2017-04-25 22:00:25,926 66053 [main] INFO  c.m.m.dao.Database$$anon$2 - Initalizing wiht:null and null

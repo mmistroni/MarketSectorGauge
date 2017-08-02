@@ -14,12 +14,13 @@ assembleArtifact in packageScala := true
 assembleArtifact in packageDependency := true
 assemblyJarName in assembly := "marketsectorgauge.jar"
 
-mainClass in assembly :=   Some("com.mm.marketgauge.service.LoaderExecutor")
+mainClass in assembly :=   Some("com.mm.marketgauge.loaders.LoaderExecutor")
 
 assemblyMergeStrategy in assembly := {
   case PathList("ch", "qos", xs @ _*)         => MergeStrategy.first
   case PathList("com", "sun", xs @ _*)         => MergeStrategy.first
   case PathList("org", "slf4j", xs @ _*)         => MergeStrategy.first
+  case PathList("akka", "http", xs @ _*)         => MergeStrategy.first
   case x =>
     val oldStrategy = (assemblyMergeStrategy in assembly).value
     oldStrategy(x)
@@ -34,10 +35,8 @@ resolvers ++= Seq("spray repo" at "http://repo.spray.io/",
                 "sprest snapshots" at "http://markschaake.github.com/releases")
 
 libraryDependencies ++= {
-  val AkkaVersion       = "2.4.8"
-  val SprayVersion      = "1.3.2"
-  val Json4sVersion     = "3.2.11"
-  val akkaHttpVersion =   "2.4.8" //"2.4.2-RC2"
+  val AkkaVersion       = "2.4.11"
+  val akkaHttpVersion =   "3.0.0-RC1" //"2.4.2-RC2"
   Seq(
     "com.typesafe.akka" %% "akka-slf4j"      % AkkaVersion,
     "ch.qos.logback"    %  "logback-classic" % "1.1.2",
@@ -59,7 +58,8 @@ libraryDependencies ++= {
     "org.mongodb" %% "casbah" % "2.8.0",
     "com.mm" %% "sparkutilities" % "1.0" ,
     "de.flapdoodle.embed" % "de.flapdoodle.embed.mongo" % "1.50.5" % "test",
-    "com.github.simplyscala" %% "scalatest-embedmongo" % "0.2.2" % "test"
+    "com.github.simplyscala" %% "scalatest-embedmongo" % "0.2.2" % "test",
+    "com.typesafe.akka" %% "akka-http-spray-json"  % akkaHttpVersion
     
   )
   

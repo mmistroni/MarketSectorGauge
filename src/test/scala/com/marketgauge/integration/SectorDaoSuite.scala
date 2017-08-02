@@ -30,15 +30,16 @@ class SectorDaoSuite extends FunSuite with MongoEmbedDatabase with BeforeAndAfte
   private val testTicker = "sectorTicker"
   private val sectorId = -1
   private val source = "sectorSource"
+  private val mongoPort = 3333
     
   before {
-      mongoProps = mongoStart()   // by default port = 12345 & version = Version.2.3.0
+      mongoProps = mongoStart(port=mongoPort)   // by default port = 12345 & version = Version.2.3.0
       sectorDao = new SectorDao {
                         val database = new MongoDatabase {
-                                            val username = "test"
-                                            val password = "test"
-                                            val uri = "mongodb://localhost:12345/"
-                                            val databaseName = "test"
+                                            override val username = "test"
+                                            override val password = "test"
+                                            override val uri = s"mongodb://localhost:$mongoPort/"
+                                            override val databaseName = "test"
                         }
                       }
 

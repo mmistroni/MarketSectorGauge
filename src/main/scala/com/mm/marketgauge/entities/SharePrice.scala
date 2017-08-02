@@ -7,6 +7,7 @@ case class SharePrice(ticker:String, price:Double, asOfDate:String,
                  peg:Double, shortRatio:Double, marketCap:String)
                  
                  
+                 
 object SharePriceProperties {
   val ID = "_id"
   val TICKER = "ticker"

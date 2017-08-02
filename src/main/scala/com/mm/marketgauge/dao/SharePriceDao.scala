@@ -14,14 +14,17 @@ trait SharePriceDao extends BaseDao with com.mm.marketgauge.util.LogHelper {
    * Mongo URI string [[http://docs.mongodb.org/manual/reference/connection-string/]]
    */
   lazy val collection = database.client("share_prices")
+  type T = SharePrice
 
-  def insert(shares: SharePrice*) = {
+  def insert(all:Seq[SharePrice]) = insertBulk(all:_*)
+  
+  
+  def insertBulk(shares: SharePrice*) = {
     val builder = collection.initializeOrderedBulkOperation
     shares.foreach(s => builder.insert(SharePriceConverter.convertToMongoObject(s)))
     builder.execute().insertedCount
   }
 
-  
   def findByTicker(ticker :String) = {
     import com.mm.marketgauge.entities.SharePriceProperties.TICKER
     val query = MongoDBObject(TICKER -> ticker)

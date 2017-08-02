@@ -4,6 +4,17 @@ import com.mongodb.casbah.{MongoClient, MongoClientURI, WriteConcern}
 import com.mongodb.casbah.Imports._
 
 trait BaseDao {
-  val database:MongoDatabase  
+  
+  type T
+  
+  val database:MongoDatabase
+  
+  def insert(values: Seq[T]):Int
+  
+  def getAll:Seq[T] = null
+  
+  def findByExample(example:T):Seq[T] = null
+  
+    
 }
 

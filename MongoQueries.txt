@@ -1,0 +1,11 @@
+db.share_prices.distinct('asofdate')
+
+db.share_prices.distinct('created_time')
+
+> db.share_prices.find({ticker: { $in: ['RDSB.L','ULVR.L','HSBA.L','BATS.L','GSK.L','BP.L','VOD.L','AZN.L','CRDA.L','DGE.L','BT.L','LLOY.L','BLT.L','NG.L','IMB.L','RIO.L','PRU.L','RBS.L','BARC.L','CCL.L','SHP.L','CPG.L']}, created_time: {$gte:new ISODate("2017-03-14")}}, {asofdate:1,ticker:1, price:1, marketCap:1, created_time:1})
+
+db.share_prices.find({ticker: { $in: ['GBPUSD=X']}})
+
+
+
+> db.share_prices.find({ticker: { $in: ['RDSB.L','ULVR.L','HSBA.L','BATS.L','GSK.L','BP.L','VOD.L','AZN.L','CRDA.L','DGE.L','BT.L','LLOY.L','BLT.L','NG.L','IMB.L','RIO.L','PRU.L','RBS.L','BARC.L','CCL.L','SHP.L','CPG.L']}, created_time: {$gte:new ISODate("2017-04-28")}})

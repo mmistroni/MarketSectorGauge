@@ -15,14 +15,17 @@ import com.mm.marketgauge.dao.SharePriceDao
 class SharePriceServiceSpec extends FreeSpec with Matchers {
  
   val mockDownloader = Mockito.mock(classOf[DataDownloader])
-  val mockSectorService = Mockito.mock(classOf[SectorService])
+  
+  trait MockDataDownloaderComponent extends DataDownloaderComponent {
+    override val dataDownloader = mockDownloader
+  }
+  
   val mockSharePriceDao = Mockito.mock(classOf[SharePriceDao])
-  val mockSharePriceService = 
-    new SharePriceService {
-            val dataDownloader = mockDownloader
-            val sectorService = mockSectorService
-            val sharePriceDao = mockSharePriceDao
-                      }
+  
+  val mockSharePricerServiceComponent = new SharePriceServiceComponent with MockDataDownloaderComponent 
+  
+  val mockSharePriceService = mockSharePricerServiceComponent.sharePriceService
+  
   "The SharePriceService" - {
     "when calling downloadSharePrice it should call dataDownloader.downloadCSV with sharePrice URL" - {
       "should return a SharePrice" in {
@@ -40,30 +43,6 @@ class SharePriceServiceSpec extends FreeSpec with Matchers {
         sharePriceResult.asOfDate should be (yahooData(2))
         sharePriceResult.marketCap should be (yahooData(9))
         Mockito.verify(mockDownloader).downloadCSV(sharePriceUrl)
-        
-      }
-    }
-  }
-  
-  "The SharePriceService" - {
-    "when calling persistSharePrices should call sharePriceDao.insert" - {
-      "and should return an integer representing number of inserts" in {
-        
-        val ticker = "GE";
-        
-        val testSharePrice = new SharePrice(ticker, 1.0, 
-                    "12/13/2016",
-                     Double.NaN, Double.NaN,
-                     Double.NaN, "i dont know",
-                     Double.NaN, Double.NaN,
-                     "10B")
-           
-        val prices = List(testSharePrice)
-        val numInsert = prices.size
-        Mockito.when(mockSharePriceDao.insert(prices: _*)).thenReturn(numInsert)
-        val sharePriceResult = mockSharePriceService.persistSharePrices(prices)
-        sharePriceResult should be (numInsert)
-        Mockito.verify(mockSharePriceDao).insert(prices: _*)
         
       }
     }

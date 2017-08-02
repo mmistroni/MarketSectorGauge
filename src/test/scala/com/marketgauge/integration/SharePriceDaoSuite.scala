@@ -26,15 +26,16 @@ class SharePriceDaoSuite extends FunSuite with MongoEmbedDatabase with BeforeAnd
 
   private var mongoProps: MongodProps = null
   private var sharePriceDao: SharePriceDao = null
+  private val mongoPort = 4444
     
   before {
-      mongoProps = mongoStart(port=1234)   // by default port = 12345 & version = Version.2.3.0
+      mongoProps = mongoStart(port=mongoPort)   // by default port = 12345 & version = Version.2.3.0
       sharePriceDao = new SharePriceDao {
                         val database = new MongoDatabase {
-                                            val username = "test"
-                                            val password = "test"
-                                            val uri = "mongodb://localhost:1234/"
-                                            val databaseName = "test"
+                                            override val username = "test"
+                                            override val password = "test"
+                                            override val uri = s"mongodb://localhost:$mongoPort/"
+                                            override val databaseName = "test"
                         }
                       }
 
@@ -52,7 +53,7 @@ class SharePriceDaoSuite extends FunSuite with MongoEmbedDatabase with BeforeAnd
                      4.0, 5.0,
                      "3B")
          
-    val res = sharePriceDao.insert(List(testSharePrice):_*)
+    val res = sharePriceDao.insert(List(testSharePrice))
     res shouldBe(1)
     
     val sharePriceFromDb = sharePriceDao.collection.find().map {

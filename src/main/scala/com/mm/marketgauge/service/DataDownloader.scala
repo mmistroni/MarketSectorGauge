@@ -1,5 +1,5 @@
 package com.mm.marketgauge.service
-import scala.io.Source
+import scala.io.{Source, BufferedSource}
 import com.github.tototoshi.csv._
 import com.mm.marketgauge.util.LogHelper
 /**
@@ -15,10 +15,16 @@ import com.mm.marketgauge.util.LogHelper
 
   # historical prices
   #'http://ichart.finance.yahoo.com/table.csv?s=%(ticker)s&a=%(fromMonth)s&b=%(fromDay)s&c=%(fromYear)s&d=%(toMonth)s&e=%(toDay)s&f=%(toYear)s&g=d&ignore=.csv' 
- * 
+ * Investigate dependency injection in Scala and see if you can use it
  * 
  * 
  */
+
+trait DataDownloaderComponent extends LogHelper {
+  
+  val dataDownloader = new DataDownloader{}
+}
+
 trait DataDownloader  extends LogHelper{
   
   def downloadFromURL(url:String):Iterator[String] = {
@@ -28,10 +34,22 @@ trait DataDownloader  extends LogHelper{
   
   def downloadCSV(url:String):List[List[String]] = {
     logger.debug(s"Loading from:$url|")
-    CSVReader.open(_getFromUrl(url)).all()
+    _getFromCSVReader(url)
   }
   
   
-  def _getFromUrl(url:String) = Source.fromURL(url)
+  private[service] def _getFromCSVReader(url:String):List[List[String]] = {
+    CSVReader.open(_getFromUrl(url)).all()
+  }
+  
+  private[service] def _getFromUrl(url:String):BufferedSource = Source.fromURL(url)
     
+}
+
+private[service] class SimpleDataDownloader extends DataDownloader
+
+
+object DataDownloader {
+  
+  def getDataDownloader():DataDownloader = new SimpleDataDownloader()
 }

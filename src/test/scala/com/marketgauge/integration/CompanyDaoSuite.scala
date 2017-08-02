@@ -30,15 +30,16 @@ class CompanyDaoSuite extends FunSuite with MongoEmbedDatabase with BeforeAndAft
   private val testTicker = "sectorTicker"
   private val sectorId = -1
   private val source = "sectorSource"
+  private val mongoPort = 1111
     
   before {
-      mongoProps = mongoStart(port=2222)   // by default port = 12345 & version = Version.2.3.0
+      mongoProps = mongoStart(port=mongoPort)   // by default port = 12345 & version = Version.2.3.0
       companyDao = new CompanyDao {
                         val database = new MongoDatabase {
-                                            val username = "test"
-                                            val password = "test"
-                                            val uri = "mongodb://localhost:2222/"
-                                            val databaseName = "test"
+                                            override val username = "test"
+                                            override val password = "test"
+                                            override val uri = s"mongodb://localhost:$mongoPort/"
+                                            override val databaseName = "test"
                         }
                       }
 
@@ -65,13 +66,6 @@ class CompanyDaoSuite extends FunSuite with MongoEmbedDatabase with BeforeAndAft
     res shouldBe(1)
   }
 
-  test("Inserting a CompanyRepo in the database") {
-    
-    val testCompany = createCompanyRepo 
-    val res = companyDao.insertCompanyRepos(List(testCompany, testCompany):_*)
-    res shouldBe(2)
-  }
-
   test("Updating a Company ") {
     val testCompany = createCompany
     val res = companyDao.insertCompanies(List(testCompany):_*)
@@ -93,43 +87,6 @@ class CompanyDaoSuite extends FunSuite with MongoEmbedDatabase with BeforeAndAft
   
     companyFromDb.name shouldEqual(updatedCompany.name)
     companyFromDb.sectorId shouldEqual(updatedCompany.sectorId)
-  }
-  
-  test("Updating a CompanyRepo ") {
-    val testCompanyRepo = createCompanyRepo
-    val res = companyDao.insertCompanyRepos(List(testCompanyRepo):_*)
-    res shouldEqual(1)
-    
-    val companyRepo = companyDao.repoCollection.find().map {
-      item => CompanyRepoConverter.convertFromMongoObject(item) }.toList(0)
-  
-    companyRepo.ticker shouldEqual(testCompanyRepo.ticker)
-    companyRepo.industry shouldEqual(testCompanyRepo.industry)
-    companyRepo.ipoYear shouldEqual(testCompanyRepo.ipoYear)
-    companyRepo.lastSale shouldEqual(testCompanyRepo.lastSale)
-    companyRepo.marketCap shouldEqual(testCompanyRepo.marketCap)
-    companyRepo.name shouldEqual(testCompanyRepo.name)
-      
-      
-    val updatedCompanyRepo = testCompanyRepo.copy(industry="TestIndustry",name="UpdatedName")
-    
-    val updatesCount = companyDao.insertCompanyRepos(List(updatedCompanyRepo):_*)
-    updatesCount shouldEqual(1)
-    
-    val companyRepoFromDb = companyDao.repoCollection.find().map {
-      item => CompanyRepoConverter.convertFromMongoObject(item) }.toList(0)
-  
-    println("Commpany repo from db is:"+ companyRepoFromDb)  
-      
-    companyRepoFromDb.name shouldEqual(updatedCompanyRepo.name)
-    companyRepoFromDb.industry shouldEqual(updatedCompanyRepo.industry)
-    companyRepoFromDb.ticker shouldEqual(testCompanyRepo.ticker)
-    
-    companyRepoFromDb.ipoYear shouldEqual(testCompanyRepo.ipoYear)
-    companyRepoFromDb.lastSale shouldEqual(testCompanyRepo.lastSale)
-    companyRepoFromDb.marketCap shouldEqual(testCompanyRepo.marketCap)
-    
-    
   }
   
   

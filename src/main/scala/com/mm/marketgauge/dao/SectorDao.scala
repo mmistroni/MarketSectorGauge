@@ -12,11 +12,15 @@ trait SectorDao  extends BaseDao with com.mm.marketgauge.util.LogHelper{
    * Mongo URI string [[http://docs.mongodb.org/manual/reference/connection-string/]]
    */
   lazy val collection = database.client("sectors")
+  type T = Sector
 
+  
+  def insert(all:Seq[Sector]) = insertBulk(all)
+  
   def insertBulk(sectors: Seq[Sector]):Int = {
-    
     collection.findOne() match {
       case Some(coll) => {
+              println("Individual inserrt" + sectors.mkString(","))
               insertIndividually(sectors)
             }
       case None => {
@@ -66,6 +70,9 @@ trait SectorDao  extends BaseDao with com.mm.marketgauge.util.LogHelper{
   }
   
 
+  override def getAll = this.findAll.toSeq
+  
+  
   def findAll = {
     collection.find.map { item => SectorConverter.convertFromMongoObject(item) }
   }

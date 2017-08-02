@@ -25,22 +25,23 @@ object SharePriceConverter {
     builder += EXDIVDATE -> sharePrice.exDivDate
     builder += PEG -> sharePrice.peg
     builder += SHORTRATIO -> sharePrice.shortRatio
-    builder += CREATED_TIME -> getCreatedTime(sharePrice.asOfDate, sharePrice.ticker)
+    builder += CREATED_TIME -> new java.util.Date()
     builder += MARKETCAP -> sharePrice.marketCap
     builder.result()
   }
 
   def convertFromMongoObject(db: DBObject): SharePrice = {
+    // only Id, ticker, asOfDate and price are required
     val id = db.getAs[ObjectId](ID) orElse {mongoFail(ID)}
     val ticker = db.getAs[String](TICKER) orElse{mongoFail(TICKER)}
     val asOfDate = db.getAs[String](ASOFDATE) orElse{mongoFail(ASOFDATE)}
     val price = db.getAs[Double](PRICE) orElse{mongoFail(PRICE)}
-    val currentEps = db.getAs[Double](CURRENTEPS) orElse{mongoFail(CURRENTEPS)}
-    val forwardEps = db.getAs[Double](FORWARDEPS) orElse{mongoFail(FORWARDEPS)}
-    val movingAverage = db.getAs[Double](MOVINGAVG) orElse{mongoFail(MOVINGAVG)}
-    val extDivDate = db.getAs[String](EXDIVDATE) orElse{mongoFail(EXDIVDATE)}
+    val currentEps = db.getAs[Double](CURRENTEPS) orElse{Option(Double.NaN)}
+    val forwardEps = db.getAs[Double](FORWARDEPS) orElse{Option(Double.NaN)}
+    val movingAverage = db.getAs[Double](MOVINGAVG) orElse{Option(Double.NaN)}
+    val extDivDate = db.getAs[String](EXDIVDATE) orElse{Option("N/A")}
     val peg = db.getAs[Double](PEG) orElse{mongoFail(PEG)}
-    val shortRatio = db.getAs[Double](SHORTRATIO) orElse{mongoFail(SHORTRATIO)}
+    val shortRatio = db.getAs[Double](SHORTRATIO) orElse{Option(Double.NaN)}
     val marketPrice = db.getAs[String](MARKETCAP) 
   
     SharePrice(ticker.get, price.get, asOfDate.get, 
@@ -49,12 +50,6 @@ object SharePriceConverter {
     
   }
   
-  private def getCreatedTime(dateTimeStr:String, ticker:String):java.util.Date = {
-    Try(formatter.parse(dateTimeStr)) match {
-      case Success(dTime) => dTime
-      case Failure(ex)  => println(s"FAliued to extract date for:$ticker");new java.util.Date()
-    }
-  }
     
     
 }
