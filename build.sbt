@@ -56,11 +56,12 @@ libraryDependencies ++= {
     "org.reactivemongo" %% "reactivemongo" % "0.11.14",
     "com.github.tototoshi" %% "scala-csv" % "1.3.3",
     "org.mongodb" %% "casbah" % "2.8.0",
-    "com.mm" %% "sparkutilities" % "1.0" ,
+    "com.mm" %% "sparkutilities" % "1.3" ,
     "de.flapdoodle.embed" % "de.flapdoodle.embed.mongo" % "1.50.5" % "test",
     "com.github.simplyscala" %% "scalatest-embedmongo" % "0.2.2" % "test",
-    "com.typesafe.akka" %% "akka-http-spray-json"  % akkaHttpVersion
-    
+    "com.typesafe.akka" %% "akka-http-spray-json"  % akkaHttpVersion,
+    "com.gu" %% "scanamo" % "0.9.5",
+    "com.amazonaws" % "aws-java-sdk-dynamodb" % "1.11.172"
   )
   
 }

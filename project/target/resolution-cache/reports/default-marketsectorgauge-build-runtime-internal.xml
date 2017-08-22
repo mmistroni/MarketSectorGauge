@@ -9,7 +9,7 @@
 		extra-sbtVersion="0.13"
 		conf="runtime-internal"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20170802194417"/>
+		date="20170821222524"/>
 	<dependencies>
 		<module organisation="com.typesafe.sbt" name="sbt-multi-jvm">
 			<revision name="0.3.9" status="release" pubdate="20150116151335" resolver="sbt-chain" artresolver="sbt-chain" extra-scalaVersion="2.10" extra-sbtVersion="0.13" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="44">
@@ -288,8 +288,8 @@
 				<metadata-artifact status="no" details="" size="2510" time="0" location="C:\Users\marco\.ivy2\cache\com.google.code.findbugs\jsr305\ivy-1.3.9.xml" searched="false" origin-is-local="true" origin-location="C:\activator-dist-1.3.10\repository\com.google.code.findbugs\jsr305\1.3.9\ivys\ivy.xml"/>
 				<caller organisation="com.google.guava" name="guava" conf="compile, runtime" rev="1.3.9" rev-constraint-default="1.3.9" rev-constraint-dynamic="1.3.9" callerrev="10.0.1"/>
 				<artifacts>
-					<artifact name="jsr305" type="jar" ext="jar" status="no" details="" size="33015" time="0" location="C:\activator-dist-1.3.10\repository\com.google.code.findbugs\jsr305\1.3.9\jars\jsr305.jar">
-						<origin-location is-local="true" location="C:\activator-dist-1.3.10\repository\com.google.code.findbugs\jsr305\1.3.9\jars\jsr305.jar"/>
+					<artifact name="jsr305" type="jar" ext="jar" status="no" details="" size="33015" time="0" location="C:\Users\marco\.ivy2\cache\com.google.code.findbugs\jsr305\jars\jsr305-1.3.9.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
@@ -533,8 +533,8 @@
 				<metadata-artifact status="no" details="" size="8695" time="0" location="C:\Users\marco\.ivy2\cache\commons-io\commons-io\ivy-2.4.xml" searched="false" origin-is-local="true" origin-location="C:\activator-dist-1.3.10\repository\commons-io\commons-io\2.4\ivys\ivy.xml"/>
 				<caller organisation="org.vafer" name="jdeb" conf="default, compile, runtime, master" rev="2.4" rev-constraint-default="2.4" rev-constraint-dynamic="2.4" callerrev="1.3"/>
 				<artifacts>
-					<artifact name="commons-io" type="jar" ext="jar" status="no" details="" size="185140" time="0" location="C:\activator-dist-1.3.10\repository\commons-io\commons-io\2.4\jars\commons-io.jar">
-						<origin-location is-local="true" location="C:\activator-dist-1.3.10\repository\commons-io\commons-io\2.4\jars\commons-io.jar"/>
+					<artifact name="commons-io" type="jar" ext="jar" status="no" details="" size="185140" time="0" location="C:\Users\marco\.ivy2\cache\commons-io\commons-io\jars\commons-io-2.4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-io/commons-io/2.4/commons-io-2.4.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
@@ -600,7 +600,7 @@
 			</revision>
 		</module>
 		<module organisation="org.scala-sbt" name="global-plugins">
-			<revision name="0.0" status="integration" pubdate="20170802194405" resolver="inter-project" artresolver="inter-project" extra-scalaVersion="2.10" extra-sbtVersion="0.13" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="0">
+			<revision name="0.0" status="integration" pubdate="20170821222511" resolver="inter-project" artresolver="inter-project" extra-scalaVersion="2.10" extra-sbtVersion="0.13" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="0">
 				<metadata-artifact status="failed" details="" size="0" time="0" searched="false"/>
 				<caller organisation="default" name="marketsectorgauge-build" conf="compile, runtime-internal, runtime, optional" rev="0.0" rev-constraint-default="0.0" rev-constraint-dynamic="0.0" callerrev="0.1-SNAPSHOT" extra-scalaVersion="2.10" extra-sbtVersion="0.13"/>
 				<artifacts>

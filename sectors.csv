@@ -1,0 +1,374 @@
+"Tobacco Products, Other ",^YHOh749,351,yhoo
+Toy & Hobby Stores ,^YHOh846,741,yhoo
+Toys & Games ,^YHOh723,315,yhoo
+Trucking ,^YHOh875,774,yhoo
+Trucks & Other Vehicles ,^YHOh736,331,yhoo
+Waste Management ,^YHOh817,637,yhoo
+Water Utilities ,^YHOh914,914,yhoo
+"Wholesale, Other ",^YHOh860,759,yhoo
+Wireless Communications ,^YHOh900,840,yhoo
+Oil & Gas WSJ,DJUSEN,-1,goog
+Oil & Gas Producer WSJ,DJUSOG,-1,goog
+Oil & Gas Exploration & Production WSJ,DJUSOS,-1,goog
+Integrated Oil & Gas WSJ,DJUSOL,-1,goog
+Oil & Gas Oil Equipment Services & Distribution WSJ,DJUSOQ,-1,goog
+Oil & Gas Oil Equipment & Services WSJ,DJUSOI,-1,goog
+Oil & Gas Pipelines WSJ,DJUSPL,-1,goog
+Oil & Gas Alternative Energy WSJ,DWCAEG,-1,goog
+Basic Materials WSJ,DJUSBM,-1,goog
+Basic Materials - Chemicals WSJ,DJUSCH,-1,goog
+Basic Materials - Commodity Chemicals WSJ,DJUSCC,-1,goog
+BasicMaterials WSJ,DJUSBM,-1,goog
+Chemicals WSJ,DJUSCH,-1,goog
+CommodityChemicals WSJ,DJUSCC,-1,goog
+SpecialtyChemicals WSJ,DJUSCX,-1,goog
+BasicResources WSJ,DJUSBS,-1,goog
+Forestry&Paper WSJ,DJUSFR,-1,goog
+Forestry WSJ,DJUSFS,-1,goog
+Paper WSJ,DJUSPP,-1,goog
+IndustrialMetals&Mining WSJ,DJUSIM,-1,goog
+Aluminum WSJ,DJUSAL,-1,goog
+NonferrousMetals WSJ,DJUSNF,-1,goog
+Iron&Steel WSJ,DJUSST,-1,goog
+Mining WSJ,DJUSMG,-1,goog
+Coal WSJ,DJUSCL,-1,goog
+GoldMining WSJ,DJUSPM,-1,goog
+Platinum&PreciousMetals WSJ,DJUSPT,-1,goog
+Industrials WSJ,DJUSIN,-1,goog
+Construction&Materials WSJ,DJUSCN,-1,goog
+BuildingMaterials&Fixtures WSJ,DJUSBD,-1,goog
+HeavyConstruction WSJ,DJUSHV,-1,goog
+IndustrialGoods&Services WSJ,DJUSIG,-1,goog
+Aerospace&Defense WSJ,DJUSAE,-1,goog
+Aerospace WSJ,DJUSAS,-1,goog
+Defense WSJ,DJUSDN,-1,goog
+GeneralIndustrials WSJ,DJUSGI,-1,goog
+Containers&Packaging WSJ,DJUSCP,-1,goog
+DiversifiedIndustrials WSJ,DJUSID,-1,goog
+Electronic&ElectricalEquipment WSJ,DJUSEE,-1,goog
+ElectricalComponents&Equipment WSJ,DJUSEC,-1,goog
+ElectronicEquipment WSJ,DJUSAI,-1,goog
+IndustrialEngineering WSJ,DJUSIQ,-1,goog
+CommercialVehicles&Trucks WSJ,DJUSHR,-1,goog
+IndustrialMachinery WSJ,DJUSFE,-1,goog
+IndustrialTransportation WSJ,DJUSIT,-1,goog
+DeliveryServices WSJ,DJUSAF,-1,goog
+MarineTransportation WSJ,DJUSMT,-1,goog
+Railroads WSJ,DJUSRR,-1,goog
+TransportationServices WSJ,DJUSTS,-1,goog
+Trucking WSJ,DJUSTK,-1,goog
+SupportServices WSJ,DJUSIS,-1,goog
+BusinessSupportServices WSJ,DJUSIV,-1,goog
+BusinessTraining&EmploymentAgencies WSJ,DJUSBE,-1,goog
+FinancialAdministration WSJ,DJUSFA,-1,goog
+IndustrialSuppliers WSJ,DJUSDS,-1,goog
+Waste&DisposalServices WSJ,DJUSPC,-1,goog
+ConsumerGoods WSJ,DJUSNC,-1,goog
+Automobiles&Parts WSJ,DJUSAP,-1,goog
+Automobiles WSJ,DJUSAU,-1,goog
+AutoParts WSJ,DJUSAT,-1,goog
+Tires WSJ,DJUSTR,-1,goog
+Food&Beverage WSJ,DJUSFB,-1,goog
+Beverages WSJ,DJUSBV,-1,goog
+Brewers WSJ,DJUSDB,-1,goog
+Distillers&Vintners WSJ,DJUSVN,-1,goog
+SoftDrinks WSJ,DJUSSD,-1,goog
+FoodProducers WSJ,DJUSFO,-1,goog
+FoodProducts WSJ,DJUSFP,-1,goog
+Personal&HouseholdGoods WSJ,DJUSNG,-1,goog
+HouseholdGoods&HomeConstruction WSJ,DJUSHG,-1,goog
+DurableHouseholdProducts WSJ,DJUSHD,-1,goog
+NondurableHouseholdProducts WSJ,DJUSHN,-1,goog
+Furnishings WSJ,DJUSFH,-1,goog
+HomeConstruction WSJ,DJUSHB,-1,goog
+LeisureGoods WSJ,DJUSLE,-1,goog
+ConsumerElectronics WSJ,DJUSCE,-1,goog
+RecreationalProducts WSJ,DJUSRP,-1,goog
+Toys WSJ,DJUSTY,-1,goog
+PersonalGoods WSJ,DJUSPG,-1,goog
+Clothing&Accessories WSJ,DJUSCF,-1,goog
+Footwear WSJ,DJUSFT,-1,goog
+PersonalProducts WSJ,DJUSCM,-1,goog
+Tobacco WSJ,DJUSTB,-1,goog
+HealthCare WSJ,DJUSHC,-1,goog
+HealthCareEquipment&Services WSJ,DJUSMC,-1,goog
+HealthCareProviders WSJ,DJUSHP,-1,goog
+MedicalEquipment WSJ,DJUSAM,-1,goog
+MedicalSupplies WSJ,DJUSMS,-1,goog
+Pharmaceuticals&Biotechnology WSJ,DJUSPN,-1,goog
+Biotechnology WSJ,DJUSBT,-1,goog
+Pharmaceuticals WSJ,DJUSPR,-1,goog
+ConsumerServices WSJ,DJUSCY,-1,goog
+Retail WSJ,DJUSRT,-1,goog
+Food&DrugRetailers WSJ,DJUSDR,-1,goog
+DrugRetailers WSJ,DJUSRD,-1,goog
+FoodRetailers&Wholesalers WSJ,DJUSFD,-1,goog
+GeneralRetailers WSJ,DJUSGT,-1,goog
+ApparelRetailers WSJ,DJUSRA,-1,goog
+BroadlineRetailers WSJ,DJUSRB,-1,goog
+HomeImprovementRetailers WSJ,DJUSHI,-1,goog
+SpecializedConsumerServices WSJ,DJUSCS,-1,goog
+SpecialtyRetailers WSJ,DJUSRS,-1,goog
+Media WSJ,DJUSME,-1,goog
+Broadcasting&Entertainment WSJ,DJUSBC,-1,goog
+MediaAgencies WSJ,DJUSAV,-1,goog
+Publishing WSJ,DJUSPB,-1,goog
+Travel&Leisure WSJ,DJUSCG,-1,goog
+Airlines WSJ,DJUSAR,-1,goog
+Gambling WSJ,DJUSCA,-1,goog
+Hotels WSJ,DJUSLG,-1,goog
+RecreationalServices WSJ,DJUSRQ,-1,goog
+Restaurants&bars WSJ,DJUSRU,-1,goog
+Travel&Tourism WSJ,DJUSTT,-1,goog
+Telecommunications WSJ,DJUSTL,-1,goog
+FixedLineTelecommunications WSJ,DJUSFC,-1,goog
+MobileTelecommunications WSJ,DJUSWC,-1,goog
+Utilities WSJ,DJUSUT,-1,goog
+Electricity WSJ,DJUSEU,-1,goog
+ConventionalElectricity WSJ,DJUSVE,-1,goog
+"Gas,Water&Multiutilities WSJ",DJUSUO,-1,goog
+GasDistribution WSJ,DJUSGU,-1,goog
+Multiutilities WSJ,DJUSMU,-1,goog
+Water WSJ,DJUSWU,-1,goog
+Financials WSJ,DJUSFN,-1,goog
+Banks WSJ,DJUSBK,-1,goog
+Insurance WSJ,DJUSIR,-1,goog
+NonlifeInsurance WSJ,DJUSIX,-1,goog
+FullLineInsurance WSJ,DJUSIF,-1,goog
+InsuranceBrokers WSJ,DJUSIB,-1,goog
+Property&CasualtyInsurance WSJ,DJUSIP,-1,goog
+Reinsurance WSJ,DJUSIU,-1,goog
+LifeInsurance WSJ,DJUSIL,-1,goog
+FinancialServices WSJ,DJUSFI,-1,goog
+AssetManagers WSJ,DJUSAG,-1,goog
+ConsumerFinance WSJ,DJUSSF,-1,goog
+SpecialtyFinance WSJ,DJUSSP,-1,goog
+MortgageFinance WSJ,DJUSMF,-1,goog
+RealEstate WSJ,DJUSRE,-1,goog
+RealEstateInvestment&Services WSJ,DJUSRH,-1,goog
+RealEstateHolding&Development WSJ,DJUSEH,-1,goog
+RealEstateServices WSJ,DJUSES,-1,goog
+RealEstateInvestmentTrusts WSJ,DJUSRI,-1,goog
+Industrial&OfficeREITs WSJ,DJUSIO,-1,goog
+RetailREITs WSJ,DJUSRL,-1,goog
+ResidentialREITs WSJ,DJUSRN,-1,goog
+DiversifiedREITs WSJ,DJUSDT,-1,goog
+SpecialtyREITs WSJ,DJUSSR,-1,goog
+MortgageREITs WSJ,DJUSMR,-1,goog
+Hotel&LodgingREIT WSJ,DJUSHL,-1,goog
+Technology WSJ,DJUSTC,-1,goog
+Software&ComputerServices WSJ,DJUSSV,-1,goog
+ComputerServices WSJ,DJUSDV,-1,goog
+Internet WSJ,DJUSNS,-1,goog
+Software WSJ,DJUSSW,-1,goog
+TechnologyHardware&Equipment WSJ,DJUSTQ,-1,goog
+ComputerHardware WSJ,DJUSCR,-1,goog
+ElectronicOfficeEquipment WSJ,DJUSOE,-1,goog
+Semiconductors WSJ,DJUSSC,-1,goog
+TelecommunicationsEquipment WSJ,DJUSCT,-1,goog
+Accident & Health Insurance ,^YHOh769,431,yhoo
+Advertising Agencies ,^YHOh825,720,yhoo
+Aerospace/Defense - Major Diversified ,^YHOh799,610,yhoo
+Aerospace/Defense Products & Services ,^YHOh800,611,yhoo
+Agricultural Chemicals ,^YHOh702,112,yhoo
+Air Delivery & Freight Services ,^YHOh874,773,yhoo
+"Air Services, Other ",^YHOh873,772,yhoo
+Aluminum ,^YHOh712,132,yhoo
+Apparel Stores ,^YHOh835,730,yhoo
+Appliances ,^YHOh718,310,yhoo
+Application Software ,^YHOh885,821,yhoo
+Asset Management ,^YHOh762,422,yhoo
+Auto Dealerships ,^YHOh849,744,yhoo
+Auto Manufacturers - Major ,^YHOh735,330,yhoo
+Auto Parts ,^YHOh738,333,yhoo
+Auto Parts Stores ,^YHOh843,738,yhoo
+Auto Parts Wholesale ,^YHOh851,750,yhoo
+Basic Materials Wholesale ,^YHOh859,758,yhoo
+Beverages - Brewers ,^YHOh745,346,yhoo
+Beverages - Soft Drinks ,^YHOh747,348,yhoo
+Beverages - Wineries & Distillers ,^YHOh746,347,yhoo
+Biotechnology ,^YHOh788,515,yhoo
+Broadcasting - Radio ,^YHOh829,724,yhoo
+Broadcasting - TV ,^YHOh828,723,yhoo
+Building Materials Wholesale ,^YHOh852,751,yhoo
+Business Equipment ,^YHOh721,313,yhoo
+Business Services ,^YHOh861,760,yhoo
+Business Software & Services ,^YHOh890,826,yhoo
+CATV Systems ,^YHOh830,725,yhoo
+Catalog & Mail Order Houses ,^YHOh844,739,yhoo
+Cement ,^YHOh813,633,yhoo
+Chemicals - Major Diversified ,^YHOh700,110,yhoo
+Cigarettes ,^YHOh748,350,yhoo
+Cleaning Products ,^YHOh733,326,yhoo
+Closed-End Fund - Debt ,^YHOh765,425,yhoo
+Closed-End Fund - Equity ,^YHOh766,426,yhoo
+Closed-End Fund - Foreign ,^YHOh767,427,yhoo
+Communication Equipment ,^YHOh901,841,yhoo
+Computer Based Systems ,^YHOh880,812,yhoo
+Computer Peripherals ,^YHOh883,815,yhoo
+Computers Wholesale ,^YHOh856,755,yhoo
+Confectioners ,^YHOh744,345,yhoo
+Conglomerates ,^YHOh717,210,yhoo
+Consumer Services ,^YHOh864,763,yhoo
+Copper ,^YHOh711,131,yhoo
+Credit Services ,^YHOh764,424,yhoo
+Dairy Products ,^YHOh743,344,yhoo
+Data Storage Devices ,^YHOh881,813,yhoo
+Department Stores ,^YHOh836,731,yhoo
+Diagnostic Substances ,^YHOh789,516,yhoo
+"Discount, Variety Stores ",^YHOh837,732,yhoo
+Diversified Communication Services ,^YHOh906,846,yhoo
+Diversified Computer Systems ,^YHOh878,810,yhoo
+Diversified Electronics ,^YHOh898,836,yhoo
+Diversified Investments ,^YHOh763,423,yhoo
+Diversified Machinery ,^YHOh803,622,yhoo
+Diversified Utilities ,^YHOh913,913,yhoo
+Drug Delivery ,^YHOh786,513,yhoo
+Drug Manufacturers - Major ,^YHOh783,510,yhoo
+Drug Manufacturers - Other ,^YHOh784,511,yhoo
+Drug Related Products ,^YHOh787,514,yhoo
+Drug Stores ,^YHOh838,733,yhoo
+Drugs - Generic ,^YHOh785,512,yhoo
+Drugs Wholesale ,^YHOh857,756,yhoo
+Education & Training Services ,^YHOh867,766,yhoo
+Electric Utilities ,^YHOh911,911,yhoo
+Electronic Equipment ,^YHOh722,314,yhoo
+Electronics Stores ,^YHOh840,735,yhoo
+Electronics Wholesale ,^YHOh854,753,yhoo
+Entertainment - Diversified ,^YHOh827,722,yhoo
+Farm & Construction Machinery ,^YHOh801,620,yhoo
+Farm Products ,^YHOh740,341,yhoo
+Food - Major Diversified ,^YHOh739,340,yhoo
+Food Wholesale ,^YHOh858,757,yhoo
+Foreign Money Center Banks ,^YHOh757,417,yhoo
+Foreign Regional Banks ,^YHOh758,418,yhoo
+Foreign Utilities ,^YHOh910,910,yhoo
+Gaming Activities ,^YHOh822,714,yhoo
+Gas Utilities ,^YHOh912,912,yhoo
+General Building Materials ,^YHOh814,634,yhoo
+General Contractors ,^YHOh816,636,yhoo
+General Entertainment ,^YHOh824,716,yhoo
+Gold ,^YHOh714,134,yhoo
+Grocery Stores ,^YHOh839,734,yhoo
+Health Care Plans ,^YHOh792,522,yhoo
+Healthcare Information Services ,^YHOh889,825,yhoo
+Heavy Construction ,^YHOh815,635,yhoo
+Home Furnishing Stores ,^YHOh842,737,yhoo
+Home Furnishings & Fixtures ,^YHOh719,311,yhoo
+Home Health Care ,^YHOh796,526,yhoo
+Home Improvement Stores ,^YHOh841,736,yhoo
+Hospitals ,^YHOh794,524,yhoo
+Housewares & Accessories ,^YHOh720,312,yhoo
+Independent Oil & Gas ,^YHOh705,121,yhoo
+Industrial Electrical Equipment ,^YHOh808,627,yhoo
+Industrial Equipment & Components ,^YHOh802,621,yhoo
+Industrial Equipment Wholesale ,^YHOh853,752,yhoo
+Industrial Metals & Minerals ,^YHOh713,133,yhoo
+Information & Delivery Services ,^YHOh891,827,yhoo
+Information Technology Services ,^YHOh888,824,yhoo
+Insurance Brokers ,^YHOh772,434,yhoo
+Internet Information Providers ,^YHOh908,851,yhoo
+Internet Service Providers ,^YHOh907,850,yhoo
+Internet Software & Services ,^YHOh909,852,yhoo
+Investment Brokerage - National ,^YHOh760,420,yhoo
+Investment Brokerage - Regional ,^YHOh761,421,yhoo
+Jewelry Stores ,^YHOh847,742,yhoo
+Life Insurance ,^YHOh768,430,yhoo
+Lodging ,^YHOh818,710,yhoo
+Long Distance Carriers ,^YHOh903,843,yhoo
+Long-Term Care Facilities ,^YHOh793,523,yhoo
+"Lumber, Wood Production ",^YHOh812,632,yhoo
+Machine Tools & Accessories ,^YHOh805,624,yhoo
+Major Airlines ,^YHOh871,770,yhoo
+Major Integrated Oil & Gas ,^YHOh704,120,yhoo
+Management Services ,^YHOh870,769,yhoo
+Manufactured Housing ,^YHOh811,631,yhoo
+Marketing Services ,^YHOh826,721,yhoo
+Meat Products ,^YHOh742,343,yhoo
+Medical Appliances & Equipment ,^YHOh791,521,yhoo
+Medical Equipment Wholesale ,^YHOh855,754,yhoo
+Medical Instruments & Supplies ,^YHOh790,520,yhoo
+Medical Laboratories & Research ,^YHOh795,525,yhoo
+Medical Practitioners ,^YHOh797,527,yhoo
+Metal Fabrication ,^YHOh807,626,yhoo
+Money Center Banks ,^YHOh750,410,yhoo
+Mortgage Investment ,^YHOh780,447,yhoo
+"Movie Production, Theaters ",^YHOh831,726,yhoo
+Multimedia & Graphics Software ,^YHOh884,820,yhoo
+Music & Video Stores ,^YHOh848,743,yhoo
+Networking & Communication Devices ,^YHOh882,814,yhoo
+Nonmetallic Mineral Mining ,^YHOh716,136,yhoo
+Office Supplies ,^YHOh734,327,yhoo
+Oil & Gas Drilling & Exploration ,^YHOh707,123,yhoo
+Oil & Gas Equipment & Services ,^YHOh708,124,yhoo
+Oil & Gas Pipelines ,^YHOh709,125,yhoo
+Oil & Gas Refining & Marketing ,^YHOh706,122,yhoo
+Packaging & Containers ,^YHOh732,325,yhoo
+Paper & Paper Products ,^YHOh731,324,yhoo
+Personal Computers ,^YHOh879,811,yhoo
+Personal Products ,^YHOh730,323,yhoo
+Personal Services ,^YHOh863,762,yhoo
+Photographic Equipment & Supplies ,^YHOh726,318,yhoo
+Pollution & Treatment Controls ,^YHOh804,623,yhoo
+Printed Circuit Boards ,^YHOh897,835,yhoo
+Processed & Packaged Goods ,^YHOh741,342,yhoo
+Processing Systems & Products ,^YHOh902,842,yhoo
+Property & Casualty Insurance ,^YHOh770,432,yhoo
+Property Management ,^YHOh781,448,yhoo
+Publishing - Books ,^YHOh834,729,yhoo
+Publishing - Newspapers ,^YHOh832,727,yhoo
+Publishing - Periodicals ,^YHOh833,728,yhoo
+REIT - Diversified ,^YHOh773,440,yhoo
+REIT - Healthcare Facilities ,^YHOh775,442,yhoo
+REIT - Hotel/Motel ,^YHOh776,443,yhoo
+REIT - Industrial ,^YHOh777,444,yhoo
+REIT - Office ,^YHOh774,441,yhoo
+REIT - Residential ,^YHOh778,445,yhoo
+REIT - Retail ,^YHOh779,446,yhoo
+Railroads ,^YHOh877,776,yhoo
+Real Estate Development ,^YHOh782,449,yhoo
+"Recreational Goods, Other ",^YHOh725,317,yhoo
+Recreational Vehicles ,^YHOh737,332,yhoo
+Regional - Mid-Atlantic Banks ,^YHOh752,412,yhoo
+Regional - Midwest Banks ,^YHOh754,414,yhoo
+Regional - Northeast Banks ,^YHOh751,411,yhoo
+Regional - Pacific Banks ,^YHOh756,416,yhoo
+Regional - Southeast Banks ,^YHOh753,413,yhoo
+Regional - Southwest  Banks ,^YHOh755,415,yhoo
+Regional Airlines ,^YHOh872,771,yhoo
+Rental & Leasing Services ,^YHOh862,761,yhoo
+Research Services ,^YHOh869,768,yhoo
+Residential Construction ,^YHOh810,630,yhoo
+Resorts & Casinos ,^YHOh819,711,yhoo
+Restaurants ,^YHOh820,712,yhoo
+Rubber & Plastics ,^YHOh729,322,yhoo
+Savings & Loans ,^YHOh759,419,yhoo
+Scientific & Technical Instruments ,^YHOh899,837,yhoo
+Security & Protection Services ,^YHOh866,765,yhoo
+Security Software & Services ,^YHOh887,823,yhoo
+Semiconductor - Broad Line ,^YHOh892,830,yhoo
+Semiconductor - Integrated Circuits ,^YHOh895,833,yhoo
+Semiconductor - Specialized ,^YHOh894,832,yhoo
+Semiconductor Equipment & Materials ,^YHOh896,834,yhoo
+Semiconductor- Memory Chips ,^YHOh893,831,yhoo
+Shipping ,^YHOh876,775,yhoo
+Silver ,^YHOh715,135,yhoo
+Small Tools & Accessories ,^YHOh806,625,yhoo
+Specialized Health Services ,^YHOh798,528,yhoo
+Specialty Chemicals ,^YHOh703,113,yhoo
+Specialty Eateries ,^YHOh821,713,yhoo
+"Specialty Retail, Other ",^YHOh850,745,yhoo
+Sporting Activities ,^YHOh823,715,yhoo
+Sporting Goods ,^YHOh724,316,yhoo
+Sporting Goods Stores ,^YHOh845,740,yhoo
+Staffing & Outsourcing Services ,^YHOh865,764,yhoo
+Steel & Iron ,^YHOh710,130,yhoo
+Surety & Title Insurance ,^YHOh771,433,yhoo
+Synthetics ,^YHOh701,111,yhoo
+Technical & System Software ,^YHOh886,822,yhoo
+Technical Services ,^YHOh868,767,yhoo
+Telecom Services - Domestic ,^YHOh904,844,yhoo
+Telecom Services - Foreign ,^YHOh905,845,yhoo
+Textile - Apparel Clothing ,^YHOh727,320,yhoo
+Textile - Apparel Footwear & Accessories ,^YHOh728,321,yhoo
+Textile Industrial ,^YHOh809,628,yhoo
