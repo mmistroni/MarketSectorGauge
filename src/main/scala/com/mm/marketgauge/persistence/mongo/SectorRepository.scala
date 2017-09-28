@@ -1,11 +1,12 @@
 package com.mm.marketgauge.persistence.mongo
 import com.mm.marketgauge.entities.Sector
 import com.mongodb.casbah.commons.TypeImports.DBObject
+import com.mm.marketgauge.persistence.BaseSectorRepository
 import com.mongodb.casbah.Imports._
 import com.mm.marketgauge.entities.SectorProperties._
 
 
-trait SectorRepository extends BaseMongoRepository[DBObject, Sector] {
+trait SectorRepository extends BaseMongoRepository[Sector] {
   
   override val collectionName = "sectors"
   
@@ -47,5 +48,7 @@ trait SectorRepository extends BaseMongoRepository[DBObject, Sector] {
    }
    updates
   }
+  
+  def getAllSectors = getAll
   
 }

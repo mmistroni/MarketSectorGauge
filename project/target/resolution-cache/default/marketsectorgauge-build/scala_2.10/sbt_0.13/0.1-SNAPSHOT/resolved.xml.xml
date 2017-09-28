@@ -4,7 +4,7 @@
 		module="marketsectorgauge-build"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20170821222524"
+		publication="20170926212313"
 		e:sbtVersion="0.13" e:scalaVersion="2.10"
 	>
 		<description>
@@ -46,6 +46,7 @@
 		<dependency org="com.eed3si9n" name="sbt-assembly" rev="0.12.0" conf="compile->default(compile)" e:sbtVersion="0.13" e:scalaVersion="2.10"/>
 		<dependency org="com.typesafe.sbt" name="sbt-native-packager" rev="1.0.0-M4" conf="compile->default(compile)" e:sbtVersion="0.13" e:scalaVersion="2.10"/>
 		<dependency org="com.typesafe.sbt" name="sbt-multi-jvm" rev="0.3.9" conf="compile->default(compile)" e:sbtVersion="0.13" e:scalaVersion="2.10"/>
+		<dependency org="com.localytics" name="sbt-dynamodb" rev="1.5.5" conf="compile->default(compile)" e:sbtVersion="0.13" e:scalaVersion="2.10"/>
 		<override org="org.scala-lang" module="scala-library" matcher="exact" rev="2.10.4"/>
 		<override org="org.scala-lang" module="scala-compiler" matcher="exact" rev="2.10.4"/>
 		<override org="org.scala-lang" module="scala-reflect" matcher="exact" rev="2.10.4"/>

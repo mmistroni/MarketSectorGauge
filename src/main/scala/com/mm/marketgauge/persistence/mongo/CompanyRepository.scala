@@ -5,7 +5,7 @@ import com.mongodb.casbah.Imports._
 import com.mm.marketgauge.entities.CompanyProperties._
 
 
-trait CompanyRepository extends BaseMongoRepository[DBObject, Company] {
+trait CompanyRepository extends BaseMongoRepository[Company]  {
   
   override val collectionName = "companies"
   

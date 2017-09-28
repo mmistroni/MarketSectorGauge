@@ -7,12 +7,15 @@ import boto3
 
 def connectToDb(hostName):
     dynamodb = boto3.resource(
-    'dynamodb',
+    'dynamodb')
+    '''
+    ,
     endpoint_url=hostName,
     region_name='dummy_region',
     aws_access_key_id='dummy_access_key',
     aws_secret_access_key='dummy_secret_key',
     verify=False)
+    '''
     return dynamodb
 
 def createTable(dynamodb, tableName):
@@ -61,24 +64,25 @@ def populateTable(dynamoTbl, fileName):
 
 if __name__ == '__main__':
     import sys
-    if len(sys.argv) < 2:
-        print 'Usage: python insertSectors.py <filename> <hostname>'
+    if len(sys.argv) < 3:
+        print 'Usage: python insertSectors.py <filename> <hostname> <createTable{t|f}>'
         sys.exit(0)
         
     print '-------------'
     print 'Filename:%s' % sys.argv[1]
     print 'Host:%s' % sys.argv[2]   
+    print 'CreateTAble:%s' % bool(sys.argv[3])
     print '------------'  
     dynamodb = connectToDb(sys.argv[2])
     print ('got resource:', dynamodb)
-    print('adding table')
-    result = createTable(dynamodb, 'sectors')
-
-    print('created table:', result)
+    if sys.argv[3].lower() == 'true':
+      print('adding table')
+      result = createTable(dynamodb, 'sectors')
+      print('created table:', result)
 
     print('getting table')
 
-    table = dynamodb.Table('sectors')
+    table = dynamodb.Table('sectors_test')
 
     print('got table:', table)
     

@@ -1,8 +1,9 @@
 package com.mm.marketgauge.loaders
 
-import com.mm.marketgauge.persistence.{PersistenceServiceComponent}
+import com.mm.marketgauge.persistence.{PersistenceServiceComponent, BaseRepository}
 import com.mm.marketgauge.dao.MongoDatabase
 import com.mm.marketgauge.service._
+import com.mm.marketgauge.persistence.mongo.MongoPersistenceServiceComponent
 import com.typesafe.config.Config
 
 
@@ -14,9 +15,8 @@ import com.typesafe.config.Config
  * To replace using DependencyInjection
  */
 trait DataLoader  {
-   self:PersistenceServiceComponent =>
-  
-    type DataService
+   persistenceService : PersistenceServiceComponent =>
+   type DataService
   
   private [loaders]val notifier:Notifier
   
@@ -40,8 +40,8 @@ object DataLoader {
   
   def getLoader(loaderName:String, config:Config):DataLoader =  {
     
-    trait ConfigLoader  extends PersistenceServiceComponent with DataDownloaderComponent {
-      // try to remove factories if you can
+    trait ConfigLoader  extends MongoPersistenceServiceComponent with DataDownloaderComponent {
+      // try to remove factories if you canMongoPersistenceServiceComponent
       // take out factories. Mix in traits instead
       val notifier = Notifier.defaultNotifier(config)         
       
@@ -56,7 +56,8 @@ object DataLoader {
           
           case "shares" => new CustomSharesLoader with ConfigLoader  
           
-          case "tester" =>  new CustomSharesTester with ConfigLoader with SharePriceServiceComponent 
+          case "tester" =>  new CustomSharesTester with ConfigLoader with SharePriceServiceComponent
+                with DataDownloaderComponent
     }
           
   

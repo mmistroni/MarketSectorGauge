@@ -3,11 +3,13 @@ import com.mm.marketgauge.entities.SharePrice
 import com.mongodb.casbah.commons.TypeImports.DBObject
 import com.mongodb.casbah.Imports._
 import com.mm.marketgauge.entities.SharePriceProperties._
+import com.mm.marketgauge.persistence.BaseSharePriceRepository
 
 
-trait SharePriceRepository extends BaseMongoRepository[DBObject, SharePrice] {
+trait SharePriceRepository extends BaseMongoRepository[SharePrice]  {
   
   override val collectionName = "share_prices"
+  
   
   override def insert(all:Seq[SharePrice]) = bulkInsert(all)
   

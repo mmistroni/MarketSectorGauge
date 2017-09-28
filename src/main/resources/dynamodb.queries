@@ -1,0 +1,6 @@
+-- SCAN --
+
+aws dynamodb scan  --table-name sectors <--endpoint-url http://localhost:8000>
+
+-- QUERY --
+aws dynamodb query  --table-name sectors --key-conditions file://c:/Users/marco/MarketSectorGauge/keys.json

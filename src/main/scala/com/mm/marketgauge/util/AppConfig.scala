@@ -17,4 +17,10 @@ object AppConfig {
     lazy val password = dbConfig.getString("password")
     lazy val dbName = dbConfig.getString("name")
   }
+  
+  object AwsConfig {
+    private val awsConfig = config.getConfig("aws")
+    lazy val region = awsConfig.getString("region")
+  }
+  
 }

@@ -14,6 +14,14 @@ assembleArtifact in packageScala := true
 assembleArtifact in packageDependency := true
 assemblyJarName in assembly := "marketsectorgauge.jar"
 
+startDynamoDBLocal := startDynamoDBLocal.dependsOn(compile in Test).value
+test in Test := (test in Test).dependsOn(startDynamoDBLocal).value
+testOnly in Test := (testOnly in Test).dependsOn(startDynamoDBLocal).value
+testOptions in Test += dynamoDBLocalTestCleanup.value
+
+
+
+
 mainClass in assembly :=   Some("com.mm.marketgauge.loaders.LoaderExecutor")
 
 assemblyMergeStrategy in assembly := {

@@ -1,0 +1,6 @@
+aws dynamodb  create-table --endpoint-url=http://localhost:9999 --table-name sectors \
+                      --attribute-definitions AttributeName=sectorId,AttributeType=N \
+                      --key-schema AttributeName=sectorId,KeyType=HASH \
+                      --provisioned-throughput ReadCapacityUnits=1,WriteCapacityUnits=1 
+                      
+

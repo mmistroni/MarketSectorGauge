@@ -8,7 +8,6 @@ import org.scalatest.concurrent.ScalaFutures._
 import org.junit.runner.RunWith
 import org.scalatest.junit.JUnitRunner
 import com.mm.marketgauge.entities.{Sector, Company, CompanyRepo, SharePrice}
-import com.mm.marketgauge.dao.{SectorDao, SharePriceDao, CompanyDao, CompanyRepoDao, MongoDatabase}
 
 
 @RunWith(classOf[JUnitRunner])
@@ -16,44 +15,68 @@ class PersistenceServiceSpec extends FreeSpec with Matchers {
  
   
   
-  val mockCompanyDao = Mockito.mock(classOf[CompanyDao])
-  val mockCompanyRepoDao = Mockito.mock(classOf[CompanyRepoDao])
-  val mockSectorDao = Mockito.mock(classOf[SectorDao])
-  val mockSharePriceDao = Mockito.mock(classOf[SharePriceDao])
+  val mockCompanyRepository = Mockito.mock(classOf[BaseCompanyRepository])
+  val mockCompanyRepoRepository = Mockito.mock(classOf[BaseCompanyRepoRepository])
+  val mockSectorRepository = Mockito.mock(classOf[BaseSectorRepository])
+  val mockSharePriceRepository = Mockito.mock(classOf[BaseSharePriceRepository])
   
   
   trait MockPersistenceServiceComponent extends PersistenceServiceComponent  {
   
-    class MockPersitenceService extends MongoPersistenceService {
-            override val sectorDao = mockSectorDao
-            override val companyDao = mockCompanyDao
-            override val sharePriceDao = mockSharePriceDao
-            override val companyRepoDao = mockCompanyRepoDao
-    }
-    
-    override val persistenceService = new MockPersitenceService() 
+    override val sectorRepository  = mockSectorRepository
+  
+    override val companyRepository = mockCompanyRepository
+  
+    override val companyRepoRepository = mockCompanyRepoRepository
+  
+    override val sharePriceRepository = mockSharePriceRepository
+ 
   }
   
   val mockPersistenceServiceComponent = new MockPersistenceServiceComponent{} 
   
-  val persistenceService = mockPersistenceServiceComponent.persistenceService
   
   "The PersistenceService" - {
-    "when calling getAllSectorIds should call sectorDao.getAll" - {
-      "returning a Sequence of Sectors" in {
+    "when calling sectorRepository should " - {
+      "return the mock Repository" in {
       
-       val mockSect1 = Sector("foo", "bar", 1, "yhoo")
-       val mockSect2 = Sector("bar", "baz", 2, "yhoo")
-       val expectedSectors = Seq(mockSect1, mockSect2)
-       Mockito.when(mockSectorDao.getAll).thenReturn(expectedSectors)
-       val result = persistenceService.getAllSectorIds
-       
-       val expectedIds = expectedSectors.map(sector => sector.sectorId)
-       
-       result shouldEqual(expectedIds)
+       mockPersistenceServiceComponent.sectorRepository shouldEqual(mockSectorRepository)
       }
     }
   }
+  
+  
+  
+ "The PersistenceService" - {
+    "when calling companyRepository should " - {
+      "return the mock Repository" in {
+      
+       mockPersistenceServiceComponent.companyRepository shouldEqual(mockCompanyRepository)
+      }
+    }
+  }
+ 
+ "The PersistenceService" - {
+    "when calling companyRepoRepository should " - {
+      "return the mock Repository" in {
+      
+       mockPersistenceServiceComponent.companyRepoRepository shouldEqual(mockCompanyRepoRepository)
+      }
+    }
+  }
+  
+  
+ "The PersistenceService" - {
+    "when calling sharePriceRepository should " - {
+      "return the mock Repository" in {
+      
+       mockPersistenceServiceComponent.sharePriceRepository shouldEqual(mockSharePriceRepository)
+      }
+    }
+  }
+ 
+  
+  /**
   
   
   "The PersistenceService" - {
@@ -153,6 +176,6 @@ class PersistenceServiceSpec extends FreeSpec with Matchers {
       }
     }
   }
-   
+  */
   
 }

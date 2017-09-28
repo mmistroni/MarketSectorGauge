@@ -2,6 +2,7 @@ package com.mm.marketgauge.loaders
 
 import com.mm.marketgauge.service.SharePriceServiceComponent
 import com.mm.marketgauge.persistence.PersistenceServiceComponent
+import com.mm.marketgauge.persistence.mongo._
 import com.typesafe.config.ConfigFactory
 
 private[loaders] trait CustomSharesTester extends DataLoader with com.mm.marketgauge.util.LogHelper{

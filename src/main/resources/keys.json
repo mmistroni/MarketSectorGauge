@@ -1,0 +1,10 @@
+{
+    "sectorId": {
+        "AttributeValueList": [
+            {   
+                "N": "512"
+            }   
+        ],  
+        "ComparisonOperator": "EQ"
+    }
+}

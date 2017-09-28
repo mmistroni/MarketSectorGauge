@@ -1,4 +1,5 @@
 package com.mm.marketgauge.persistence
+import com.mm.marketgauge.entities._
 
 /**
  * Generic repository trait. 
@@ -19,33 +20,53 @@ package com.mm.marketgauge.persistence
  * */
 
 import com.mm.marketgauge.util.AppConfig
-trait BaseRepository[T, E] extends com.mm.marketgauge.util.LogHelper {
+trait BaseRepository[T] extends com.mm.marketgauge.util.LogHelper {
+  
   /**
    * Inserts multiple item in the repository
    * @param items a Seq of Item
    * @return: the number of entities persisted
    */
-  def insert(items: Seq[E]):Int 
+  def insert(items: Seq[T]):Int 
  
   /**
    * delete multiple items
    * @param:items a sequence of items
    * @return: an integer representing the number of deletions
    */
-  def delete(items: Seq[E]):Int
+  def delete(items: Seq[T]):Int
  
   /**
    * Return a sequence of item for the specified query
    */
-  def getByQuery(query:BaseRepositoryQuery[T,E]):Seq[E] = Nil
+  def getByQuery(query:BaseRepositoryQuery[T]):Seq[T] = Nil
   
   /**
    * Return all the items in the query
    */
-  def getAll:Seq[E] 
+  def getAll:Seq[T] 
  
   
 }
+
+
+
+trait BaseSectorRepository extends BaseRepository[Sector] {
+  type Entity = com.mm.marketgauge.entities.Sector
+}
+  
+trait BaseCompanyRepository extends BaseRepository[Company] {
+  type Entity = com.mm.marketgauge.entities.Company
+}
+
+trait BaseCompanyRepoRepository extends BaseRepository[CompanyRepo] {
+  type Entity = com.mm.marketgauge.entities.CompanyRepo
+}
+
+trait BaseSharePriceRepository extends BaseRepository[SharePrice] {
+  type Entity = com.mm.marketgauge.entities.SharePrice
+}
+
 
  
 

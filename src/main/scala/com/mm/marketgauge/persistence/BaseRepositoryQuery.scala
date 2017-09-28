@@ -35,7 +35,7 @@ package com.mm.marketgauge.persistence
  *  
  * 
  * */
-trait BaseRepositoryQuery[T,E] {
+trait BaseRepositoryQuery[T] {
  
   // so maybe for the moment we dont need to use this
  

@@ -1,6 +1,7 @@
 package com.mm.marketgauge.loaders
 
 import com.mm.marketgauge.persistence.PersistenceServiceComponent
+import com.mm.marketgauge.persistence.mongo._
 import com.mm.marketgauge.service.SectorServiceComponent
 import com.mm.marketgauge.entities.Sector
 import com.mm.marketgauge.util.LogHelper
@@ -20,16 +21,28 @@ private[loaders] trait SectorLoader extends DataLoader with LogHelper {
   self:SectorServiceComponent with PersistenceServiceComponent =>
   
   
-  private def fetchSectors :Seq[Sector] = {
-    val allSectorsId = dataService.downloadAllSectorsIds
-    logger.info("All sector downoaded. now mapping them...")
-    allSectorsId.flatMap(sectorId => dataService.downloadSectorData(sectorId)) //, this will take care of the nulls
+  private[loaders] def fetchSectorIds :Seq[Int] = {
+    dataService.downloadAllSectorsIds
   }
+    
+  private[loaders] def downloadSectors(allSectorsIds:Seq[Int]):Seq[Sector] = {
+    logger.info("All sector downoaded. now mapping them...")
+    allSectorsIds.flatMap(sectorId => dataService.downloadSectorData(sectorId)) //, this will take care of the nulls
+  } 
+  
+  
+  private[loaders] def fetchSectors :Seq[Sector] = {
+    val allSectorsIds = fetchSectorIds
+    logger.info("All sector downoaded. now mapping them...")
+    downloadSectors(allSectorsIds)
+  }
+  
+  
   
   def load:Int = {
     logger.info("Got all sectors...")
     val allSectors = fetchSectors
-    val res = persistenceService.storeSectors(allSectors)
+    val res = sectorRepository.insert(allSectors)
     notify("MarketSectorGauge. Sector upload", s"$res sectors were uploaded")
     res 
     

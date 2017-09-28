@@ -9,13 +9,10 @@ import com.typesafe.config.ConfigFactory
 
 private [loaders] trait SharePriceLoader extends DataLoader with LogHelper{
   self:SharePriceServiceComponent with PersistenceServiceComponent =>
-  
-    
+     
   
   def loadSectors = {
-    logger.info("Loading all sectors.....")
-    logger.info("Persistence servic eis null?" + persistenceService == null)
-    persistenceService.getAllSectors
+    sectorRepository.getAll
   }
 
   def loadPrices(sectors:Seq[Sector]) = {
@@ -25,7 +22,7 @@ private [loaders] trait SharePriceLoader extends DataLoader with LogHelper{
   
   def persistPrices(prices:Seq[SharePrice]) = {
     logger.info(s"Persisting ${prices.size} prices...")
-    persistenceService.storePrices(prices)
+    sharePriceRepository.insert(prices)
   }
   
   def load = {
