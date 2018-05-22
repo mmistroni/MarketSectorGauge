@@ -5,8 +5,8 @@
   <classpathentry output="target\scala-2.11\test-classes" kind="src" path="src\test\scala-2.11"/>
   <classpathentry output="target\scala-2.11\test-classes" kind="src" path="src\test\scala"/>
   <classpathentry output="target\scala-2.11\test-classes" kind="src" path="src\test\java"/>
-  <classpathentry kind="lib" path="C:\Users\marco\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.11\jars\akka-slf4j_2.11-2.4.11.jar"/>
   <classpathentry kind="con" path="org.scala-ide.sdt.launching.SCALA_CONTAINER"/>
+  <classpathentry kind="lib" path="C:\Users\marco\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.11\jars\akka-slf4j_2.11-2.4.11.jar"/>
   <classpathentry kind="lib" path="C:\Users\marco\.ivy2\cache\com.typesafe.akka\akka-actor_2.11\jars\akka-actor_2.11-2.4.11.jar"/>
   <classpathentry kind="lib" path="C:\activator-dist-1.3.10\repository\com.typesafe\config\1.3.0\bundles\config.jar"/>
   <classpathentry kind="lib" path="C:\activator-dist-1.3.10\repository\org.scala-lang.modules\scala-java8-compat_2.11\0.7.0\bundles\scala-java8-compat_2.11.jar"/>
@@ -47,11 +47,10 @@
   <classpathentry kind="lib" path="C:\Users\marco\.ivy2\cache\org.mongodb\casbah-query_2.11\jars\casbah-query_2.11-2.8.0.jar"/>
   <classpathentry kind="lib" path="C:\Users\marco\.ivy2\cache\org.mongodb\casbah-gridfs_2.11\jars\casbah-gridfs_2.11-2.8.0.jar"/>
   <classpathentry kind="lib" path="C:\Users\marco\.ivy2\local\com.mm\sparkutilities_2.11\1.3\jars\sparkutilities_2.11.jar"/>
-  <classpathentry kind="lib" path="C:\Users\marco\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.2.jar"/>
   <classpathentry kind="lib" path="C:\Users\marco\.ivy2\cache\com.amazonaws\aws-java-sdk\jars\aws-java-sdk-1.11.172.jar"/>
   <classpathentry kind="lib" path="C:\Users\marco\.ivy2\cache\com.amazonaws\aws-java-sdk-dax\jars\aws-java-sdk-dax-1.11.172.jar"/>
   <classpathentry kind="lib" path="C:\Users\marco\.ivy2\cache\com.amazonaws\aws-java-sdk-core\jars\aws-java-sdk-core-1.11.172.jar"/>
-  <classpathentry kind="lib" path="C:\activator-dist-1.3.10\repository\commons-logging\commons-logging\1.1.3\jars\commons-logging.jar"/>
+  <classpathentry kind="lib" path="C:\Users\marco\.ivy2\cache\commons-logging\commons-logging\jars\commons-logging-1.1.3.jar"/>
   <classpathentry kind="lib" path="C:\Users\marco\.ivy2\cache\org.apache.httpcomponents\httpclient\jars\httpclient-4.5.2.jar"/>
   <classpathentry kind="lib" path="C:\Users\marco\.ivy2\cache\org.apache.httpcomponents\httpcore\jars\httpcore-4.4.4.jar"/>
   <classpathentry kind="lib" path="C:\Users\marco\.ivy2\cache\software.amazon.ion\ion-java\bundles\ion-java-1.0.2.jar"/>
@@ -157,7 +156,7 @@
   <classpathentry kind="lib" path="C:\Users\marco\.ivy2\cache\com.amazonaws\aws-java-sdk-workdocs\jars\aws-java-sdk-workdocs-1.11.172.jar"/>
   <classpathentry kind="lib" path="C:\Users\marco\.ivy2\cache\com.amazonaws\aws-java-sdk-models\jars\aws-java-sdk-models-1.11.172.jar"/>
   <classpathentry kind="lib" path="C:\Users\marco\.ivy2\cache\com.amazonaws\aws-java-sdk-swf-libraries\jars\aws-java-sdk-swf-libraries-1.11.22.jar"/>
-  <classpathentry kind="lib" path="C:\activator-dist-1.3.10\repository\commons-io\commons-io\2.4\jars\commons-io.jar"/>
+  <classpathentry kind="lib" path="C:\Users\marco\.ivy2\cache\commons-io\commons-io\jars\commons-io-2.4.jar"/>
   <classpathentry kind="lib" path="C:\Users\marco\.ivy2\cache\com.typesafe.akka\akka-http-spray-json_2.11\jars\akka-http-spray-json_2.11-3.0.0-RC1.jar"/>
   <classpathentry kind="lib" path="C:\Users\marco\.ivy2\cache\com.typesafe.akka\akka-http_2.11\jars\akka-http_2.11-3.0.0-RC1.jar"/>
   <classpathentry kind="lib" path="C:\Users\marco\.ivy2\cache\io.spray\spray-json_2.11\bundles\spray-json_2.11-1.3.2.jar"/>
@@ -170,11 +169,17 @@
   <classpathentry kind="lib" path="C:\Users\marco\.ivy2\cache\org.typelevel\machinist_2.11\jars\machinist_2.11-0.6.1.jar"/>
   <classpathentry kind="lib" path="C:\Users\marco\.ivy2\cache\org.typelevel\cats-core_2.11\jars\cats-core_2.11-0.9.0.jar"/>
   <classpathentry kind="lib" path="C:\Users\marco\.ivy2\cache\org.typelevel\cats-kernel_2.11\jars\cats-kernel_2.11-0.9.0.jar"/>
+  <classpathentry kind="lib" path="C:\Users\marco\.ivy2\cache\org.json4s\json4s-native_2.11\jars\json4s-native_2.11-3.3.0.jar"/>
+  <classpathentry kind="lib" path="C:\Users\marco\.ivy2\cache\org.json4s\json4s-core_2.11\jars\json4s-core_2.11-3.3.0.jar"/>
+  <classpathentry kind="lib" path="C:\Users\marco\.ivy2\cache\org.json4s\json4s-ast_2.11\jars\json4s-ast_2.11-3.3.0.jar"/>
+  <classpathentry kind="lib" path="C:\Users\marco\.ivy2\cache\org.json4s\json4s-scalap_2.11\jars\json4s-scalap_2.11-3.3.0.jar"/>
+  <classpathentry kind="lib" path="C:\Users\marco\.ivy2\cache\com.thoughtworks.paranamer\paranamer\bundles\paranamer-2.8.jar"/>
+  <classpathentry kind="lib" path="C:\Users\marco\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.5.jar"/>
   <classpathentry kind="lib" path="C:\Users\marco\.ivy2\cache\org.scalatest\scalatest_2.11\bundles\scalatest_2.11-2.2.5.jar"/>
   <classpathentry kind="lib" path="C:\activator-dist-1.3.10\repository\org.specs2\specs2_2.11\2.3.11\jars\specs2_2.11.jar"/>
   <classpathentry kind="con" path="org.scala-ide.sdt.launching.SCALA_COMPILER_CONTAINER"/>
-  <classpathentry kind="lib" path="C:\activator-dist-1.3.10\repository\junit\junit\4.11\jars\junit.jar"/>
-  <classpathentry kind="lib" path="C:\activator-dist-1.3.10\repository\org.hamcrest\hamcrest-core\1.3\jars\hamcrest-core.jar"/>
+  <classpathentry kind="lib" path="C:\Users\marco\.ivy2\cache\junit\junit\jars\junit-4.11.jar"/>
+  <classpathentry kind="lib" path="C:\Users\marco\.ivy2\cache\org.hamcrest\hamcrest-core\jars\hamcrest-core-1.3.jar"/>
   <classpathentry kind="lib" path="C:\Users\marco\.ivy2\cache\org.scalacheck\scalacheck_2.11\jars\scalacheck_2.11-1.11.3.jar"/>
   <classpathentry kind="lib" path="C:\activator-dist-1.3.10\repository\org.scala-sbt\test-interface\1.0\jars\test-interface.jar"/>
   <classpathentry kind="lib" path="C:\activator-dist-1.3.10\repository\org.specs2\classycle\1.4.3\jars\classycle.jar"/>

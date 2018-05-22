@@ -1,0 +1,99 @@
+2017-10-07 21:36:41,505 9600 [pool-8-thread-7-ScalaTest-running-CompanyRepositorySuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@1ae2772b
+2017-10-07 21:36:42,130 10225 [pool-8-thread-4-ScalaTest-running-CompanyDaoSuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@3de8b206
+2017-10-07 21:36:42,784 10879 [pool-8-thread-4-ScalaTest-running-CompanyDaoSuite] INFO  c.m.i.CompanyDaoSuite$$anonfun$1$$anon$1$$anon$2 - Initalizing wiht:null and null
+2017-10-07 21:36:42,878 10973 [pool-8-thread-4-ScalaTest-running-CompanyDaoSuite] INFO  c.m.i.CompanyDaoSuite$$anonfun$1$$anon$1 - Bulk Insert....
+2017-10-07 21:36:42,878 10973 [pool-8-thread-4-ScalaTest-running-CompanyDaoSuite] INFO  c.m.i.CompanyDaoSuite$$anonfun$1$$anon$1 - Dao. Inserting:1
+2017-10-07 21:36:46,133 14228 [pool-8-thread-4-ScalaTest-running-CompanyDaoSuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@2119b4ce
+2017-10-07 21:36:46,133 14228 [pool-8-thread-4-ScalaTest-running-CompanyDaoSuite] INFO  c.m.i.CompanyDaoSuite$$anonfun$1$$anon$1$$anon$2 - Initalizing wiht:null and null
+2017-10-07 21:36:46,133 14228 [pool-8-thread-4-ScalaTest-running-CompanyDaoSuite] INFO  c.m.i.CompanyDaoSuite$$anonfun$1$$anon$1 - Bulk Insert....
+2017-10-07 21:36:46,133 14228 [pool-8-thread-4-ScalaTest-running-CompanyDaoSuite] INFO  c.m.i.CompanyDaoSuite$$anonfun$1$$anon$1 - Dao. Inserting:1
+2017-10-07 21:36:46,571 14666 [pool-8-thread-4-ScalaTest-running-CompanyDaoSuite] INFO  c.m.i.CompanyDaoSuite$$anonfun$1$$anon$1 - ...There's data in db. updating one by one...
+2017-10-07 21:36:46,586 14681 [pool-8-thread-4-ScalaTest-running-CompanyDaoSuite] INFO  c.m.i.CompanyDaoSuite$$anonfun$1$$anon$1 - Updating name
+2017-10-07 21:36:46,978 15073 [pool-8-thread-7-ScalaTest-running-CompanyRepositorySuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@389e6547
+2017-10-07 21:36:47,307 15402 [pool-8-thread-7-ScalaTest-running-CompanyRepositorySuite] INFO  c.m.i.CompanyRepositorySuite$$anonfun$1$$anon$1 - Updating name
+2017-10-07 21:36:47,447 15542 [pool-8-thread-7-ScalaTest-running-CompanyRepositorySuite] WARN  d.f.embed.process.io.file.Files - could not delete C:\Users\marco\AppData\Local\Temp\extract-6a2cfd46-c6ae-40eb-926b-73959fcae7f6extractmongod.exe. Will try to delete it again when program exits.
+2017-10-07 21:36:48,463 16558 [Thread-39] INFO  d.f.e.process.io.file.FileCleaner - Could delete C:\Users\marco\AppData\Local\Temp\extract-6a2cfd46-c6ae-40eb-926b-73959fcae7f6extractmongod.exe
+2017-10-07 21:36:49,039 17134 [pool-8-thread-1-ScalaTest-running-CompanyRepoRepositorySuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@308b91f8
+2017-10-07 21:36:50,195 18290 [pool-8-thread-4-ScalaTest-running-SharePriceRepositorySuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@2b8fa65e
+2017-10-07 21:36:51,953 20048 [pool-8-thread-3-ScalaTest-running-SectorDaoSuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@c997de7
+2017-10-07 21:36:52,078 20173 [pool-8-thread-1-ScalaTest-running-CompanyRepoRepositorySuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@152e728e
+2017-10-07 21:36:52,343 20438 [pool-8-thread-3-ScalaTest-running-SectorDaoSuite] INFO  c.m.i.SectorDaoSuite$$anonfun$1$$anon$1$$anon$2 - Initalizing wiht:null and null
+2017-10-07 21:36:52,578 20673 [pool-8-thread-1-ScalaTest-running-CompanyRepoRepositorySuite] INFO  c.m.i.CompanyRepoRepositorySuite$$anonfun$1$$anon$1 - Updating UpdatedName
+2017-10-07 21:36:52,656 20751 [pool-8-thread-7-ScalaTest-running-SectorServiceDownloaderSpec] INFO  c.m.m.s.SectorServiceDownloaderSpec$$anon$1 - Got:1:2
+2017-10-07 21:36:52,656 20751 [pool-8-thread-7-ScalaTest-running-SectorServiceDownloaderSpec] INFO  c.m.m.s.SectorServiceDownloaderSpec$$anon$1 - Downloading data for 124
+2017-10-07 21:36:52,656 20751 [pool-8-thread-7-ScalaTest-running-SectorServiceDownloaderSpec] INFO  c.m.m.s.SectorServiceDownloaderSpec$$anon$1 - Extracting data for sector:124
+2017-10-07 21:36:52,671 20766 [pool-8-thread-7-ScalaTest-running-SectorServiceDownloaderSpec] INFO  c.m.m.s.SectorServiceDownloaderSpec$$anon$1 - Downloading data for 124
+2017-10-07 21:36:54,914 23009 [pool-8-thread-3-ScalaTest-running-SectorDaoSuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@1a0ba835
+2017-10-07 21:36:54,914 23009 [pool-8-thread-3-ScalaTest-running-SectorDaoSuite] INFO  c.m.i.SectorDaoSuite$$anonfun$1$$anon$1$$anon$2 - Initalizing wiht:null and null
+2017-10-07 21:36:55,368 23463 [pool-8-thread-3-ScalaTest-running-SectorDaoSuite] INFO  c.m.i.SectorDaoSuite$$anonfun$1$$anon$1 - Found:1
+2017-10-07 21:36:55,899 23994 [pool-8-thread-4-ScalaTest-running-CompanyRepoDaoSuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@1f21501c
+2017-10-07 21:36:55,961 24056 [pool-8-thread-4-ScalaTest-running-CompanyRepoDaoSuite] INFO  c.m.i.CompanyRepoDaoSuite$$anonfun$1$$anon$1$$anon$2 - Initalizing wiht:null and null
+2017-10-07 21:36:55,993 24088 [pool-8-thread-4-ScalaTest-running-CompanyRepoDaoSuite] INFO  c.m.i.CompanyRepoDaoSuite$$anonfun$1$$anon$1 - Bulk RepoInsert....
+2017-10-07 21:36:57,362 25457 [pool-8-thread-1-ScalaTest-running-SharePriceDaoSuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@6df0ca12
+2017-10-07 21:36:57,706 25801 [pool-8-thread-1-ScalaTest-running-SharePriceDaoSuite] INFO  c.m.i.SharePriceDaoSuite$$anonfun$1$$anon$1$$anon$2 - Initalizing wiht:null and null
+2017-10-07 21:36:58,299 26394 [pool-8-thread-3-ScalaTest-running-SectorDaoSuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@8b24be1
+2017-10-07 21:36:58,315 26410 [pool-8-thread-3-ScalaTest-running-SectorDaoSuite] INFO  c.m.i.SectorDaoSuite$$anonfun$1$$anon$1$$anon$2 - Initalizing wiht:null and null
+2017-10-07 21:36:59,174 27269 [pool-8-thread-4-ScalaTest-running-CompanyRepoDaoSuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@6c2b68ed
+2017-10-07 21:36:59,174 27269 [pool-8-thread-4-ScalaTest-running-CompanyRepoDaoSuite] INFO  c.m.i.CompanyRepoDaoSuite$$anonfun$1$$anon$1$$anon$2 - Initalizing wiht:null and null
+2017-10-07 21:36:59,206 27301 [pool-8-thread-4-ScalaTest-running-CompanyRepoDaoSuite] INFO  c.m.i.CompanyRepoDaoSuite$$anonfun$1$$anon$1 - Bulk RepoInsert....
+2017-10-07 21:36:59,643 27738 [pool-8-thread-4-ScalaTest-running-CompanyRepoDaoSuite] INFO  c.m.i.CompanyRepoDaoSuite$$anonfun$1$$anon$1 - ...There's data in repo db. updating one by one...
+2017-10-07 21:36:59,643 27738 [pool-8-thread-4-ScalaTest-running-CompanyRepoDaoSuite] INFO  c.m.i.CompanyRepoDaoSuite$$anonfun$1$$anon$1 - Updating UpdatedName
+2017-10-07 21:37:00,883 28978 [pool-8-thread-7-ScalaTest-running-SectorRepositorySuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@3fed4365
+2017-10-07 21:37:01,680 29775 [pool-8-thread-3-ScalaTest-running-SectorDaoSuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@29a2d198
+2017-10-07 21:37:01,680 29775 [pool-8-thread-3-ScalaTest-running-SectorDaoSuite] INFO  c.m.i.SectorDaoSuite$$anonfun$1$$anon$1$$anon$2 - Initalizing wiht:null and null
+2017-10-07 21:37:03,319 31414 [pool-8-thread-7-ScalaTest-running-SectorRepositorySuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@4f7cabdd
+2017-10-07 21:37:05,397 33492 [pool-8-thread-7-ScalaTest-running-SectorRepositorySuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@dd6de58
+2017-10-07 21:37:07,527 35622 [pool-8-thread-7-ScalaTest-running-SectorRepositorySuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@2a670c56
+2017-10-07 21:50:03,173 3031 [pool-8-thread-5-ScalaTest-running-DataDownloaderSpec] INFO  c.m.m.service.SimpleDataDownloader - Downloadign data from url:http://myurl
+2017-10-07 21:50:07,830 7688 [pool-8-thread-2-ScalaTest-running-SectorRepositorySuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@72657c80
+2017-10-07 21:50:09,986 9844 [pool-8-thread-6-ScalaTest-running-SectorDaoSuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@5837cd72
+2017-10-07 21:50:11,376 11234 [pool-8-thread-6-ScalaTest-running-SectorDaoSuite] INFO  c.m.i.SectorDaoSuite$$anonfun$1$$anon$1$$anon$2 - Initalizing wiht:null and null
+2017-10-07 21:50:11,861 11719 [pool-8-thread-5-ScalaTest-running-CompanyRepoDaoSuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@70b8f326
+2017-10-07 21:50:11,861 11719 [pool-8-thread-5-ScalaTest-running-CompanyRepoDaoSuite] INFO  c.m.i.CompanyRepoDaoSuite$$anonfun$1$$anon$1$$anon$2 - Initalizing wiht:null and null
+2017-10-07 21:50:12,111 11969 [pool-8-thread-5-ScalaTest-running-CompanyRepoDaoSuite] INFO  c.m.i.CompanyRepoDaoSuite$$anonfun$1$$anon$1 - Bulk RepoInsert....
+2017-10-07 21:50:14,423 14281 [pool-8-thread-2-ScalaTest-running-SectorRepositorySuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@113bd98e
+2017-10-07 21:50:15,408 15266 [pool-8-thread-5-ScalaTest-running-CompanyRepoDaoSuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@22922533
+2017-10-07 21:50:15,408 15266 [pool-8-thread-5-ScalaTest-running-CompanyRepoDaoSuite] INFO  c.m.i.CompanyRepoDaoSuite$$anonfun$1$$anon$1$$anon$2 - Initalizing wiht:null and null
+2017-10-07 21:50:15,423 15281 [pool-8-thread-5-ScalaTest-running-CompanyRepoDaoSuite] INFO  c.m.i.CompanyRepoDaoSuite$$anonfun$1$$anon$1 - Bulk RepoInsert....
+2017-10-07 21:50:15,876 15734 [pool-8-thread-5-ScalaTest-running-CompanyRepoDaoSuite] INFO  c.m.i.CompanyRepoDaoSuite$$anonfun$1$$anon$1 - ...There's data in repo db. updating one by one...
+2017-10-07 21:50:15,876 15734 [pool-8-thread-5-ScalaTest-running-CompanyRepoDaoSuite] INFO  c.m.i.CompanyRepoDaoSuite$$anonfun$1$$anon$1 - Updating UpdatedName
+2017-10-07 21:50:16,267 16125 [pool-8-thread-6-ScalaTest-running-SectorDaoSuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@ba9b832
+2017-10-07 21:50:16,267 16125 [pool-8-thread-6-ScalaTest-running-SectorDaoSuite] INFO  c.m.i.SectorDaoSuite$$anonfun$1$$anon$1$$anon$2 - Initalizing wiht:null and null
+2017-10-07 21:50:16,580 16438 [pool-8-thread-5-ScalaTest-running-SectorLoaderSpec] INFO  c.m.m.l.SectorLoaderSpec$$anon$1 - All sector downoaded. now mapping them...
+2017-10-07 21:50:16,595 16453 [pool-8-thread-5-ScalaTest-running-SectorLoaderSpec] INFO  c.m.m.l.SectorLoaderSpec$$anon$1 - All sector downoaded. now mapping them...
+2017-10-07 21:50:16,595 16453 [pool-8-thread-5-ScalaTest-running-SectorLoaderSpec] INFO  c.m.m.l.SectorLoaderSpec$$anon$1 - All sector downoaded. now mapping them...
+2017-10-07 21:50:16,626 16484 [pool-8-thread-5-ScalaTest-running-SectorLoaderSpec] INFO  c.m.m.l.SectorLoaderSpec$$anon$1 - Got all sectors...
+2017-10-07 21:50:16,626 16484 [pool-8-thread-5-ScalaTest-running-SectorLoaderSpec] INFO  c.m.m.l.SectorLoaderSpec$$anon$1 - All sector downoaded. now mapping them...
+2017-10-07 21:50:16,626 16484 [pool-8-thread-5-ScalaTest-running-SectorLoaderSpec] INFO  c.m.m.l.SectorLoaderSpec$$anon$1 - All sector downoaded. now mapping them...
+2017-10-07 21:50:16,861 16719 [pool-8-thread-6-ScalaTest-running-SectorDaoSuite] INFO  c.m.i.SectorDaoSuite$$anonfun$1$$anon$1 - Found:1
+2017-10-07 21:50:17,173 17031 [pool-8-thread-2-ScalaTest-running-SectorRepositorySuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@3f3e6d77
+2017-10-07 21:50:18,013 17871 [pool-8-thread-1-ScalaTest-running-CompanyRepoRepositorySuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@245a63bd
+2017-10-07 21:50:18,560 18418 [pool-8-thread-1-ScalaTest-running-CompanyRepoRepositorySuite] INFO  d.f.e.p.runtime.ProcessControl - stopOrDestroyProcess: process has not exited 
+2017-10-07 21:50:19,872 19730 [pool-8-thread-6-ScalaTest-running-SectorDaoSuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@54c657a9
+2017-10-07 21:50:19,888 19746 [pool-8-thread-6-ScalaTest-running-SectorDaoSuite] INFO  c.m.i.SectorDaoSuite$$anonfun$1$$anon$1$$anon$2 - Initalizing wiht:null and null
+2017-10-07 21:50:19,997 19855 [pool-8-thread-5-ScalaTest-running-CompanyRepositorySuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@4d77b80a
+2017-10-07 21:50:22,181 22039 [pool-8-thread-1-ScalaTest-running-CompanyRepoRepositorySuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@631bd852
+2017-10-07 21:50:22,697 22555 [pool-8-thread-1-ScalaTest-running-CompanyRepoRepositorySuite] INFO  c.m.i.CompanyRepoRepositorySuite$$anonfun$1$$anon$1 - Updating UpdatedName
+2017-10-07 21:50:22,713 22571 [pool-8-thread-2-ScalaTest-running-SectorRepositorySuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@6cf97bcb
+2017-10-07 21:50:23,041 22899 [pool-8-thread-3-ScalaTest-running-SectorServiceDownloaderSpec] INFO  c.m.m.s.SectorServiceDownloaderSpec$$anon$1 - Got:1:2
+2017-10-07 21:50:23,056 22914 [pool-8-thread-3-ScalaTest-running-SectorServiceDownloaderSpec] INFO  c.m.m.s.SectorServiceDownloaderSpec$$anon$1 - Downloading data for 124
+2017-10-07 21:50:23,056 22914 [pool-8-thread-3-ScalaTest-running-SectorServiceDownloaderSpec] INFO  c.m.m.s.SectorServiceDownloaderSpec$$anon$1 - Extracting data for sector:124
+2017-10-07 21:50:23,088 22946 [pool-8-thread-3-ScalaTest-running-SectorServiceDownloaderSpec] INFO  c.m.m.s.SectorServiceDownloaderSpec$$anon$1 - Downloading data for 124
+2017-10-07 21:50:23,775 23633 [pool-8-thread-5-ScalaTest-running-CompanyRepositorySuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@44a06b86
+2017-10-07 21:50:24,322 24180 [pool-8-thread-5-ScalaTest-running-CompanyRepositorySuite] INFO  c.m.i.CompanyRepositorySuite$$anonfun$1$$anon$1 - Updating name
+2017-10-07 21:50:24,463 24321 [pool-8-thread-6-ScalaTest-running-SectorDaoSuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@585c0ba6
+2017-10-07 21:50:24,463 24321 [pool-8-thread-6-ScalaTest-running-SectorDaoSuite] INFO  c.m.i.SectorDaoSuite$$anonfun$1$$anon$1$$anon$2 - Initalizing wiht:null and null
+2017-10-07 21:50:25,053 24911 [pool-8-thread-6-ScalaTest-running-SectorDaoSuite] INFO  d.f.e.p.runtime.ProcessControl - stopOrDestroyProcess: process has not exited 
+2017-10-07 21:50:26,272 26130 [pool-8-thread-1-ScalaTest-running-SharePriceRepositorySuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@2a1853dc
+2017-10-07 21:50:27,304 27162 [pool-8-thread-3-ScalaTest-running-SharePriceDaoSuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@258da411
+2017-10-07 21:50:27,304 27162 [pool-8-thread-3-ScalaTest-running-SharePriceDaoSuite] INFO  c.m.i.SharePriceDaoSuite$$anonfun$1$$anon$1$$anon$2 - Initalizing wiht:null and null
+2017-10-07 21:50:27,981 27839 [pool-8-thread-2-ScalaTest-running-CompanyDaoSuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@33576be7
+2017-10-07 21:50:27,996 27854 [pool-8-thread-2-ScalaTest-running-CompanyDaoSuite] INFO  c.m.i.CompanyDaoSuite$$anonfun$1$$anon$1$$anon$2 - Initalizing wiht:null and null
+2017-10-07 21:50:27,996 27854 [pool-8-thread-2-ScalaTest-running-CompanyDaoSuite] INFO  c.m.i.CompanyDaoSuite$$anonfun$1$$anon$1 - Bulk Insert....
+2017-10-07 21:50:28,012 27870 [pool-8-thread-2-ScalaTest-running-CompanyDaoSuite] INFO  c.m.i.CompanyDaoSuite$$anonfun$1$$anon$1 - Dao. Inserting:1
+2017-10-07 21:50:30,936 30794 [pool-8-thread-2-ScalaTest-running-CompanyDaoSuite] INFO  d.f.e.process.runtime.Executable - start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@b6cbb18
+2017-10-07 21:50:30,936 30794 [pool-8-thread-2-ScalaTest-running-CompanyDaoSuite] INFO  c.m.i.CompanyDaoSuite$$anonfun$1$$anon$1$$anon$2 - Initalizing wiht:null and null
+2017-10-07 21:50:30,968 30826 [pool-8-thread-2-ScalaTest-running-CompanyDaoSuite] INFO  c.m.i.CompanyDaoSuite$$anonfun$1$$anon$1 - Bulk Insert....
+2017-10-07 21:50:30,968 30826 [pool-8-thread-2-ScalaTest-running-CompanyDaoSuite] INFO  c.m.i.CompanyDaoSuite$$anonfun$1$$anon$1 - Dao. Inserting:1
+2017-10-07 21:50:31,452 31310 [pool-8-thread-2-ScalaTest-running-CompanyDaoSuite] INFO  c.m.i.CompanyDaoSuite$$anonfun$1$$anon$1 - ...There's data in db. updating one by one...
+2017-10-07 21:50:31,468 31326 [pool-8-thread-2-ScalaTest-running-CompanyDaoSuite] INFO  c.m.i.CompanyDaoSuite$$anonfun$1$$anon$1 - Updating name

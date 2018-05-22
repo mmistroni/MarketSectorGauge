@@ -18,6 +18,7 @@ startDynamoDBLocal := startDynamoDBLocal.dependsOn(compile in Test).value
 test in Test := (test in Test).dependsOn(startDynamoDBLocal).value
 testOnly in Test := (testOnly in Test).dependsOn(startDynamoDBLocal).value
 testOptions in Test += dynamoDBLocalTestCleanup.value
+dynamoDBLocalPort := 8888
 
 
 
@@ -69,7 +70,8 @@ libraryDependencies ++= {
     "com.github.simplyscala" %% "scalatest-embedmongo" % "0.2.2" % "test",
     "com.typesafe.akka" %% "akka-http-spray-json"  % akkaHttpVersion,
     "com.gu" %% "scanamo" % "0.9.5",
-    "com.amazonaws" % "aws-java-sdk-dynamodb" % "1.11.172"
+    "com.amazonaws" % "aws-java-sdk-dynamodb" % "1.11.172",
+     "org.json4s" % "json4s-native_2.11" % "3.3.0" 
   )
   
 }

@@ -110,7 +110,8 @@ class SectorLoaderSpec extends FreeSpec with Matchers {
         Mockito.when(mockSectorLoader.dataService.downloadSectorData(expectedSectorsIds(1))).thenReturn(Some(mockSect2))
         Mockito.when(mockSectorLoader.sectorRepository.insert(expectedSectors)).thenReturn(expectedSectors.size)
         val result = mockSectorLoader.load
-        result shouldEqual (expectedSectors)
+        println("Result from mock loader is:" + result)
+        result shouldEqual (expectedSectors.size)
 
       }
     }

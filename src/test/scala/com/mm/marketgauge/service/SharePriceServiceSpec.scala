@@ -32,16 +32,17 @@ class SharePriceServiceSpec extends FreeSpec with Matchers {
         
         val ticker = "GE";
         
-        val yahooData = List(ticker, "1.0", "12/13/2016", "3.0", "4.0", "5.0", "", "6.0", "7.0", "20B")
+        val yahooData = List("12/13/2016", "1.0","2.0" , "3.0", "4.0", "5.0", "", "6.0", "7.0", "20B")
+        val headers = List.fill(9)("test")
         val sharePriceUrl = mockSharePriceService.sharePriceUrl.replace("<ticker>", ticker);
                         
-        Mockito.when(mockDownloader.downloadCSV(sharePriceUrl)).thenReturn(List(yahooData))
+        Mockito.when(mockDownloader.downloadCSV(sharePriceUrl)).thenReturn(List(headers,yahooData))
         val sharePriceResult = mockSharePriceService.downloadSharePrice(ticker).get
-        sharePriceResult.price should be(yahooData(1).toDouble)
+        sharePriceResult.price should be(yahooData(4).toDouble)
         sharePriceResult.ticker should be(ticker)
         sharePriceResult.currentEps should be(yahooData(3).toDouble)
-        sharePriceResult.asOfDate should be (yahooData(2))
-        sharePriceResult.marketCap should be (yahooData(9))
+        sharePriceResult.asOfDate should be (yahooData(0))
+        sharePriceResult.marketCap should be ("N/A")
         Mockito.verify(mockDownloader).downloadCSV(sharePriceUrl)
         
       }

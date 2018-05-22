@@ -4,6 +4,9 @@ import com.mm.marketgauge.persistence.{PersistenceServiceComponent, BaseReposito
 import com.mm.marketgauge.dao.MongoDatabase
 import com.mm.marketgauge.service._
 import com.mm.marketgauge.persistence.mongo.MongoPersistenceServiceComponent
+import com.mm.marketgauge.persistence.dynamodb.{LocalDyamoDbPersistenceServiceComponent, 
+                                                RemoteDynamoDbPersistenceServiceComponent}
+
 import com.typesafe.config.Config
 
 
@@ -47,12 +50,20 @@ object DataLoader {
       
     }
     
+    trait DynamoConfigLoader  extends RemoteDynamoDbPersistenceServiceComponent with DataDownloaderComponent {
+      // try to remove factories if you canMongoPersistenceServiceComponent
+      // take out factories. Mix in traits instead
+      val notifier = Notifier.defaultNotifier(config)         
+      
+    }
+    
+    
     loaderName match {
           case "sectors" => new SectorLoader with SectorServiceComponent with ConfigLoader 
           
           case "companies" => new CompaniesLoader with CompanyServiceComponent with ConfigLoader 
           
-          case "prices" => new SharePriceLoader with SharePriceServiceComponent  with ConfigLoader 
+          case "prices" => new SharePriceLoader with SharePriceServiceComponent  with DynamoConfigLoader 
           
           case "shares" => new CustomSharesLoader with ConfigLoader  
           
