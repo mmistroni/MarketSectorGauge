@@ -2,6 +2,9 @@ package com.mm.marketgauge.service
 import scala.io.{Source, BufferedSource}
 import com.github.tototoshi.csv._
 import com.mm.marketgauge.util.LogHelper
+import org.json4s._
+import org.json4s.native.JsonMethods._
+
 /**
  * Trait for a DataDowloader which fetches data
  * from a supplied URL
@@ -25,7 +28,8 @@ trait DataDownloaderComponent extends LogHelper {
   val dataDownloader = new DataDownloader{}
 }
 
-trait DataDownloader  extends LogHelper{
+
+trait DataDownloader  extends LogHelper with JsonDataDownloader{
   
   def downloadFromURL(url:String):Iterator[String] = {
     logger.info("Downloadign data from url:" + url)
@@ -45,6 +49,19 @@ trait DataDownloader  extends LogHelper{
   private[service] def _getFromUrl(url:String):BufferedSource = Source.fromURL(url)
     
 }
+
+trait JsonDataDownloader  {
+  
+  def downloadJson(url:String):JValue = {
+    parse(loadFromURL(url))
+  }
+  
+  private[service] def loadFromURL(url:String) = {
+    Source.fromURL(url).mkString
+  }
+  
+}
+
 
 private[service] class SimpleDataDownloader extends DataDownloader
 

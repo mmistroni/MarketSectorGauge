@@ -25,6 +25,7 @@ class ParsingJsonSpec extends FreeSpec with Matchers {
   implicit val formats = DefaultFormats
 
   def parseWithScalaJson(jsonString: String): Unit = {
+    println(jsonString)
     val result = JSON.parseFull(jsonString)
     result match {
       // Matches if jsonStr is valid JSON and represents a Map of Strings to Any
@@ -37,6 +38,7 @@ class ParsingJsonSpec extends FreeSpec with Matchers {
   def parseWithJson4s(jsonString: String): Unit = {
     val json = parse(jsonString)
 
+    println(json)
     val stockData = json.extract[StockData]
     println(stockData)
 
@@ -51,24 +53,31 @@ class ParsingJsonSpec extends FreeSpec with Matchers {
       "should return a result" in {
 
         
-        """
         val aaplUrl = baseUrl.format("AAPL")
 
         val jsonStr = Source.fromURL("https://api.iextrading.com/1.0/stock/%s/quote".format("AAPL")).mkString
 
-        parseWithScalaJson(jsonStr)
+        
+        
+        
+        //parseWithScalaJson(jsonStr)
 
-        println("-------------------------------")
+        println(" THE JSON STRING IS-------------------------------")
 
+        println(jsonStr)
+        println("-----------------")
+        
         parseWithJson4s(jsonStr)
 
         //
         //https://stackoverflow.com/questions/4170949/how-to-parse-json-in-scala-using-standard-scala-classes
-        """
+        
       }
     }
   }
 
+  
+  /**
   "The ParsingJsonService for sector stock" - {
     "when parseJson with  an URL" - {
       "should return a result" in {
@@ -91,5 +100,5 @@ class ParsingJsonSpec extends FreeSpec with Matchers {
       }
     }
   }
-
+  **/
 }

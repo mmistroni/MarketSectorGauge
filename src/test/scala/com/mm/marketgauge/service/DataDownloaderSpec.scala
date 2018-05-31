@@ -8,6 +8,8 @@ import org.scalatest.concurrent.ScalaFutures._
 
 import org.junit.runner.RunWith
 import org.scalatest.junit.JUnitRunner
+import org.json4s._
+import org.json4s.native.JsonMethods._
 
 
 
@@ -57,6 +59,39 @@ class DataDownloaderSpec extends FreeSpec with Matchers {
       }
     }
   }
+  
+  "The DataDownloader" - {
+    "when calling downloadJson with a String representing an URL" - {
+      "should return a JValue mock " in {
+        
+        class MockJsonDataDownloader extends JsonDataDownloader
+        
+        val testUrl = "http://myurl"
+        val testJsonString = """ { "numbers" : [1, 2, 3, 4] } """
+        val dataDownloader = new MockJsonDataDownloader()
+        
+        val dataDownloaderSpy = Mockito.spy(dataDownloader)
+        
+        Mockito.doReturn(testJsonString).when(dataDownloaderSpy).loadFromURL(testUrl)
+        
+        val downloadedData = dataDownloaderSpy.downloadJson(testUrl)
+        
+        assert(downloadedData.isInstanceOf[JValue])
+        
+        Mockito.verify(dataDownloaderSpy).loadFromURL(testUrl)
+        
+      }
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+    
   
   
   
