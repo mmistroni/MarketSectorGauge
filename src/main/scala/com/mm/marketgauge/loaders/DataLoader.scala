@@ -63,11 +63,11 @@ object DataLoader {
           
           case "companies" => new CompaniesLoader with CompanyServiceComponent with ConfigLoader 
           
-          case "prices" => new SharePriceLoader with SharePriceServiceComponent  with DynamoConfigLoader 
+          case "prices" => new SharePriceLoader with JsonSharePriceServiceComponent  with DynamoConfigLoader 
           
           case "shares" => new CustomSharesLoader with ConfigLoader  
           
-          case "tester" =>  new CustomSharesTester with ConfigLoader with SharePriceServiceComponent
+          case "tester" =>  new CustomSharesTester with ConfigLoader with JsonSharePriceServiceComponent
                 with DataDownloaderComponent
     }
           

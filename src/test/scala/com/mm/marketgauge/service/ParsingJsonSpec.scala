@@ -25,7 +25,6 @@ class ParsingJsonSpec extends FreeSpec with Matchers {
   implicit val formats = DefaultFormats
 
   def parseWithScalaJson(jsonString: String): Unit = {
-    println(jsonString)
     val result = JSON.parseFull(jsonString)
     result match {
       // Matches if jsonStr is valid JSON and represents a Map of Strings to Any
@@ -38,10 +37,8 @@ class ParsingJsonSpec extends FreeSpec with Matchers {
   def parseWithJson4s(jsonString: String): Unit = {
     val json = parse(jsonString)
 
-    println(json)
     val stockData = json.extract[StockData]
-    println(stockData)
-
+    
   }
 
   def parseJson(jsonUrl: String): String = {
@@ -77,7 +74,6 @@ class ParsingJsonSpec extends FreeSpec with Matchers {
   }
 
   
-  /**
   "The ParsingJsonService for sector stock" - {
     "when parseJson with  an URL" - {
       "should return a result" in {
@@ -93,6 +89,7 @@ class ParsingJsonSpec extends FreeSpec with Matchers {
           "IYZ", //telecom
           "IDU", //utilities 
           "XLU")
+          
 
         val mappedUrl = sectors.map(ticker => "https://api.iextrading.com/1.0/stock/%s/quote".format(ticker))
           .map(parseJson).foreach { jsonString => parseWithJson4s(jsonString) }
@@ -100,5 +97,5 @@ class ParsingJsonSpec extends FreeSpec with Matchers {
       }
     }
   }
-  **/
+  
 }

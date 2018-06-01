@@ -52,10 +52,22 @@ def createTable(dynamodb, tableName):
 def populateTable(dynamoTbl, fileName):
     print 'Loading sectors from %s' % fileName
     import csv
-    with open('c:/Users/marco/MarketSectorGauge/sectors.csv', 'r') as csvfile:
-        reader = csv.reader(csvfile)
-        for row in reader:
-            sectorName, sectorTicker, sectorId, source = row
+
+    sectors = [
+            (-20, "IYE", "energy", "yhoo"),
+            (-30, "IYF", "financials", "yhoo"),
+            (-40, "IYH", "healh care", "yhoo"),
+            (-50,"IYJ",  "Industrials", "yhoo"),
+            (-60, "IYM", "materials ", "yhoo"),
+            (-70, "IYW", "info tech", "yhoo"),
+            (-80, "IYZ", "telecom", "yhoo"),
+            (-90, "IDU", "utilities", "yhoo"), 
+            (-100, "XLU", "utilities2", "yhoo")
+              ]
+             
+
+
+    for sectorId, sectorTicker, sectorName, source in sectors:
             dynamoTbl.put_item(
                     Item={'sectorId': int(sectorId), 
                          'ticker':sectorTicker, 
